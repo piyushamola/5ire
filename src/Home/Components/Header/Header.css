@@ -1,0 +1,26 @@
+.logoStyles {
+    height: 8rem;
+    margin-left: 5rem;
+  }
+
+
+.App-logo {
+    height: 4rem;
+    pointer-events: none;
+}
+
+.Header {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    width: 80%;
+    height: 5rem;
+}
+
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 1.5rem;
+}

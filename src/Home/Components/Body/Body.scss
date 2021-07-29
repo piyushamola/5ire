@@ -1,0 +1,62 @@
+.coverImage {
+   width: 100%;
+   height: 35rem;
+   margin: 0;
+   padding: 0;
+  }
+
+.firstPageFooter {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Applogo {
+    height: 8rem;
+    pointer-events: none;
+}
+
+.rightContent {
+    width: 30%;
+}
+
+
+.getStartedBoxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 40rem;
+  flex-wrap: wrap;
+}
+
+
+.GetStartedContainer {
+  margin-top: 5rem;
+
+  .getStartedInfo {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 10rem;
+
+    .startedLogo {
+      height: 25rem;
+      width: 25rem;
+      pointer-events: none;
+    }
+  }
+
+  .getStartedBoxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 40rem;
+    flex-wrap: wrap;
+  }
+
+}
