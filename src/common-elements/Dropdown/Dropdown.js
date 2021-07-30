@@ -7,14 +7,11 @@ import './Dropdown.css';
 function DropdownElement(props) {
     const menu = (
         <Menu>
-          <Menu.Item key="0">
-            <a>1st menu item</a>
-          </Menu.Item>
-          <Menu.Item key="1">
-            <a >2nd menu item</a>
-          </Menu.Item>
-          <Menu.Divider />
-          <Menu.Item key="3">3rd menu item</Menu.Item>
+          {props.menuList.map((item, index) => (
+              <Menu.Item key={index}>
+                <a>{item}</a>
+              </Menu.Item>
+          ))}
         </Menu>
       );
     return (

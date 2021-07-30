@@ -34,61 +34,61 @@ import GetStartedInfo from './getStartedInfo/getStartedInfo.js';
 import AboutInfo from './aboutInfo/aboutInfo.js';
 import './Body.scss'
 
+const backGroundImageStyle = {
+  backgroundImage: `url(${backGround})`,
+  height: '100%',
+  width: '100%',
+  backgroundSize: "100% 100%",
+  backgroundRepeat: "no-repeat",
+};
+const finalFooterLogos = [google, messenger, youtube, whatsapp]
+const getStartedImages = [blockchain, proofofFire, nativeapps, dapps];
+
+const headings = ["BlockChain + Benefit", "Proof Of Fire", "SGD's + Native Apps", "Built For Benefit Dapps"];
+
+const Paragraphs = ["We have taken the technology of blockchain and the spirit of impact, creating a perfect marriage between the two.",
+                    "Our proprietary consensus mechanism makes sure that sustainable practices in the world of blockchain are rewarded, both in terms of financials and legacy.",
+                  "Our native apps would aim to translate all Sustainable Development Goals listed by the United Nations in blockchain for transparency. In addition, our native apps would have innumerable use cases.",
+                    "Build dApps on our ecosystem and move to “for benefit”, automatically."]
+
+const aboutImages = [blockChainSust, iot, facilitate];
+
+const aboutPara = ["5IRE is a Native Chain that combines the benefits of existing blockchain (trust, cost, speed, visibility, traceability,immutability, improved security & privacy, efficiency & decentralization. Plus the Sustainable Aspect of Economy. Every action inside the blockchain is designed to contribute directly to impact.",
+                    "5ire isn't just for donations or e-governance. It is an all inclusive ecosystem with benefits intrinsically built into it. Our consensus mechanism is based on our proprietary “Proof of FIRE” concept, which has Nominated Proof Of Stake(nPOS) as the base layer, on top of which we have added “Proof Of Benefit” And “Proof Of Donation”, to make sure we work t an intersection of profit and purpose. The way it should be.",
+                    "In today's world, blockchain is trying to solve the privacy problem by facilitating an “Open” internet with no need for a user's private data. But we still do not factor in sustainability and hence end up using way more resources than needed. 5IRE is the first blockchain where sustainable practices are rewarded and translate into financial benefits as well, hence taking the world towards a more sustainable future."];
+
+const aboutHeading = ["Blockchain + Sustainability = 5IRE", "The internet of benefit", "Blockchain To Facilitate 5IRE"];
+
+const logos = [forbes, ted, globe, nasdaq, entrepreneur];
+
+const logosDimensions = [{ width: '15rem', height: '10rem'}, { width: '10rem', height: '4rem'}, { width: '10rem', height: '8rem'}, { width: '12rem', height: '6rem'}, { width: '12rem', height: '6rem'}];
+
+const explorePara = ["The latest price for 5ire ether. You can buy as little as 0.000000000000000001 – you don't need to buy 1 whole 5ire coin.",
+                        "The number of transactions successfully processed on the network in the last 24 hours.",
+                        "The amount of money in decentralized finance (DeFi) applications, the 5ire ecosystem",
+                        "5ire is run by 120 nodes around the globe."];
+const exploreHeading = ["5ire PRICE (USD)", "TRANSACTIONS TODAY", "VALUE LOCKED IN DEFI (USD)", "NODES"];
+
+const exploreImages = [enterprise, community, contribute];
+
+const exploreContentHeading = ["5ire for enterprise", "The 5ire community (heroes)", "Contribute to 5ire.org"];
+
+const exploreContentPara = ["See how 5ire can open up new business models, reduce your costs and future-proof your business.",
+                      "The community is the heart and soul of 5ire. It's made up of people from all different backgrounds and interests. Click here to join.",
+                      "The website and community are open source with hundreds of community contributors. You can propose edits to any of the content , suggest new features, or help us in another way."]
+
+const FinalFooterList = [["About", "FAQ", "Support", "Build", "Grants and Bounties", "Careers"], ["Technology", "Roadmap", "Token", "Telemetry", "Substrate", "Lightpaper", "Whitepaper"],
+                          ["Community",
+                            "Documentation",
+                            "Brand Assets",
+                            "Blog",
+                            "Element",
+                            "Chat",
+                            "Medium"]];
+
+const FinalFooterHeading = ["General", "Technology", "Community"];
+
 function Body(props) {
-
-  const backGroundImageStyle = {
-    backgroundImage: `url(${backGround})`,
-    height: '100%',
-    width: '100%',
-    backgroundSize: "100% 100%",
-    backgroundRepeat: "no-repeat",
-  };
-  const finalFooterLogos = [google, messenger, youtube, whatsapp]
-  const getStartedImages = [blockchain, proofofFire, nativeapps, dapps];
-
-  const headings = ["BlockChain + Benefit", "Proof Of Fire", "SGD's + Native Apps", "Built For Benefit Dapps"];
-
-  const Paragraphs = ["We have taken the technology of blockchain and the spirit of impact, creating a perfect marriage between the two.",
-                      "Our proprietary consensus mechanism makes sure that sustainable practices in the world of blockchain are rewarded, both in terms of financials and legacy.",
-                    "Our native apps would aim to translate all Sustainable Development Goals listed by the United Nations in blockchain for transparency. In addition, our native apps would have innumerable use cases.",
-                      "Build dApps on our ecosystem and move to “for benefit”, automatically."]
-
-  const aboutImages = [blockChainSust, iot, facilitate];
-
-  const aboutPara = ["5IRE is a Native Chain that combines the benefits of existing blockchain (trust, cost, speed, visibility, traceability,immutability, improved security & privacy, efficiency & decentralization. Plus the Sustainable Aspect of Economy. Every action inside the blockchain is designed to contribute directly to impact.",
-                      "5ire isn't just for donations or e-governance. It is an all inclusive ecosystem with benefits intrinsically built into it. Our consensus mechanism is based on our proprietary “Proof of FIRE” concept, which has Nominated Proof Of Stake(nPOS) as the base layer, on top of which we have added “Proof Of Benefit” And “Proof Of Donation”, to make sure we work t an intersection of profit and purpose. The way it should be.",
-                      "In today's world, blockchain is trying to solve the privacy problem by facilitating an “Open” internet with no need for a user's private data. But we still do not factor in sustainability and hence end up using way more resources than needed. 5IRE is the first blockchain where sustainable practices are rewarded and translate into financial benefits as well, hence taking the world towards a more sustainable future."];
-
-  const aboutHeading = ["Blockchain + Sustainability = 5IRE", "The internet of benefit", "Blockchain To Facilitate 5IRE"];
-
-  const logos = [forbes, ted, globe, nasdaq, entrepreneur];
-
-  const logosDimensions = [{ width: '15rem', height: '10rem'}, { width: '10rem', height: '4rem'}, { width: '10rem', height: '8rem'}, { width: '12rem', height: '6rem'}, { width: '12rem', height: '6rem'}];
-
-  const explorePara = ["The latest price for 5ire ether. You can buy as little as 0.000000000000000001 – you don't need to buy 1 whole 5ire coin.",
-                          "The number of transactions successfully processed on the network in the last 24 hours.",
-                          "The amount of money in decentralized finance (DeFi) applications, the 5ire ecosystem",
-                          "5ire is run by 120 nodes around the globe."];
-  const exploreHeading = ["5ire PRICE (USD)", "TRANSACTIONS TODAY", "VALUE LOCKED IN DEFI (USD)", "NODES"];
-
-  const exploreImages = [enterprise, community, contribute];
-
-  const exploreContentHeading = ["5ire for enterprise", "The 5ire community (heroes)", "Contribute to 5ire.org"];
-
-  const exploreContentPara = ["See how 5ire can open up new business models, reduce your costs and future-proof your business.",
-                        "The community is the heart and soul of 5ire. It's made up of people from all different backgrounds and interests. Click here to join.",
-                        "The website and community are open source with hundreds of community contributors. You can propose edits to any of the content , suggest new features, or help us in another way."]
-
-  const FinalFooterList = [["About", "FAQ", "Support", "Build", "Grants and Bounties", "Careers"], ["Technology", "Roadmap", "Token", "Telemetry", "Substrate", "Lightpaper", "Whitepaper"],
-                            ["Community",
-                              "Documentation",
-                              "Brand Assets",
-                              "Blog",
-                              "Element",
-                              "Chat",
-                              "Medium"]];
-
-  const FinalFooterHeading = ["General", "Technology", "Community"];
 
     return (
     <div>

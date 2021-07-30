@@ -5,6 +5,11 @@ import './Header.css';
 import DropdownElement from '../../../common-elements/Dropdown/Dropdown.js';
 
 const Headings = ["Use 5ire", "Learn", "Developers", "Enterprise", "Community"];
+const HeadingsMenuItem = [["5ire Wallets", "Get 5ire", "Decentralized applications (dapps)",  "Stake 5ire"],
+["What is 5ire", "5ire Whitepaper","5ire Glossary","5ire Improvement Proposals"],
+["Get started", "Documentation", "Tutorials", "Developer", "Resources"],
+["Mainnet 5ire", "Private 5ire", "Enterprise"], []]
+
 
 function Header(props) {
     return (
@@ -15,7 +20,7 @@ function Header(props) {
         <div className="items">
         {Headings.map((name, index) => (
           <div className="itemsDiv">
-            <DropdownElement name={name} key={index}/>
+            <DropdownElement name={name} key={index} menuList={HeadingsMenuItem[index]}/>
           </div>
         ))}
         </div>

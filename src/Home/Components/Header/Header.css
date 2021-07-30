@@ -12,15 +12,15 @@
 .Header {
     display: flex;
     justify-content: flex-start;
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 80%;
-    height: 5rem;
+    height: 3rem;
 }
 
 
 .items {
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
+    width: 60%;
     margin-top: 1.5rem;
 }
