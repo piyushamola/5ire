@@ -1,7 +1,5 @@
 import React from 'react';
-import coverImage from '../../../assets/designImage.png'
 import fire from '../../../assets/fire.png'
-import startedImage from '../../../assets/getStartedInfo.png'
 import backGround from '../../../assets/backgroundImage.png'
 import blockchain from '../../../assets/blockchainbenefit.png';
 import dapps from '../../../assets/dapps.png';
@@ -24,6 +22,9 @@ import paradigm from '../../../assets/paradigm.svg';
 import community from '../../../assets/exploresvgs/community.svg'
 import contribute from '../../../assets/exploresvgs/contribute.svg'
 import enterprise from '../../../assets/exploresvgs/enterprise.svg'
+
+import coverImage from '../../../assets/cover.svg'
+import startedImage from '../../../assets/getStarted.png';
 
 import { google, messenger, whatsapp, youtube } from '../../../assets/footerLogos';
 
