@@ -1,0 +1,18 @@
+.listStyles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h1 {
+        font-size: 18px;
+        color: #5C5AB8;
+    }
+
+    li {
+        font-size: 14px;
+        color: #404F77;
+        line-height: 2rem;
+        list-style: none;
+    }
+}
+

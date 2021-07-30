@@ -52,4 +52,15 @@ section {
 
 p {
   font: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
 }
+
+h1 {
+  font: 'Futura', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+}
+

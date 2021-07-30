@@ -4,7 +4,7 @@ import fire from '../../../assets/fire.png'
 import './Header.css';
 import DropdownElement from '../../../common-elements/Dropdown/Dropdown.js';
 
-const Headings = ["Use 5ire", "Learn", "Developers", "Enterprise", "community"];
+const Headings = ["Use 5ire", "Learn", "Developers", "Enterprise", "Community"];
 
 function Header(props) {
     return (

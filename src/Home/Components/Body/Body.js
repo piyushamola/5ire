@@ -11,6 +11,24 @@ import about from '../../../assets/about.png';
 import blockChainSust from '../../../assets/blockChainSustainibility.png';
 import iot from '../../../assets/iot.png';
 import facilitate from '../../../assets/facilitate.png';
+
+import ted from '../../../assets/logos/ted.png'
+import forbes from '../../../assets/logos/Forbes-logo.png'
+import entrepreneur from '../../../assets/logos/Entrepreneur_logo.png'
+import globe from '../../../assets/logos/globe.png'
+import nasdaq from '../../../assets/logos/nasdaq.png'
+
+import useCases from '../../../assets/aboutFooter.svg';
+import paradigm from '../../../assets/paradigm.svg';
+
+import community from '../../../assets/exploresvgs/community.svg'
+import contribute from '../../../assets/exploresvgs/contribute.svg'
+import enterprise from '../../../assets/exploresvgs/enterprise.svg'
+
+import { google, messenger, whatsapp, youtube } from '../../../assets/footerLogos';
+
+import HeadingWithContent from '../../../common-elements/HeadingWithContent/HeadingWithContent'
+import HeadingWithList from '../../../common-elements/HeaderWithList/HeaderWithList.js'
 import GetStartedInfo from './getStartedInfo/getStartedInfo.js';
 import AboutInfo from './aboutInfo/aboutInfo.js';
 import './Body.scss'
@@ -24,7 +42,7 @@ function Body(props) {
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   };
-
+  const finalFooterLogos = [google, messenger, youtube, whatsapp]
   const getStartedImages = [blockchain, proofofFire, nativeapps, dapps];
 
   const headings = ["BlockChain + Benefit", "Proof Of Fire", "SGD's + Native Apps", "Built For Benefit Dapps"];
@@ -41,6 +59,36 @@ function Body(props) {
                       "In today's world, blockchain is trying to solve the privacy problem by facilitating an “Open” internet with no need for a user's private data. But we still do not factor in sustainability and hence end up using way more resources than needed. 5IRE is the first blockchain where sustainable practices are rewarded and translate into financial benefits as well, hence taking the world towards a more sustainable future."];
 
   const aboutHeading = ["Blockchain + Sustainability = 5IRE", "The internet of benefit", "Blockchain To Facilitate 5IRE"];
+
+  const logos = [forbes, ted, globe, nasdaq, entrepreneur];
+
+  const logosDimensions = [{ width: '15rem', height: '10rem'}, { width: '10rem', height: '4rem'}, { width: '10rem', height: '8rem'}, { width: '12rem', height: '6rem'}, { width: '12rem', height: '6rem'}];
+
+  const explorePara = ["The latest price for 5ire ether. You can buy as little as 0.000000000000000001 – you don't need to buy 1 whole 5ire coin.",
+                          "The number of transactions successfully processed on the network in the last 24 hours.",
+                          "The amount of money in decentralized finance (DeFi) applications, the 5ire ecosystem",
+                          "5ire is run by 120 nodes around the globe."];
+  const exploreHeading = ["5ire PRICE (USD)", "TRANSACTIONS TODAY", "VALUE LOCKED IN DEFI (USD)", "NODES"];
+
+  const exploreImages = [enterprise, community, contribute];
+
+  const exploreContentHeading = ["5ire for enterprise", "The 5ire community (heroes)", "Contribute to 5ire.org"];
+
+  const exploreContentPara = ["See how 5ire can open up new business models, reduce your costs and future-proof your business.",
+                        "The community is the heart and soul of 5ire. It's made up of people from all different backgrounds and interests. Click here to join.",
+                        "The website and community are open source with hundreds of community contributors. You can propose edits to any of the content , suggest new features, or help us in another way."]
+
+  const FinalFooterList = [["About", "FAQ", "Support", "Build", "Grants and Bounties", "Careers"], ["Technology", "Roadmap", "Token", "Telemetry", "Substrate", "Lightpaper", "Whitepaper"],
+                            ["Community",
+                              "Documentation",
+                              "Brand Assets",
+                              "Blog",
+                              "Element",
+                              "Chat",
+                              "Medium"]];
+
+  const FinalFooterHeading = ["General", "Technology", "Community"];
+
     return (
     <div>
       <div className="FirstPageBody">
@@ -63,11 +111,11 @@ function Body(props) {
        <div>
          <div style={backGroundImageStyle}>
            <div className="getStartedInfo">
-            <div style={{ width: '30%'}}>
-              <h1 style={{ fontSize: '3rem', color: '#29316F', fontWeight: 'bold'}}>Get started</h1>
-              <p>5ire.org is your gate into the ecosystem of 5ire. We are a totally new paradigm in the world of blockchain.  Let us introduce you to the world of 5IRE. May we build a better world together.s</p>
+            <div style={{ width: '30%', paddingTop: '12rem'}}>
+              <h1>Get started</h1>
+              <p>5ire.org is your gate into the ecosystem of 5ire. We are a totally new paradigm in the world of blockchain.  Let us introduce you to the world of 5IRE. May we build a better world together</p>
             </div>
-            <div>
+            <div style={{ paddingTop: '6rem'}}>
                 <img src={startedImage} className="startedLogo" alt="logo" />
             </div>
           </div>
@@ -96,6 +144,71 @@ function Body(props) {
                 <AboutInfo image={img} para={aboutPara[index]} heading={aboutHeading[index]}/>
               ))}
           </div>
+          <footer>
+          <img src={useCases}  alt="useCases"/>
+          </footer>
+      </section>
+      <section className="WhyFire">
+        <header className="whyFireHeader">
+            <div className="whyFireContent">
+              <h1>Why 5IRE?</h1>
+              <p>In contrast to trends in the Fourth Revolution toward dehumanization, technology and innovation best practices need to be bent back toward the service of humanity.</p>
+            </div>
+        </header>
+        <div className="whyBody">
+           <h1>FOUNDERS FEATURED IN</h1>
+        </div>
+        <footer className="whyFireFooter">
+                { logos.map((logo, index) => (
+                   <img src={logo} style={logosDimensions[index]} alt={logo} />
+                ))}
+        </footer>
+      </section>
+      <section className="Explore">
+        <header className="aboutExplore">
+            <div>
+              <img src={paradigm} style={{ width: "30rem", height: "30rem"}} alt="paradigm"/>
+            </div>
+            <div className="exploreContent">
+              <h1>A New Paradigm for Sustainability</h1>
+              <p>5ire and its dapps are transparent and open source. You can build on top or fork code and reuse functionalities that others have already built. If you don't want to learn a new language you can just interact with open source code using Rust and other existing languages.</p>
+            </div>
+        </header>
+        <div class="exploreBody">
+            {
+              exploreHeading.map((head,index) => (
+                <HeadingWithContent heading={head} para={explorePara[index]} />
+              ))
+            }
+        </div>
+        <div className="expHeading"><h1>Explore 5ire.org</h1></div>
+        <div className="aboutExploreBoxes">
+              { exploreImages.map((img, index) => (
+                <AboutInfo image={img} para={exploreContentPara[index]} heading={exploreContentHeading[index]}/>
+              ))}
+          </div>
+          <footer className="FinalFooter">
+                { FinalFooterHeading.map(( head, index) => (
+                <div>
+                    <HeadingWithList list={FinalFooterList[index]} heading={head}/>
+                </div>
+                ))}
+               <div class="footerLastColumn">
+                  <div class="footerLogoStyle">
+                  {finalFooterLogos.map((logo) => (
+                    <div>
+                    <img src={logo}  alt={logo} />
+                    </div>
+                  ))}
+                  </div>
+                  <div>
+                    <p>Subscribe to the newsletter to hear about Polkadot updates and events.</p>
+                  </div>
+                  <button>
+                    Subscribe
+                  </button>
+              </div>
+          </footer>
       </section>
    </div>
     );

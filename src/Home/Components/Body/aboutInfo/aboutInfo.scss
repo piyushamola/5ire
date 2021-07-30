@@ -1,0 +1,26 @@
+.aboutInfo {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .aboutDescImage {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    p {
+        width: 75%;
+        text-align: center;
+        font-size: 16px;
+        color: #404F77;
+    }
+
+    h1 {
+        width: 60%;
+        color: #404F77;
+        text-align: center;
+        font-size: 18px;
+    }
+}
