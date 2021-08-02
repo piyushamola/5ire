@@ -1,7 +1,10 @@
 .Dropdown {
-    font-family: 'Futura';
-    font-weight: 500;
+    font-family: "Roboto";
     font-style: normal;
+    font-weight: 500;
     font-size: 15px;
     line-height: 16px;
+    /* identical to box height, or 107% */
+    letter-spacing: -0.02em;
+    color: #404F77;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import fire from '../../../assets/fire.png'
 import backGround from '../../../assets/backgroundImage.png'
 import blockchain from '../../../assets/blockchainbenefit.png';
@@ -23,13 +24,14 @@ import community from '../../../assets/exploresvgs/community.svg'
 import contribute from '../../../assets/exploresvgs/contribute.svg'
 import enterprise from '../../../assets/exploresvgs/enterprise.svg'
 
-import coverImage from '../../../assets/cover.svg'
 import startedImage from '../../../assets/getStarted.png';
 
 import { google, messenger, whatsapp, youtube } from '../../../assets/footerLogos';
 
+// components
 import HeadingWithContent from '../../../common-elements/HeadingWithContent/HeadingWithContent'
 import HeadingWithList from '../../../common-elements/HeaderWithList/HeaderWithList.js'
+import Button from '../../../common-elements/Button/Button.js';
 import GetStartedInfo from './getStartedInfo/getStartedInfo.js';
 import AboutInfo from './aboutInfo/aboutInfo.js';
 import './Body.scss'
@@ -61,7 +63,7 @@ const aboutHeading = ["Blockchain + Sustainability = 5IRE", "The internet of ben
 
 const logos = [forbes, ted, globe, nasdaq, entrepreneur];
 
-const logosDimensions = [{ width: '15rem', height: '10rem'}, { width: '10rem', height: '4rem'}, { width: '10rem', height: '8rem'}, { width: '12rem', height: '6rem'}, { width: '12rem', height: '6rem'}];
+const logosDimensions = [{ width: '24rem', height: '18rem'}, { width: '18rem', height: '8rem'}, { width: '18rem', height: '15rem'}, { width: '20rem', height: '11rem'}, { width: '20rem', height: '11rem'}];
 
 const explorePara = ["The latest price for 5ire ether. You can buy as little as 0.000000000000000001 – you don't need to buy 1 whole 5ire coin.",
                         "The number of transactions successfully processed on the network in the last 24 hours.",
@@ -93,19 +95,20 @@ function Body(props) {
     return (
     <div>
       <div className="FirstPageBody">
-         <div>
-              <img src={coverImage} class="coverImage" alt="cover" />
-        </div>
         <div className="firstPageFooter">
-            <h1>
-                Welcome To The World Of 5ire
-            </h1>
             <div>
               <img src={fire} className="Applogo" alt="logo" />
             </div>
-            <p className="rightContent">
-              5ire is a community-run public sustainable blockchain powering the cryptocurrency (5ire) and hundreds of decentralized applications.
+            <h1>
+                Welcome To 5ire
+            </h1>
+            <h2>
+               The Future of <del>Blockchain</del> Business
+            </h2>
+            <p>
+                5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit. 5irechain implements sustainability by design while it ensures democracy and governance, interoperability, high transactional throughput, strong security guarantees and forkless upgradeability.
             </p>
+            <Button label="Learn More" className="button"/>
         </div>
       </div>
       <section className="GetStartedContainer">
@@ -168,7 +171,7 @@ function Body(props) {
       <section className="Explore">
         <header className="aboutExplore">
             <div>
-              <img src={paradigm} style={{ width: "30rem", height: "30rem"}} alt="paradigm"/>
+              <img src={paradigm} style={{ width: "40rem", height: "40rem"}} alt="paradigm"/>
             </div>
             <div className="exploreContent">
               <h1>A New Paradigm for Sustainability</h1>

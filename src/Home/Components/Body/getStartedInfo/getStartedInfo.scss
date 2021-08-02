@@ -1,5 +1,5 @@
 .startedImages {
-    height: 20rem;
+    height: 30rem;
     pointer-events: none;
     margin-left: 10rem;
 }
@@ -8,20 +8,20 @@
     width: 40%;
     background: #F6F7FA;
     box-shadow: 0.5rem 0.5rem 3rem rgba(64, 79, 119, 0.05);
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     margin-top: 5rem;
 }
 
 .textStyles {
     background: #000040;
-    height: 9rem;
+    height: 15rem;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 2rem;
 
      p {
         color: white;
-        width: 35rem;
-        font-family: Roboto;
+        width: 60rem;
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
