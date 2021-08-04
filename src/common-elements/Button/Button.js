@@ -1,13 +1,11 @@
 import React from 'react';
-import 'antd/dist/antd.css';
-import { Button } from 'antd';
 
-function ButtonComp({ size, label, className}) {
+function ButtonComp({ label, className}) {
     return (
         <div>
-          <Button type="primary" size={size} className={className}>
+          <button className={className}>
                  {label}
-         </Button>
+         </button>
         </div>
     );
 }

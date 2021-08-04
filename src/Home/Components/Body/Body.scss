@@ -1,12 +1,11 @@
 .FirstPageBody {
-  margin-top: 2rem;
+  margin-top: 8rem;
 
  .firstPageFooter {
-     justify-content: space-around;
+     justify-content: flex-start;
      display: flex;
      flex-direction: column;
-     margin-top: 8rem;
-     height: 70rem;
+     margin-top: 3rem auto;
      align-items: center;
 
      .Applogo {
@@ -16,14 +15,15 @@
    }
 
    h1{
-    font-family: Futura;
+    font-family: "Futura";
     font-style: normal;
     font-weight: bold;
-    font-size: 54px;
-    line-height: 64px;
+    font-size: 5.4rem;
+    line-height: 6.4rem;
     /* identical to box height, or 119% */
     letter-spacing: -0.05em;
     color: #000040;
+    margin-top: 3.2rem;
    }
 
    h2 {
@@ -47,11 +47,8 @@
     text-align: center;
     letter-spacing: -0.02em;
     color: #1E1E25;
-    width: 64rem;
-   }
-
-   .tripleIcon {
-     margin-top: 4rem;
+    width: 35%;
+    margin-top: 1.5rem;
    }
 
    .button {
@@ -66,112 +63,503 @@
     text-align: center;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+    background: #0071FF;
     border-radius: 5px;
+    border: none;
+    margin: 4.8rem 0;
    }
  }
 }
 
 
 .GetStartedContainer {
-  margin-top: 3rem;
-
   .getStartedInfo {
-    width: 100%;
-    height: 50rem;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    background:#000040;
 
-    .startedLogo {
-      height: 40rem;
-      width: 40rem;
-      pointer-events: none;
-    }
+    .getStartedText {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding: 5rem;
 
-    p{
-      font-size: 1.8rem;
-    }
-
-    h1 {
-      color: #29316F;
-      font-weight: 700;
-    }
+      p:first-child {
+        font-family: Futura;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 42px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        width: 60%;
+      }
+      p {
+        font-family: Futura;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 42px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        width: 100%;
+      }
+      .button {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 24px;
+        width: 20rem;
+        height: 5.6rem;
+        text-align: center;
+        letter-spacing: -0.02em;
+        background: #D0DDEC;
+        border-radius: 5px;
+        color: #323A78;
+       }
   }
 
-  .getStartedBoxes {
+  }
+
+  .aboutBody {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    width: 100%;
-    height: 80rem;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    margin: 0rem auto;
+    width: 65%;
   }
 
 }
 
 .AboutFire {
-  margin-top: 25rem;
-  .aboutHeader {
-    height: 50rem;
-    width: 100%;
-    background: #000040;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  margin-top: 5rem;
+  .parentHeader {
+    background: #EAF0F8;
+    .aboutHeader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 5rem 0rem;
+      margin: 0 auto;
 
-    .aboutContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-left: 15rem;
-        h1 {
-          font-size: 64px;
-          color:white;
+      .aboutContent {
+          h1 {
+            font-family: Futura;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 4.2rem;
+            color: #000040;
+          }
+          p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-size: 4rem;
+            line-height: 5rem;
+            color: #000040;
+            width: 50rem
+          }
+      }
+
+      .aboutImageContainer {
+        width: 70rem;
+        height: 100%;
+        .aboutImage {
+          height: 100%;
+          width: 100%;
+          pointer-events: none;
         }
-        p {
-          color:white;
-          font-size: 18px;
-          width: 70%;
-        }
-    }
-    .aboutImage {
-      height: 50rem;
-      width: 50rem;
-      margin-right: 15rem;
-      pointer-events: none;
+      }
     }
   }
 
-  .aboutBody {
-    height: 60rem;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-  }
 }
 
 
 .WhyFire {
   .whyFireHeader {
-    .whyFireContent {
-      width: 100%;
+   .learnWhatContent {
       display: flex;
-      height: 35rem;
-      justify-content: space-between;
-      p {
-        width: 60%;
-        text-align: center;
-        padding: 9rem 18rem;
-        color: #3F536F;
-        background: #F6F7FA;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .whatFireContent {
+        background: #000040;
+        padding: 10rem 8rem;
+        flex: 1;
+        h1 {
+          font-family: "Futura";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 64px;
+          line-height: 64px;
+          letter-spacing: -0.02em;
+          color: #FFFFFF;
+        }
+
+        p {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: -0.02em;
+          color: #BAD3E6;
+
+        }
       }
 
-      h1 {
+      .LearnAbout {
+        background: #EAF0F8;
+        padding: 10.5rem 8rem;
+        flex: 1;
+        p {
+          font-family: Futura;
+          font-style: normal;
+          font-size: 32px;
+          line-height: 40px;
+          letter-spacing: -0.02em;
+          color: #000040;
+        }
+
+        .button {
+          width: 20rem;
+          height: 5.6rem;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 24px;
+          /* identical to box height, or 160% */
+          text-align: center;
+          letter-spacing: -0.02em;
+          color: #FFFFFF;
+          background: #0071FF;
+          border-radius: 5px;
+          border: none;
+          margin-top: 4.8rem;
+         }
+
+      }
+
+      .whyFireContent {
+        p {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 24px;
+          /* or 160% */
+
+          letter-spacing: -0.02em;
+
+          color: #000040;
+        }
+      }
+   }
+
+   .learnWhyContent {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .whyFireContent {
+          flex: 1;
+          background: #EAF0F8;
+          padding: 10rem 8rem;
+        p {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: -0.02em;
+          color: #000040;
+         }
+
+         .button {
+          width: 20rem;
+          height: 5.6rem;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 24px;
+          /* identical to box height, or 160% */
+          text-align: center;
+          letter-spacing: -0.02em;
+          color: #FFFFFF;
+          background: #0071FF;
+          border-radius: 5px;
+          border: none;
+          margin-top: 4.8rem;
+         }
+      }
+
+      .whyFireHeading {
         background: #000040;
-        color: white;
-        width: 40%;
+        padding: 14rem 8rem;
+        flex: 1;
+
+        h1 {
+          font-family: Futura;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 64px;
+          line-height: 64px;
+          letter-spacing: -0.02em;
+          color: #FFFFFF;
+        }
+      }
+   }
+  }
+
+  .founder {
+
+  .founderContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10rem 0;
+
+    h1 {
+      font-family: "Futura";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 6.4rem;
+      line-height: 8.4rem;
+      /* or 131% */
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60%
+  }
+
+    .button {
+      width: 20rem;
+      height: 5.6rem;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 24px;
+      /* identical to box height, or 160% */
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      background: #0071FF;
+      border-radius: 5px;
+      border: none;
+      margin-top: 4.8rem;
+    }
+  }
+}
+.footerStyles {
+  background: #000040;
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5rem auto;
+    align-items: center;
+    padding-top: 5rem;
+
+    h1 {
+      font-family: Futura;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    p:first-child {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      width: 70%;
+    }
+
+    p {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #BAD3E6;
+      width: 70%;
+    }
+  }
+
+  .footerBody {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .footerLast {
+    text-align: center;
+    .button {
+      width: 20rem;
+      height: 5.6rem;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      background: #0071FF;
+      border-radius: 5px;
+      border: none;
+      margin-top: 4.8rem;
+    }
+
+    h1 {
+      font-family: Futura;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #BAD3E6;
+    }
+  }
+
+  .buttonList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5rem;
+
+    .button {
+      background: rgba(210, 234, 255, 0.24);
+      border: 1px solid #BAD3E6;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 24px;
+      /* identical to box height, or 160% */
+      width: 20rem;
+      height: 5.6rem;
+      text-align: center;
+      letter-spacing: -0.02em;
+      margin: 1rem;
+      color: #FFFFFF;
+    }
+  }
+}
+ .textStyle {
+   margin: 10rem auto;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-direction: column;
+   width: 70%;
+   p {
+     span {
+      color: #0071FF;
+     }
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 41px;
+    /* or 130% */
+    letter-spacing: -0.02em;
+   }
+   img {
+     width: 6rem;
+     height: 6rem;
+     align-self: flex-start;
+   }
+ }
+
+
+}
+
+
+
+
+
+.Explore {
+  margin-top: 5rem;
+  .aboutExplore {
+    background: #000040;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5rem 0rem;
+    margin: 0 auto;
+
+    .paradigmImage {
+      height: 45rem;
+      width: 45rem;
+    }
+    .exploreContent {
+      h1 {
+      font-family: Futura;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 85px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      width: 50rem;
+      }
+
+      p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px;
+        /* or 160% */
+        letter-spacing: -0.02em;
+        width: 50rem;
+        color: #BAD3E6;
+
+      }
+
+      .button {
+        width: 20rem;
+        height: 5.6rem;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 24px;
         text-align: center;
-        padding: 9rem;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        background: #0071FF;
+        border-radius: 5px;
+        border: none;
+        margin-top: 4.8rem;
       }
     }
   }
@@ -179,87 +567,92 @@
   .whyBody {
     margin-top: 9rem;
     h1 {
-    text-align: center;
-    font-size: 48px;
-    line-height: 24px;
+      font-family: Futura;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 54px;
+      line-height: 64px;
+      letter-spacing: -0.05em;
+      color: #000040;
+      text-align: center;
     }
   }
 
   .whyFireFooter {
      margin-top: 9rem;
+     margin-left : 2rem;
+     margin-right: 2rem;
      display: flex;
      justify-content: space-evenly;
      align-items: center;
-  }
-}
-
-.Explore {
-  margin-top: 5rem;
-  .aboutExplore {
-    height: 50rem;
-    width: 100%;
-    background: #000040;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    .exploreContent {
-      width: 40%;
-
-      h1 { 
-        color: white;
-        line-height: 7rem;
-      }
-
-      p {
-        color: white;
-      }
-    }
-  }
-
-  .exploreBody {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 8rem 28rem;
-    height: 30rem;
-    background: #FFFFFF;
-    border: 1px solid rgba(41, 49, 111, 0.11);
-    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.04);
-    border-radius: 3rem;
-    padding: 2rem;
+     flex-wrap: wrap;
+     padding: 3rem;
   }
 
   .expHeading {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 4rem;
     h1 {
-      color: #29316F;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.02em;
+      color: #000040;
     }
   }
 
   .aboutExploreBoxes {
-    margin-top: 5rem;
-    height: 50rem;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5rem 0rem;
+
+    .imageStyles{
+      height: 25rem;
+      width: 25rem;
+    }
+
+    .headingStyles {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #000040;
+    }
+
+    .paraStyles {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #171D4B;
+      width: 30rem;
+    }
   }
 
   .FinalFooter {
-    height: 50rem;
     background: #F6F7FA;
     display: flex;
-    padding: 10rem 0rem;
+    padding: 5rem 0rem;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
     .footerLastColumn {
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
       flex-basis: 12%;
-      margin-bottom: 10rem;
+      padding: 5rem;
       .footerLogoStyle {
         display: flex;
         justify-content: space-between;
@@ -273,8 +666,8 @@
       }
 
       button {
-        background: #7C79E8;
-        border-radius: 11px;
+        background: #0071FF;
+        border-radius: 5px;
         height: 56px;
         width: 152px;
         border: none;
@@ -292,4 +685,196 @@
     }
 
   }
+}
+
+
+
+@media only screen and (max-width: 640px) {
+
+  .FirstPageBody {
+    margin-top: 8rem;
+
+   .firstPageFooter {
+       justify-content: flex-start;
+       display: flex;
+       flex-direction: column;
+       margin-top: 3rem auto;
+
+       .Applogo {
+         height: 4.5rem;
+         width: 4.5rem;
+         pointer-events: none;
+     }
+
+     h1{
+      font-family: Futura;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 18px;
+      /* identical to box height, or 100% */
+      letter-spacing: -0.05em;
+      color: #000040;
+     }
+
+     h2 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 32px;
+      /* identical to box height, or 229% */
+      letter-spacing: -0.02em;
+      color: #000040;
+     }
+
+     p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 24px;
+      /* or 200% */
+      letter-spacing: -0.02em;
+      color: #1E1E25;
+      width: 100%;
+     }
+
+     .button {
+      width: 20rem;
+      height: 5.6rem;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 24px;
+      /* identical to box height, or 160% */
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      background: #0071FF;
+      border-radius: 5px;
+      border: none;
+      margin: 4.8rem 0;
+     }
+   }
+  }
+
+.GetStartedContainer {
+  .getStartedInfo {
+    background:#000040;
+
+    .getStartedText {
+
+
+      p:first-child {
+        font-family: Futura;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        width: 100%;
+      }
+      p {
+        font-family: Futura;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        width: 100%;
+      }
+  }
+
+  }
+
+}
+
+.AboutFire {
+  .parentHeader {
+    .aboutHeader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 5rem;
+      margin: 0 auto;
+
+      .aboutContent {
+          h1 {
+            font-family: Futura;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 4.2rem;
+            color: #000040;
+          }
+          p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-size: 4rem;
+            line-height: 5rem;
+            color: #000040;
+            width: 30rem
+          }
+      }
+    }
+  }
+
+}
+
+.Explore {
+  margin-top: 5rem;
+  .aboutExplore {
+    .paradigmImage {
+      height: 25rem;
+      width: 25rem;
+    }
+    .exploreContent {
+      h1 {
+      font-family: Futura;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 65px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      width: 30rem;
+      margin: 0 5rem;
+      text-align: center;
+      }
+
+      p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px;
+        /* or 160% */
+        letter-spacing: -0.02em;
+        width: 30rem;
+        margin: 0 5rem;
+        color: #BAD3E6;
+        text-align: center;
+      }
+
+      .button {
+        width: 20rem;
+        height: 5.6rem;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        background: #0071FF;
+        border-radius: 5px;
+        border: none;
+        margin: 4.8rem 10rem;
+      }
+    }
+  }
+}
 }

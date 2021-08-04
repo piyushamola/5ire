@@ -1,9 +1,9 @@
 import React from 'react';
-import './HeaderWithList.scss';
+import styles from './HeaderWithList.scss';
 
 function HeaderWithList(props) {
     return (
-        <div class="listStyles">
+        <div className={styles.listStyles}>
             <h1>{props.heading}</h1>
             { props.list.map((list) => (
                 <li>{list}</li>

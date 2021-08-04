@@ -1,10 +1,10 @@
 import React from 'react';
-import './aboutInfo.scss';
+import styles from './aboutInfo.scss';
 
 function AboutInfo(props) {
     return (
-        <div className="aboutInfo">
-              <img src={props.image} className="aboutDescImage" alt="about"/>
+        <div className={styles.aboutInfo}>
+              <img src={props.image} className={styles.aboutDescImage} alt="about"/>
               <h1>{props.heading}</h1>
               <p>{props.para}</p>
         </div>

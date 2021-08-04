@@ -1,13 +1,12 @@
-.aboutInfo {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 
-    .aboutDescImage {
+    .imageStyles {
         height: 5.2rem;
         width: 5.9rem;
-        align-self: flex-start;
         margin-top: 3rem;
     }
 
@@ -17,10 +16,10 @@
         font-weight: normal;
         font-size: 15px;
         line-height: 24px;
-        /* or 160% */
         letter-spacing: -0.02em;
-        color: #1E1E25;
-        width: 30rem;
+        color: #BAD3E6;
+        width: 35rem;
+        text-align: center;
     }
 
     h1 {
@@ -29,10 +28,9 @@
         font-weight: bold;
         font-size: 24px;
         line-height: 36px;
-        /* or 150% */
         letter-spacing: -0.02em;
-        color: #000040;
-        align-self: flex-start;
-        width: 30rem;
+        color: #FFFFFF;
+        width: 35rem;
+        text-align: center;
     }
 }
