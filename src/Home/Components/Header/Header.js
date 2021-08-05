@@ -20,6 +20,8 @@ function Header(props) {
   }
     return (
        <div className={styles.Header}>
+         <div>
+         </div>
         <div className={styles.logoStyles}>
              <img src={fire} className={styles.appLogo} alt="logo" />
         </div>

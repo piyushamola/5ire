@@ -27,6 +27,7 @@ import icon8 from '../../../assets2/icon8.svg';
 import icon9 from '../../../assets2/icon9.svg';
 import banner2 from '../../../assets2/Banner2.png';
 import quote from '../../../assets2/quote.svg';
+import banner from '../../../assets2/Banner.svg';
 
 
 // components
@@ -42,6 +43,13 @@ const backGroundImagebanner2 = {
   backgroundSize: '100% 100%',
   backgroundRepeat: "no-repeat",
 };
+
+const backGroundImagebanner = {
+  backgroundImage: `url(${banner})`,
+  backgroundSize: '100% 100%',
+  backgroundRepeat: "no-repeat",
+};
+
 const finalFooterLogos = [google, messenger, youtube, whatsapp]
 
 const aboutImages = [icon1, icon2, icon3, icon4, icon5, icon6];
@@ -56,9 +64,9 @@ const aboutPara = ["5irechain’s main goal is to create a user-centric sustaina
 const aboutHeading = ["Sustainability by Design ", "On-chain Governance and Democracy", "Future-proof and Forkless upgradeability",
 "Interoperability & cross-chain Transfers", "On-chain Governance and Democracy", "Future-proof and Forkless upgradeability"];
 
-const logos = [nasdaq, ted, globe, entrepreneur, forbes];
+const logos = [nasdaq, ted, globe, forbes, entrepreneur,];
 
-const logosDimensions = [{ width: '16rem', height: '4rem'}, { width: '12.3rem', height: '4.5rem'}, { width: '11.2rem', height: '9.4rem'}, { width: '23.8rem', height: '9rem'}, { width: '14.7rem', height: '8.3rem'}];
+const logosDimensions = [{ width: '16rem', height: '4rem', marginTop: '2rem'}, { width: '12.3rem', height: '4.5rem', marginTop: '2rem'}, { width: '11.2rem', height: '9.4rem', marginTop: '2rem'}, { width: '14.7rem', height: '8.3rem', marginTop: '2rem'}, { width: '23.8rem', height: '9rem', marginTop: '2rem'}];
 
 
 const exploreImages = [enterprise, community, contribute];
@@ -93,6 +101,7 @@ function Body(props) {
     return (
     <div>
       <div className={styles.FirstPageBody}>
+      <div className={styles.backGroundImageStyles}>
         <div className={styles.firstPageFooter}>
             <div>
               <img src={fire} className={styles.Applogo} alt="logo" />
@@ -101,12 +110,13 @@ function Body(props) {
                 Welcome To 5ire
             </h1>
             <h2>
-               The Future of <del>Blockchain</del> Business
+               The Future of <span><del>Blockchain</del></span> Business
             </h2>
             <p>
                 5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit. 5irechain implements sustainability by design while it ensures democracy and governance, interoperability, high transactional throughput, strong security guarantees and forkless upgradeability.
             </p>
             <Button label="Learn More" className={styles.button}/>
+        </div>
         </div>
       </div>
       <section className={styles.GetStartedContainer}>
@@ -147,7 +157,7 @@ function Body(props) {
         <header className={styles.whyFireHeader}>
           <div className={styles.learnWhatContent}>
             <div className={styles.whatFireContent}>
-              <h1>What is 5ire</h1>
+              <h1>What is 5ire ?</h1>
               <p>5IRE is a Collaborative Blockchain-Driven Platform with an innovative SDG driven consensus mechanism , with a mission to bring a paradigm shift from “For Profit” to “For Benefit” across the globe, as every single transaction on the 5IRE Ecosystem Contributes to Social Impact.</p>
             </div>
             <div className={styles.LearnAbout}>
@@ -168,7 +178,7 @@ function Body(props) {
               <Button label="Learn More About 5IR" className={styles.button}/>
            </div>
             <div className={styles.whyFireHeading}>
-              <h1>Why 5ire</h1>
+              <h1>Why 5ire ?</h1>
             </div>
         </div>
         </header>
