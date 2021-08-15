@@ -268,7 +268,7 @@ function Body(props) {
                   ))}
                   </div>
                   <div>
-                    <p>Subscribe to the newsletter to hear about Polkadot updates and events.</p>
+                    <p>Subscribe to the newsletter to hear about 5ire updates and events.</p>
                   </div>
                   <button>
                     Subscribe

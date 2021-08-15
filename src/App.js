@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Home from './Home';
+import Wiki from './Wiki'
 import './App.css'
 
 class App extends Component {

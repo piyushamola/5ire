@@ -1,0 +1,71 @@
+.BodyWrapper { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+    .pageHeader {
+        background: #000040;
+        padding: 2rem;
+        display: flex;
+        justify-content: flex-start;
+
+        .appLogo {
+            height: 6.4rem;
+            width: 6.4rem;
+            pointer-events: none;
+        }
+
+        p {
+            color:white;
+            margin-left: 5rem;
+        }
+    }
+
+    .body {
+        display: flex;
+        .sideBar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .sideBarItems {
+                font-size: 1.8rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                background: #F8F8F8;
+                height: 100vh;
+
+                ul {
+                    list-style: none;
+                    justify-content: space-around;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: right;
+                    li {
+
+                        margin: 1rem 0;
+                        padding: 1rem 1rem;
+                        width: 20rem;
+                        cursor: pointer;
+
+                        div {
+                            justify-content: space-between;
+                            flex-direction: row;
+                            display: flex;
+                            margin-right: 2rem;
+                        }
+                        ul {
+                            color: #3B454E;
+                        }
+                    }
+                    li:hover {
+                        background: #E8E8E8;
+                    }
+                }
+            }
+        }
+    }
+}
