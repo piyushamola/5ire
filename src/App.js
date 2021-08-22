@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
-import Home from './Home';
-import Wiki from './Wiki'
+import React from 'react'
 import './App.css'
 
-class App extends Component {
-  render() {
+const App = ({ children}) => {
     return (
-      <Home/>
+      <>
+      {children}
+      </>
     )
-  }
 }
 
 export default App

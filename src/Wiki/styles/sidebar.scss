@@ -1,3 +1,5 @@
+@import '../../common-styles/typography';
+
 .BodyWrapper { 
     display: flex;
     flex-direction: column;
@@ -6,18 +8,15 @@
 
     .pageHeader {
         background: #000040;
-        padding: 2rem;
-        display: flex;
-        justify-content: flex-start;
-
+        padding: 2rem 4rem;
+        @include flex($justify-content: flex-start);
         .appLogo {
             height: 6.4rem;
             width: 6.4rem;
             pointer-events: none;
         }
 
-        p {
-            color:white;
+        div {
             margin-left: 5rem;
         }
     }
@@ -31,10 +30,7 @@
 
             .sideBarItems {
                 font-size: 1.8rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
+                @include flex($flex-direction: column);
                 background: #F8F8F8;
                 height: 100vh;
 
@@ -68,4 +64,10 @@
             }
         }
     }
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    
 }

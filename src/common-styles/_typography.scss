@@ -1,0 +1,51 @@
+@mixin flex(
+  $flex-direction: row,
+  $justify-content: space-between,
+  $align-items: center,
+  $flex-wrap: wrap,
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $flex-wrap;
+}
+
+@mixin flex-center {
+  @include flex($justify-content: center, $align-items: center);
+}
+
+// Heading mixins
+@mixin heading($font-size: 5.4rem, $font-family: 'Futura',  $color: '#000040', $line-height: 6.4rem, $letter-spacing: 0.03rem, $font-weight: bold) {
+  font-size: $font-size;
+  color: $color;
+  font-family: $font-family;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-weight: $font-weight;
+}
+
+// content mixin
+@mixin content($font-size: 5.4rem, $font-family: 'Roboto',  $color: white, $line-height: 6.4rem, $letter-spacing: 0.03rem, $font-weight: normal) {
+    font-size: $font-size;
+    color: $color;
+    font-family: $font-family;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    font-weight: $font-weight;
+};
+
+@mixin button($width: 20rem, $height:5.6rem, $background: #0071FF, $font-size: 1.5rem, $font-family: 'Roboto',  $color: white, $line-height: 2.4rem, $letter-spacing: 0.02rem, $font-weight: bold) {
+  font-size: $font-size;
+  color: $color;
+  font-family: $font-family;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-weight: $font-weight;
+  width: $width;
+  height: $height;
+  background: $background;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: none;
+}

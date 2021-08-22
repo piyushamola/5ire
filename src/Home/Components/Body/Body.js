@@ -37,6 +37,8 @@ import Button from '../../../common-elements/Button/Button.js';
 import AboutInfo from './aboutInfo/aboutInfo.js';
 import styles from './Body.scss'
 
+import { useHistory, useLocation } from "react-router-dom";
+
 
 const backGroundImagebanner2 = {
   backgroundImage: `url(${banner2})`,
@@ -98,6 +100,9 @@ const proofOfFireParas = ["The cutting edge NPOS guarantees democracy and justif
 const buttonsLabels = ["Nominator", "Validator", "Curator", "Register", "Governance"];
 
 function Body(props) {
+
+  const history = useHistory();
+
     return (
     <div>
       <div className={styles.FirstPageBody}>
@@ -115,7 +120,7 @@ function Body(props) {
             <p>
                 5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit. 5irechain implements sustainability by design while it ensures democracy and governance, interoperability, high transactional throughput, strong security guarantees and forkless upgradeability.
             </p>
-            <Button label="Learn More" className={styles.button}/>
+            <Button label="Learn More" btnClick={() => history.push('/wiki')} className={styles.button}/>
         </div>
         </div>
       </div>
@@ -270,9 +275,7 @@ function Body(props) {
                   <div>
                     <p>Subscribe to the newsletter to hear about 5ire updates and events.</p>
                   </div>
-                  <button>
-                    Subscribe
-                  </button>
+                  <Button label="Subscribe" className={styles.button}/>
               </div>
           </footer>
       </section>

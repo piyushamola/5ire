@@ -1,0 +1,18 @@
+@import '../../../common-styles/typography';
+
+.content1 {
+ @include content($font-size: 2rem);
+}
+
+.content2 {
+  @include content();
+}
+.content3 {
+  @include content();
+}
+.content4 {
+  @include content();
+}
+.content5 {
+  @include content();
+}

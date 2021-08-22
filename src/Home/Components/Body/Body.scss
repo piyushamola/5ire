@@ -1,3 +1,5 @@
+@import '../../../common-styles/typography';
+
 .FirstPageBody {
   background: #F9FCFF;
   padding-top: 5rem;
@@ -12,13 +14,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
- 
+
       .Applogo {
         height: 15.2rem;
         width: 15.2rem;
         pointer-events: none;
     }
- 
+
     h1{
      font-family: "Futura";
      font-style: normal;
@@ -57,20 +59,6 @@
     }
  
     .button {
-     width: 20rem;
-     height: 5.6rem;
-     font-family: "Roboto";
-     font-style: normal;
-     font-weight: bold;
-     font-size: 15px;
-     line-height: 24px;
-     /* identical to box height, or 160% */
-     text-align: center;
-     letter-spacing: -0.02em;
-     color: #FFFFFF;
-     background: #0071FF;
-     border-radius: 5px;
-     border: none;
      margin: 4.8rem auto;
     }
   }
@@ -110,17 +98,7 @@
         width: 100%;
       }
       .button {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 24px;
-        width: 20rem;
-        height: 5.6rem;
-        text-align: center;
-        letter-spacing: -0.02em;
         background: #D0DDEC;
-        border-radius: 5px;
         color: #323A78;
        }
   }
@@ -232,20 +210,6 @@
         }
 
         .button {
-          width: 20rem;
-          height: 5.6rem;
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: bold;
-          font-size: 15px;
-          line-height: 24px;
-          /* identical to box height, or 160% */
-          text-align: center;
-          letter-spacing: -0.02em;
-          color: #FFFFFF;
-          background: #0071FF;
-          border-radius: 5px;
-          border: none;
           margin-top: 4.8rem;
          }
 
@@ -288,20 +252,6 @@
          }
 
          .button {
-          width: 20rem;
-          height: 5.6rem;
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: bold;
-          font-size: 15px;
-          line-height: 24px;
-          /* identical to box height, or 160% */
-          text-align: center;
-          letter-spacing: -0.02em;
-          color: #FFFFFF;
-          background: #0071FF;
-          border-radius: 5px;
-          border: none;
           margin-top: 4.8rem;
          }
       }
@@ -350,20 +300,6 @@
   }
 
     .button {
-      width: 20rem;
-      height: 5.6rem;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 15px;
-      line-height: 24px;
-      /* identical to box height, or 160% */
-      text-align: center;
-      letter-spacing: -0.02em;
-      color: #FFFFFF;
-      background: #0071FF;
-      border-radius: 5px;
-      border: none;
       margin-top: 4.8rem;
     }
   }
@@ -424,19 +360,6 @@
   .footerLast {
     text-align: center;
     .button {
-      width: 20rem;
-      height: 5.6rem;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 15px;
-      line-height: 24px;
-      text-align: center;
-      letter-spacing: -0.02em;
-      color: #FFFFFF;
-      background: #0071FF;
-      border-radius: 5px;
-      border: none;
       margin-top: 4.8rem;
     }
 
@@ -461,20 +384,7 @@
     .button {
       background: rgba(210, 234, 255, 0.24);
       border: 1px solid #BAD3E6;
-      box-sizing: border-box;
-      border-radius: 5px;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 24px;
-      /* identical to box height, or 160% */
-      width: 20rem;
-      height: 5.6rem;
-      text-align: center;
-      letter-spacing: -0.02em;
       margin: 1rem;
-      color: #FFFFFF;
     }
   }
 }
@@ -553,19 +463,6 @@
       }
 
       .button {
-        width: 20rem;
-        height: 5.6rem;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 24px;
-        text-align: center;
-        letter-spacing: -0.02em;
-        color: #FFFFFF;
-        background: #0071FF;
-        border-radius: 5px;
-        border: none;
         margin-top: 4.8rem;
       }
     }
@@ -612,41 +509,6 @@
     }
   }
 
-  .aboutExploreBoxes {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 5rem 0rem;
-
-    .imageStyles{
-      height: 25rem;
-      width: 25rem;
-    }
-
-    .headingStyles {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 24px;
-      text-align: center;
-      letter-spacing: -0.02em;
-      color: #000040;
-    }
-
-    .paraStyles {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 24px;
-      text-align: center;
-      letter-spacing: -0.02em;
-      color: #171D4B;
-      width: 30rem;
-    }
-  }
-
   .FinalFooter {
     background: #F6F7FA;
     display: flex;
@@ -673,21 +535,9 @@
       }
 
       button {
-        background: #0071FF;
-        border-radius: 5px;
         height: 56px;
         width: 152px;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 14px;
         margin: 4px 2px;
-        cursor: pointer;
-        font-weight: 500;
-
       }
     }
 
@@ -747,20 +597,6 @@
      }
 
      .button {
-      width: 20rem;
-      height: 5.6rem;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 15px;
-      line-height: 24px;
-      /* identical to box height, or 160% */
-      text-align: center;
-      letter-spacing: -0.02em;
-      color: #FFFFFF;
-      background: #0071FF;
-      border-radius: 5px;
-      border: none;
       margin: 2rem auto;
      }
    }

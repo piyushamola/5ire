@@ -3,10 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route,  Switch } from 'react-router-dom'
+import Home from './Home';
+import Wiki from './Wiki'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <App>
+      <BrowserRouter>
+      <Switch>
+        <Route path="/wiki" component={Wiki}/>
+        <Route path="/"  exact component={Home}/>
+      </Switch>
+      </BrowserRouter>
+      </App>
   </React.StrictMode>,
   document.getElementById('root')
 );
