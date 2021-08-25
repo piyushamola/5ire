@@ -17,6 +17,8 @@ const aboutTechParas = ["Normally, blockchains compete with each other over reso
 "By being a cutting-edge blockchain based on WebAssembly, 5irechain is able to upgrade its runtime logic without hard forking. 5irechain governance mechanism is designed to establish a transparent, accountable and binding process for resolving disputes and upgrading the network. Hence, most importantly staying loyal to the sustainability and for benefit goal of the network.",
 "5irechain is using hybrid consensus, combining BABE and GRANDPA for block production and provable finality, respectively allowing a fast block production and a higher level of security. GRANDPA algorithm reaches and finalizes consensus quickly, across networks big and small."];
 
+const links = ["https://github.com/orgs/5ire-org/", "https://5ire.gitbook.io/5ire-wiki/", "https://matrix.to/#/#5ire:matrix.org"]
+
 
 function AboutTechnology(props) {
     return (
@@ -27,7 +29,7 @@ function AboutTechnology(props) {
             <div className={styles.techBoxStyles}>
             {
                 techBoxesHeading.map((heading, index)=> (
-                <div className={styles.techBox}>
+                <div className={styles.techBox} onClick={() => window.open(links[index])}>
                     <h1>{heading}</h1>
                     <p>{techBoxesPara[index]}</p>
                 </div>
