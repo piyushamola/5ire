@@ -13,6 +13,15 @@
         color: #404F77;
         line-height: 3rem;
         list-style: none;
+        cursor: pointer;
+    }
+
+    li:hover { 
+        color: #40A4C8;
+    }
+
+    .list {
+        pointer-events:none;
     }
 }
 

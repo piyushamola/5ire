@@ -4,6 +4,7 @@ import fire from '../../assets2/fire.png'
 import burger from '../../assets2/frontPageLogos/burger.svg'
 
 import NavigationItem from '../NavigationItems/NavigationItem/NavigationItem'
+import WhitePaper from '../../assets2/documents/WhitePaper.pdf';
 
 function Header(props) {
 
@@ -15,7 +16,7 @@ function Header(props) {
     return (
       <div>
           <div className={styles.topHeader}>
-            <a>Whitepaper</a>
+            <a onClick={() => window.open(WhitePaper)}>Whitepaper</a>
             <a>Lightpaper</a>
             <a onClick={() => window.open('https://5ire.gitbook.io/5ire-wiki/')}>Wiki</a>
           </div>

@@ -9,11 +9,13 @@ import about from './About';
 import contact from './ContactUs'
 import technology from './Technology';
 import roadmap from './Roadmap';
+import ScrollToTop from './common-elements/ScrollToTop/ScrollToTop';
 
 ReactDOM.render(
   <React.StrictMode>
       <App>
       <BrowserRouter>
+      <ScrollToTop/>
       <Switch>
         <Route path="/about" component={about}/>
         <Route path="/contact"component={contact}/>
