@@ -1,0 +1,237 @@
+@import '../../../common-styles/typography';
+
+.techHeader {
+    text-align: center;
+    margin: 10rem 20rem;
+    h1 {
+        @include heading($font-size: 4.2rem, $color: #000040);
+    }
+}
+
+.techBoxStyles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .techBox {
+
+        width: 30rem;
+        background: #000040;
+        border-radius: 1rem;
+        text-align: center;
+        align-items: center;
+        margin: 4rem auto;
+        h1 {
+            @include heading($font-size: 3rem, $color: white)
+        }
+
+        p {
+            @include content($font-size: 2rem, $color: white);
+        }
+    }
+}
+
+.imageContent {
+    display: flex;
+    margin: 10rem auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    .Applogo {
+        width: 50rem;
+        height: 40rem;
+    }
+    .Content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 3rem;
+        width: 50%;
+        p {
+            @include content($color: #000040, $font-size: 2rem);
+         }
+    }
+}
+
+
+.aboutBody1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-wrap: wrap;
+    .aboutBodyHead1 {
+        width: 10%;
+        h1 {
+            @include heading($font-size: 3.2rem);
+        }
+    }
+    .aboutBodyContent1 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 20%;
+        padding: 1rem;
+        h1 {
+            @include heading($font-size: 2.4rem, $color: #000040)
+        }
+        p {
+            @include content($font-size: 1.5rem, $color: #000040);
+        }
+    }
+}
+
+.aboutBody2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+    .aboutBodyHead2 {
+        width: 10%;
+        h1 {
+            @include heading($font-size: 3.2rem);
+        }
+    }
+
+    .aboutBodyContent2 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 20%;
+        padding: 1rem;
+        h1 {
+            @include heading($font-size: 2.4rem, $color: #000040)
+        }
+        p {
+            @include content($font-size: 1.5rem, $color: #000040);
+        }
+    }
+ }
+
+ .finalDescription {
+     background: #000040;
+     padding: 5rem;
+     h1 {
+         @include heading($font-size: 2.4rem, $color: #FFFFFF);
+         text-align: center;
+     }
+     p {
+         @include content($font-size: 2rem, $color: white);
+         text-align: center;
+     }
+
+     .aboutTeam {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: left;
+        .imageStyles{
+            height: 5rem;
+            width: 5rem;
+            align-self: flex-start;
+          }
+          .headingStyles {
+            @include heading($color: white, $font-size: 2rem);
+            text-align: left;
+          }
+          .paraStyles {
+            @include content($color: white, $font-size: 1.5rem);
+            text-align: left;
+          }
+    }
+}
+
+
+
+.finalFooter {
+    text-align: center;
+    margin: 10rem auto;
+    p {
+        @include content($color: #0093D1, $font-size: 4.4rem, $line-height: 2.4rem);
+    }
+}
+
+
+
+@media only screen and (max-width: 640px) { 
+    .techHeader {
+        text-align: center;
+        margin: 10rem 2rem;
+        h1 {
+            @include heading($font-size: 2.2rem);
+        }
+    }
+
+        .imageContent {
+            .Applogo {
+                width: 35rem;
+                height: 30rem;
+            }
+            .Content {
+                width: 100%;
+                text-align: left;
+                p {
+                    @include content($color: #000040, $font-size: 1.5rem);
+                }
+            }
+    }
+
+
+    .aboutBody1 {
+        padding: 2rem;
+
+        .aboutBodyHead1 {
+            width: 100%;
+            text-align: left;
+            h1 {
+                @include heading($font-size: 3.2rem);
+            }
+        }
+        .aboutBodyContent1 {
+            width: 100%;
+            text-align: left;
+            p {
+                @include content($font-size: 1.5rem, $color: #000040);
+            }
+        }
+    }
+
+    .aboutBody2 {
+        padding: 2rem;
+        .aboutBodyHead2 {
+            width: 100%;
+            text-align: left;
+            h1 {
+                @include heading($font-size: 3.2rem);
+            }
+        }
+
+        .aboutBodyContent2 {
+            width: 100%;
+            text-align: left;
+            p {
+                @include content($font-size: 1.5rem, $color: #000040);
+            }
+        }
+     }
+     .finalDescription {
+         padding: 2rem;
+        h1 {
+            @include heading($font-size: 2rem, $color: #FFFFFF);
+            text-align: left;
+        }
+        p {
+            @include content($font-size: 1.5rem, $color: white);
+            text-align: left;
+        }
+        .aboutTeam {
+            margin-left: 2rem;
+        }
+     }
+
+     .finalFooter {
+
+        p {
+            @include content($color: #0093D1, $font-size: 3.4rem, $line-height: 2.4rem);
+        }
+}
+}

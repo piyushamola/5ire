@@ -1,0 +1,186 @@
+@import '../../../common-styles/typography';
+
+.AboutHeader {
+    background: #000040;
+    padding: 12rem 0rem;
+    text-align: center;
+    h1 {
+        @include heading();
+        font-size: 4rem;
+        color: white;
+    }
+}
+
+
+.aboutBody1 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    .aboutBodyHead1 {
+        width: 10%;
+        h1 {
+            @include heading($font-size: 3.2rem);
+        }
+    } 
+    .aboutBodyContent1 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 50%;
+        padding: 1rem;
+        p {
+            @include content($font-size: 1.5rem, $color: #000040);
+        }
+    }
+}
+
+.aboutBody2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    .aboutBodyHead2 {
+        width: 10%;
+        h1 {
+            @include heading($font-size: 3.2rem);
+        }
+    }
+
+    .aboutBodyContent2 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 50%;
+        padding: 1rem;
+        p {
+            @include content($font-size: 1.5rem, $color: #000040);
+        }
+    }
+ }
+
+
+ .MeetTeam {
+    text-align: center;
+    h1 {
+        @include heading($font-size: 5.4rem);
+    }
+}
+
+.aboutTeam {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5rem 15rem;
+
+    .imageStyles{
+        height: 25rem;
+        width: 25rem;
+      }
+      .headingStyles {
+        @include heading($color: #0093D1, $font-size: 2.4rem, $line-height: 2.4rem)
+      }
+
+      .subheadingStyles {
+        @include heading($color: #0093D1, $font-size: 1.8rem, $line-height: 2.4rem);
+        width: 25rem;
+        text-align: center;
+      }
+
+      .paraStyles {
+        @include content($color: #000040, $font-size: 1.5rem, $line-height: 2.4rem);
+      }
+}
+
+.founders {
+    margin: 10rem 2rem;
+    h1 {
+        text-align: center;
+        @include heading($color: #000040, $font-size: 3.4rem, $line-height: 4.4rem);
+    };
+}
+
+.finalFooter {
+    text-align: center;
+    margin: 10rem auto;
+    p {
+        @include content($color: #0093D1, $font-size: 4.4rem, $line-height: 2.4rem);
+    }
+}
+
+
+
+@media only screen and (max-width: 640px) {
+
+    .AboutHeader {
+        h1 {
+            @include heading();
+            font-size: 3rem;
+        }
+    }
+
+    .aboutBody1 {
+        padding: 0rem;
+
+        .aboutBodyHead1 {
+            width: 100%;
+            text-align: center;
+            h1 {
+                @include heading($font-size: 3.2rem);
+            }
+        }
+        .aboutBodyContent1 {
+            width: 100%;
+            padding: 2rem;
+            text-align: center;
+            p {
+                @include content($font-size: 1.5rem, $color: #000040);
+            }
+        }
+    }
+
+    .aboutBody2 {
+        padding: 0rem;
+        .aboutBodyHead2 {
+            width: 100%;
+            text-align: center;
+            h1 {
+                @include heading($font-size: 3.2rem);
+            }
+        }
+
+        .aboutBodyContent2 {
+            width: 100%;
+            padding: 2rem;
+            text-align: center;
+            p {
+                @include content($font-size: 1.5rem, $color: #000040);
+            }
+        }
+     }
+
+
+ .MeetTeam {
+    text-align: center;
+    h1 {
+        @include heading($font-size: 3.4rem);
+    }
+}
+
+
+
+    .founders {
+        h1 {
+            text-align: center;
+            @include heading($color: #000040, $font-size: 2.4rem, $line-height: 4.4rem);
+        };
+    }
+    .finalFooter {
+
+        p {
+            @include content($color: #0093D1, $font-size: 3.4rem, $line-height: 2.4rem);
+        }
+}
+}

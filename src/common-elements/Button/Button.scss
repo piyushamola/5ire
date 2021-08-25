@@ -6,4 +6,5 @@
 
 .buttonStyles {
      @include button();
+     cursor: pointer;
 }

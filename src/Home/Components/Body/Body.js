@@ -1,18 +1,8 @@
 import React from 'react';
 
-import fire from '../../../assets/fire.png'
+import fire from '../../../assets2/fire.png'
 
-import ted from '../../../assets/logos/ted.png'
-import forbes from '../../../assets/logos/Forbes-logo.png'
-import entrepreneur from '../../../assets/logos/Entrepreneur_logo.png'
-import globe from '../../../assets/logos/globe.png'
-import nasdaq from '../../../assets/logos/nasdaq.png'
-import paradigm from '../../../assets/paradigm.svg';
-
-import community from '../../../assets/exploresvgs/community.svg'
-import contribute from '../../../assets/exploresvgs/contribute.svg'
-import enterprise from '../../../assets/exploresvgs/enterprise.svg'
-import { google, messenger, whatsapp, youtube } from '../../../assets/footerLogos';
+import paradigm from '../../../assets2/paradigm.svg';
 
 // Assets2
 import sdg from '../../../assets2/sdg.png';
@@ -25,19 +15,23 @@ import icon6 from '../../../assets2/icon6.svg';
 import icon7 from '../../../assets2/icon7.svg';
 import icon8 from '../../../assets2/icon8.svg';
 import icon9 from '../../../assets2/icon9.svg';
-import banner2 from '../../../assets2/Banner2.png';
+import banner2 from '../../../assets2//foundedby.png';
 import quote from '../../../assets2/quote.svg';
-import banner from '../../../assets2/Banner.svg';
 
 
 // components
 import ImageHeadingContent from '../../../common-elements/ImageHeadingContent/ImageHeadingContent'
-import HeadingWithList from '../../../common-elements/HeaderWithList/HeaderWithList.js'
 import Button from '../../../common-elements/Button/Button.js';
+import CarouselComp from '../../../common-elements/Carousel/Carousel.js';
 import AboutInfo from './aboutInfo/aboutInfo.js';
+import Footer from '../../../common-elements/Footer/Footer';
+
+
+//styles
 import styles from './Body.scss'
 
-import { useHistory, useLocation } from "react-router-dom";
+//Routing
+import { useHistory } from "react-router-dom";
 
 
 const backGroundImagebanner2 = {
@@ -46,49 +40,19 @@ const backGroundImagebanner2 = {
   backgroundRepeat: "no-repeat",
 };
 
-const backGroundImagebanner = {
-  backgroundImage: `url(${banner})`,
-  backgroundSize: '100% 100%',
-  backgroundRepeat: "no-repeat",
-};
-
-const finalFooterLogos = [google, messenger, youtube, whatsapp]
-
 const aboutImages = [icon1, icon2, icon3, icon4, icon5, icon6];
 
-const aboutPara = ["5irechain’s main goal is to create a user-centric sustainability-driven ecosystem and it achieves this by embedding sustainability and humanity benefit algorithms inside the 5irechain reward distribution mechanism and runtime logic.",
-                    "5irechain’s transparent on-chain governance mechanism allows everyone to democratically participate in the network and propose changes. And assure a justified fair representation of all the stakeholders.",
+const aboutPara = ["5irechain’s main goal is to create a user-centric sustainability-driven ecosystem. This is achieved by embedding sustainability in the consensus mechanism architecture.5ire uses Machine Learning to track +700 ESG data sources in real time to for an Sustainability Score for the Validators of the chain.",
+                    "5irechain’s transparent on-chain governance mechanism allows everyone to democratically participate in the network and propose changes. The purpose of this is to assure a justified fair representation of all the stakeholders.",
                     "By being a cutting-edge blockchain based    on WebAssembly. 5irechain is able to upgrade its runtime logic without hard forking. These upgrades are enacted through the 5irechain governance mechanism.",
                     "5irechain has the ability to interoperate seamlessly with a variety of blockchains. Enabling cross-blockchain transfers of any type of data through bridges. Either natively with substrate based chains or through smart contract bridges.",
                     "5irechain uses  GRANDPA finality gadget that is able to reach and finalize consensus quickly, no matter how big the 5ire network would become. While NPoS mechanisms assure high transactional throughput with the low fees.",
                     "5irechain is built on Rust and Substrate with the best Present-day  technological stack for the creation of blockchains. While the NPoS assures higher levels of security without compromising decentralization."];
 
+// const aboutHeadStyle = [{ width: '20rem'}];
+
 const aboutHeading = ["Sustainability by Design ", "On-chain Governance and Democracy", "Future-proof and Forkless upgradeability",
 "Interoperability & cross-chain Transfers", "On-chain Governance and Democracy", "Future-proof and Forkless upgradeability"];
-
-const logos = [nasdaq, ted, globe, forbes, entrepreneur,];
-
-const logosDimensions = [{ width: '16rem', height: '4rem', marginTop: '2rem'}, { width: '12.3rem', height: '4.5rem', marginTop: '2rem'}, { width: '11.2rem', height: '9.4rem', marginTop: '2rem'}, { width: '14.7rem', height: '8.3rem', marginTop: '2rem'}, { width: '23.8rem', height: '9rem', marginTop: '2rem'}];
-
-
-const exploreImages = [enterprise, community, contribute];
-
-const exploreContentHeading = ["5ire for enterprise", "The 5ire community (heroes)", "Contribute to 5ire.org"];
-
-const exploreContentPara = ["See how 5ire can open up new business models, reduce your costs and future-proof your business.",
-                      "The community is the heart and soul of 5ire. It's made up of people from all different backgrounds and interests. Click here to join.",
-                      "The website and community are open source with hundreds of community contributors. You can propose edits to any of the content , suggest new features, or help us in another way."]
-
-const FinalFooterList = [["About", "FAQ", "Support", "Build", "Grants and Bounties", "Careers"], ["Technology", "Roadmap", "Token", "Telemetry", "Substrate", "Lightpaper", "Whitepaper"],
-                          ["Community",
-                            "Documentation",
-                            "Brand Assets",
-                            "Blog",
-                            "Element",
-                            "Chat",
-                            "Medium"]];
-
-const FinalFooterHeading = ["General", "Technology", "Community"];
 
 const proofOfFireImages = [icon7, icon8, icon9];
 
@@ -97,7 +61,10 @@ const proofOfFireParas = ["The cutting edge NPOS guarantees democracy and justif
                           "A governance based mechanism that rewards network actors  based on their commitment to the United Nation 17 Sustainable Development Goals (SDGs).",
                         "A Donation oriented scheme that focuses on rewarding charity-oriented activities. These activities can be either on-chain or in the real world."];
 
-const buttonsLabels = ["Nominator", "Validator", "Curator", "Register", "Governance"];
+// const buttonsLabels = ["Nominator", "Validator", "Curator", "Register", "Governance"];
+
+// const buttonsLabelsText = ["Provide sustainability and security to 5irechain by wisely electing validators and by staking the 5ire tokens.", "Sustainably securing the chain by participating in verification and production of blocks.", "Experts on each one of the 17 SDGs, Maintain the process of judging proposals",
+// "Provide sustainability and security to 5irechain by wisely electing validators and by staking the 5ire tokens.", "Provide sustainability and security to 5irechain by wisely electing validators and by staking the 5ire tokens."];
 
 function Body(props) {
 
@@ -115,12 +82,12 @@ function Body(props) {
                 Welcome To 5ire
             </h1>
             <h2>
-               The Future of <span><del>Blockchain</del></span> Business
+               The Future of Internet
             </h2>
             <p>
-                5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit. 5irechain implements sustainability by design while it ensures democracy and governance, interoperability, high transactional throughput, strong security guarantees and forkless upgradeability.
+                5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit. 5irechain implements sustainability by design while it ensures democracy and governance, interoperability, high transactional throughput, advanced cybersecurity and forkless upgradeability.
             </p>
-            <Button label="Learn More" btnClick={() => history.push('/wiki')} className={styles.button}/>
+            <Button label="Explore More" btnClick={() => window.open('/wiki')} className={styles.button}/>
         </div>
         </div>
       </div>
@@ -131,15 +98,16 @@ function Body(props) {
             <div className={styles.getStartedText}>
               <div>
                 <p>We are Redefining the Blockchain </p>
-                <p> Be a the part of the next Big Revolution </p>
+                <p> Be the part of the next Big Revolution </p>
               </div>
-            <Button label="See Roadmap" className={styles.button}/>
+            <Button label="See Roadmap" btnClick={() => history.push('/roadmap')} className={styles.button}/>
             </div>
           </div>
         </div>
+        {/* style={aboutHeadStyle[index]} */}
          <div className={styles.aboutBody}>
               { aboutImages.map((img, index) => (
-                <AboutInfo image={img} para={aboutPara[index]} heading={aboutHeading[index]}/>
+                <AboutInfo image={img}  para={aboutPara[index]} heading={aboutHeading[index]}/>
               ))}
           </div>
        </div>
@@ -148,7 +116,7 @@ function Body(props) {
           <header className={styles.parentHeader}>
               <div className={styles.aboutHeader}>
                 <div className={styles.aboutContent}>
-                  <h1>5ire’s language</h1>
+                  <h1>5ire’s language =</h1>
                   <p>United Nation’s Sustainable Development Goals</p>
                 </div>
                 <div className={styles.aboutImageContainer}>
@@ -169,7 +137,7 @@ function Body(props) {
                <div>
                 <p>Learn more about <br/> <b>5irechain Technology</b></p>
               </div>
-              <Button label="Discover 5ire" className={styles.button}/>
+              <Button label="Discover 5ire" btnClick={() => history.push('/technology')} className={styles.button}/>
            </div>
         </div>
         <div className={styles.learnWhyContent}>
@@ -180,10 +148,10 @@ function Body(props) {
 
                  <p>Also its breakthrough to help the world in achieving the UN SDGs in the fast and efficient way.</p>
               </div>
-              <Button label="Learn More About 5IR" className={styles.button}/>
+              <Button label="Learn More About 5IR"  btnClick={() => window.open('https://www.youtube.com/watch?v=RDiHaHPOVH0')} className={styles.button}/>
            </div>
             <div className={styles.whyFireHeading}>
-              <h1>Why 5ire ?</h1>
+              <h1>Why 5IR ?</h1>
             </div>
         </div>
         </header>
@@ -191,7 +159,7 @@ function Body(props) {
           <div style={backGroundImagebanner2}>
             <div className={styles.founderContent}>
               <h1>Founded by some of the pioneers in Impact & Blockchain Industry</h1>
-              <Button label="Learn about 5ire Team" className={styles.button}/>
+              <Button label="Learn about 5ire Team" btnClick={() => history.push('/about')} className={styles.button}/>
             </div>
           </div>
         </div>
@@ -209,17 +177,20 @@ function Body(props) {
                       ))}
                   </div>
               </div>
-              <div className={styles.footerLast}>
+              {/* <div className={styles.footerLast}>
                 <Button label="Learn More" className={styles.button}/>
                 <h1>Participate in 5ire Ecosystem become a </h1>
               </div>
               <div className={styles.buttonList}>
                 {
-                  buttonsLabels.map((label) => (
+                  buttonsLabels.map((label, index) => (
+                  <div>
                     <Button label={label} className={styles.button}/>
+                    <Content size="1" className={styles.buttonListText}>{buttonsLabelsText[index]}</Content>
+                  </div>
                   ))
                 }
-              </div>
+              </div> */}
          </div>
         </footer>
         <div className={styles.textStyle}>
@@ -237,47 +208,16 @@ function Body(props) {
             <div className={styles.exploreContent}>
               <h1>A New Paradigm for Sustainability</h1>
               <p>5ire and its dapps are transparent and open source. You can build on top or fork code and reuse functionalities that others have already built. If you don't want to learn a new language you can just interact with open source code using Rust and other existing languages.</p>
-              <Button label="Build on 5ire" className={styles.button}/>
+              <Button label="Build on 5ire" btnClick={() => window.open('https://5ire.gitbook.io/5ire-wiki/developer-guide/untitled/')} className={styles.button}/>
             </div>
         </header>
         <div className={styles.whyBody}>
            <h1>FOUNDERS FEATURED IN</h1>
         </div>
-        <footer className={styles.whyFireFooter}>
-                { logos.map((logo, index) => (
-                   <img src={logo} style={logosDimensions[index]} alt={logo} />
-                ))}
+        <footer>
+            <CarouselComp/>
         </footer>
-        <div className={styles.expHeading}><h1>Explore 5ire.org</h1></div>
-        <div className={styles.aboutExploreBoxes}>
-              { exploreImages.map((img, index) => (
-                <ImageHeadingContent image={img} para={exploreContentPara[index]} heading={exploreContentHeading[index]}
-                   imgSize={styles.imageStyles}
-                   headingStyles={styles.headingStyles}
-                   paragraphStyles={styles.paraStyles}
-                />
-              ))}
-          </div>
-          <footer className={styles.FinalFooter}>
-                { FinalFooterHeading.map(( head, index) => (
-                <div>
-                    <HeadingWithList list={FinalFooterList[index]} heading={head}/>
-                </div>
-                ))}
-               <div class={styles.footerLastColumn}>
-                  <div class={styles.footerLogoStyle}>
-                  {finalFooterLogos.map((logo) => (
-                    <div>
-                    <img src={logo}  alt={logo} />
-                    </div>
-                  ))}
-                  </div>
-                  <div>
-                    <p>Subscribe to the newsletter to hear about 5ire updates and events.</p>
-                  </div>
-                  <Button label="Subscribe" className={styles.button}/>
-              </div>
-          </footer>
+        <Footer/>
       </section>
    </div>
     );

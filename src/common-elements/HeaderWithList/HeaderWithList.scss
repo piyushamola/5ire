@@ -4,15 +4,32 @@
     justify-content: space-evenly;
 
     h1 {
-        font-size: 18px;
+        font-size: 1.8rem;
         color: #5C5AB8;
     }
 
     li {
-        font-size: 14px;
+        font-size: 1.4rem;
         color: #404F77;
         line-height: 3rem;
         list-style: none;
     }
 }
 
+@media only screen and (max-width: 640px) {
+    .listStyles {
+
+        h1 {
+            font-size: 1.5rem;
+            color: #5C5AB8;
+        }
+
+        li {
+            font-size: 1.2rem;
+            color: #404F77;
+            line-height: 3rem;
+            list-style: none;
+        }
+    }
+
+}

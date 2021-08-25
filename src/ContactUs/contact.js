@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from '../common-elements/Header/Header.js';
-import Body from './Components/Body/Body.js';
+import ContactBody from './Components/contactBody/contactBody';
 
-import styles from './Home.scss'
+import styles from './contact.scss'
 
 function Home(props) {
     return (
-        <div className={styles.Home}> 
+        <div className={styles.Home}>
             <Header/>
-            <Body/>
+            <ContactBody/>
         </div>
     );
 }

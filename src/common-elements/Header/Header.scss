@@ -1,0 +1,120 @@
+
+@import '../../common-styles/typography';
+
+.appLogo {
+    height: 6.4rem;
+    width: 6.4rem;
+    pointer-events: none;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-evenly;
+    background: #F9FCFF;
+    padding: 1rem 0rem;
+}
+
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.burgerIcon {
+    display: none;
+}
+
+.logoStyles {
+    margin-right: 5rem;
+}
+
+.topHeader{
+    @include flex($justify-content: flex-end, $align-items: center);
+    padding: 2rem 25rem 2rem 0;
+    box-shadow: inset 1px -3px 0px rgba(0, 0, 0, 0.1);
+
+    a {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 16px;
+        /* identical to box height, or 107% */
+        letter-spacing: -0.02em;
+        color: #404F77;
+        margin: 0 3rem;
+        cursor: pointer;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    .Header {
+        display: flex;
+        background: #F9FCFF;
+        padding: 2rem 1rem;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        background: #FFFFFF;
+        box-shadow: inset 1px -3px 0px rgba(0, 0, 0, 0.1);
+        align-items: center;
+    }
+
+    .appLogo {
+        height: 6rem;
+        width: 6rem;
+        pointer-events: none;
+        margin-right: 2rem;
+    }
+    .flexItems {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 40px;
+        z-index: 2;
+        padding: 2rem;
+        margin: 2rem 0;
+        background: #F9FCFF;
+        height: 20rem;
+        transition: transform 1s ease-out;
+    }
+
+    .items {
+        display: none;
+    }
+
+    .burgerIcon {
+        display: block;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-evenly;
+        height: 3rem;
+    }
+
+    .burgerIcon:hover {
+        cursor: pointer;
+    }
+
+    .Open {
+        transform: translateX(0);
+    }
+    .Close {
+        transform: translateX(-100%);
+    }
+
+    .logoStyles {
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    .topHeader{
+        @include flex($justify-content: center, $align-items: center);
+        padding: 2rem 1rem;
+    }
+}

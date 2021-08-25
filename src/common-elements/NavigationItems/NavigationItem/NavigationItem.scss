@@ -1,0 +1,21 @@
+.NavigationItem {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    /* identical to box height, or 107% */
+    letter-spacing: -0.02em;
+    color: #404F77;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: #404F77;
+    }
+    a:hover,
+    a:active,
+    a.active {
+        color: #40A4C8;
+    }
+}

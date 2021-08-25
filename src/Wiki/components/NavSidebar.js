@@ -1,7 +1,6 @@
 /* eslint-disable react/display-name, jsx-a11y/click-events-have-key-events */
 import { Navigation } from "react-minimal-side-navigation";
 import { useHistory, useLocation } from "react-router-dom";
-import burger from '../../assets/frontPageLogos/burger.svg'
 import React, { useState } from "react";
 
 import styles from '../styles/sidebar.scss'

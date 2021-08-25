@@ -5,10 +5,10 @@
   }
 
   .h2 {
-    @include heading();
+    @include heading($color: white, $font-size: 4.2rem, $font-weight: 'normal');
   }
   .h3 {
-    @include heading();
+    @include heading($font-size: 4.2rem);
   }
   .h4 {
     @include heading();

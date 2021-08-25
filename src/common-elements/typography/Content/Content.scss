@@ -1,14 +1,14 @@
 @import '../../../common-styles/typography';
 
 .content1 {
- @include content($font-size: 2rem);
+ @include content($font-size: 1.5rem);
 }
 
 .content2 {
-  @include content();
+  @include content($font-size: 1.4rem);
 }
 .content3 {
-  @include content();
+  @include content($font-size: 2rem, $color: '#000040');
 }
 .content4 {
   @include content();

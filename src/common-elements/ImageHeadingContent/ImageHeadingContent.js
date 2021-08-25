@@ -11,6 +11,7 @@ function ImageHeadingContent(props) {
         <div className={styles.container}>
                 <img src={props.image} className={itemsClasses.join(' ')} alt="about"/>
                 <h1 className={props?.headingStyles}>{props.heading}</h1>
+                {props.subPara && <h2 className={props?.subParaStyles}>{props.subPara}</h2>}
                 <p className={props?.paragraphStyles}>{props.para}</p>
         </div>
     );

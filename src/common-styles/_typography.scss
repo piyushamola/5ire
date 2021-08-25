@@ -16,7 +16,7 @@
 }
 
 // Heading mixins
-@mixin heading($font-size: 5.4rem, $font-family: 'Futura',  $color: '#000040', $line-height: 6.4rem, $letter-spacing: 0.03rem, $font-weight: bold) {
+@mixin heading($font-size: 2.4rem, $font-family: Futura,  $color: '#000040', $line-height: 4.6rem, $letter-spacing: 0.03rem, $font-weight: bold) {
   font-size: $font-size;
   color: $color;
   font-family: $font-family;
@@ -26,7 +26,7 @@
 }
 
 // content mixin
-@mixin content($font-size: 5.4rem, $font-family: 'Roboto',  $color: white, $line-height: 6.4rem, $letter-spacing: 0.03rem, $font-weight: normal) {
+@mixin content($font-size: 5.4rem, $font-family: 'Roboto',  $color: white, $line-height: 2.4rem, $letter-spacing: 0.03rem, $font-weight: normal) {
     font-size: $font-size;
     color: $color;
     font-family: $font-family;

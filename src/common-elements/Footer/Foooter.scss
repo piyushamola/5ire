@@ -1,0 +1,26 @@
+@import '../../common-styles/typography';
+
+.FinalFooterContainer {
+    background: #F6F7FA;
+    padding: 5rem 0rem 1rem 0rem;
+    .FinalFooter {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .contentStyles {
+      text-align: center;
+      margin: 5rem 0 1rem 0;
+      @include content($font-size: 1.5rem, $color: #404F77)
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .FinalFooterContainer {
+        .contentStyles {
+          margin: 2rem 1rem;
+          @include content($font-size: 1.2rem, $color: #404F77)
+        }
+      }
+  }
