@@ -18,7 +18,7 @@
     padding: 2rem;
     flex-wrap: wrap;
     .aboutBodyHead1 {
-        width: 10%;
+        width: 15rem;
         h1 {
             @include heading($font-size: 3.2rem);
         }
@@ -41,7 +41,7 @@
     flex-wrap: wrap;
     padding: 2rem;
     .aboutBodyHead2 {
-        width: 10%;
+        width: 15rem;
         h1 {
             @include heading($font-size: 3.2rem);
         }

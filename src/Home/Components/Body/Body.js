@@ -42,14 +42,12 @@ const backGroundImagebanner2 = {
 
 const aboutImages = [icon1, icon2, icon3, icon4, icon5, icon6];
 
-const aboutPara = ["5irechain’s main goal is to create a user-centric sustainability-driven ecosystem. This is achieved by embedding sustainability in the consensus mechanism architecture.5ire uses Machine Learning to track +700 ESG data sources in real time to for an Sustainability Score for the Validators of the chain.",
-                    "5irechain’s transparent on-chain governance mechanism allows everyone to democratically participate in the network and propose changes. The purpose of this is to assure a justified fair representation of all the stakeholders.",
-                    "By being a cutting-edge blockchain based    on WebAssembly. 5irechain is able to upgrade its runtime logic without hard forking. These upgrades are enacted through the 5irechain governance mechanism.",
-                    "5irechain has the ability to interoperate seamlessly with a variety of blockchains. Enabling cross-blockchain transfers of any type of data through bridges. Either natively with substrate based chains or through smart contract bridges.",
-                    "5irechain uses  GRANDPA finality gadget that is able to reach and finalize consensus quickly, no matter how big the 5ire network would become. While NPoS mechanisms assure high transactional throughput with the low fees.",
-                    "5irechain is built on Rust and Substrate with the best Present-day  technological stack for the creation of blockchains. While the NPoS assures higher levels of security without compromising decentralization."];
-
-// const aboutHeadStyle = [{ width: '20rem'}];
+const aboutPara = ["5irechain empowers sustainability in order to build the ecosystems of tomorrow while having UN SDGs as the common value system. 5ire uses Machine Learning to track +700 ESG data sources in real time and provide sustainability standards.",
+                    "5irechain’s transparent on-chain governance mechanism allows everyone to democratically participate in the network and propose changes. For the purpose of assuring a justified fair representation of all the stakeholders.",
+                    "5irechain is able to seamlessly upgrade its runtime logic without hard forking. These upgrades are enacted through the 5irechain governance mechanism. 5irechain is able to evolve and apply changes seamlessly",
+                    "5irechain has the ability to interoperate with a variety of blockchains. Enabling cross-blockchain transfers of any type of data through bridges with older blockchains and new ecosystems",
+                    "5irechain aims to be the leader of sustainability standards leveraging the true power of DLT technology, Oracles, Trusted Execution Environment (TEE), AI and UN SDGs indicators. To move the world to the 5th industrial revolution.",
+                    "5irechain runtime modules can serve as building blocks for several fields including IoT, on-chain Governance, Defi primitives, digital identity plus to execute EVM smart contract with  ethereum tooling full compatibility And WebAssembly WASM smart contract."];
 
 const aboutHeading = ["Sustainability by Design ", "On-chain Governance and Democracy", "Future-proof and Forkless upgradeability",
 "Interoperability & cross-chain Transfers", "On-chain Governance and Democracy", "Future-proof and Forkless upgradeability"];
@@ -57,14 +55,9 @@ const aboutHeading = ["Sustainability by Design ", "On-chain Governance and Demo
 const proofOfFireImages = [icon7, icon8, icon9];
 
 const proofOfFireHeading = ["Nominated Proof of Stake", "Proof of Benefit", "Proof of Donation"];
-const proofOfFireParas = ["The cutting edge NPOS guarantees democracy and justified fair representation to all the stakeholders while giving a reputation base for the upper Proof Of 5ire layers.",
-                          "A governance based mechanism that rewards network actors  based on their commitment to the United Nation 17 Sustainable Development Goals (SDGs).",
+const proofOfFireParas = ["Nominated Proof of Stake guarantees democracy and justified fair representation for network actors.",
+                          "A governance based mechanism and reward distribution scheme that empower network actors based on their commitment to the United Nation 17 Sustainable Development Goals (SDGs).",
                         "A Donation oriented scheme that focuses on rewarding charity-oriented activities. These activities can be either on-chain or in the real world."];
-
-// const buttonsLabels = ["Nominator", "Validator", "Curator", "Register", "Governance"];
-
-// const buttonsLabelsText = ["Provide sustainability and security to 5irechain by wisely electing validators and by staking the 5ire tokens.", "Sustainably securing the chain by participating in verification and production of blocks.", "Experts on each one of the 17 SDGs, Maintain the process of judging proposals",
-// "Provide sustainability and security to 5irechain by wisely electing validators and by staking the 5ire tokens.", "Provide sustainability and security to 5irechain by wisely electing validators and by staking the 5ire tokens."];
 
 function Body(props) {
 
@@ -82,12 +75,12 @@ function Body(props) {
                 Welcome To 5ire
             </h1>
             <h2>
-               The Future of Internet
+               <span>Humanity, </span>Purpose and Inclusivity
             </h2>
             <p>
-                5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit. 5irechain implements sustainability by design while it ensures democracy and governance, interoperability, high transactional throughput, advanced cybersecurity and forkless upgradeability.
+               5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit. 5irechain implements sustainability by design while it ensures democracy and governance, interoperability, high transactional throughput, strong security guarantees and forkless upgradeability.
             </p>
-            <Button label="Explore More" btnClick={() => window.open('/wiki')} className={styles.button}/>
+            <Button label="Explore More" btnClick={() => window.scroll(0, 700)} className={styles.button}/>
         </div>
         </div>
       </div>
@@ -97,8 +90,8 @@ function Body(props) {
           <div>
             <div className={styles.getStartedText}>
               <div>
-                <p>We are Redefining the Blockchain </p>
-                <p> Be the part of the next Big Revolution </p>
+                <p>5ire build the sustainable future of human collaborations & reduce barriers of entry. </p>
+                <p> Be part of the 5th industrial revolution. </p>
               </div>
             <Button label="See Roadmap" btnClick={() => history.push('/roadmap')} className={styles.button}/>
             </div>
@@ -131,7 +124,7 @@ function Body(props) {
           <div className={styles.learnWhatContent}>
             <div className={styles.whatFireContent}>
               <h1>What is 5ire ?</h1>
-              <p>5IRE is a Collaborative Blockchain-Driven Platform with an innovative SDG driven consensus mechanism , with a mission to bring a paradigm shift from “For Profit” to “For Benefit” across the globe, as every single transaction on the 5IRE Ecosystem Contributes to Social Impact.</p>
+              <p>5IRE is an ecosystem that brings forth DLT technology and innovation for the service of humanity with a mission to bring a paradigm shift from “For Profit” to “For Benefit” across the globe. Providing systems and technologies that will eliminate the inefficiencies of digital exchange and communication.</p>
             </div>
             <div className={styles.LearnAbout}>
                <div>
@@ -168,7 +161,7 @@ function Body(props) {
               <div className={styles.footerContent}>
                   <h1>Proof of 5ire </h1>
                   <p>The first sustainable by design hybrid consensus and reward distribution mechanism</p>
-                  <p>The Proof Of Fire is the first multi-layered consensus mechanism and reward distribution scheme that prioritizes sustainability and service of humanity,  and 5irechain is the first  blockchain to implement it. Proof Of Fire  assures higher yields to network actors that are in  harmony with the United Nation 17 Sustainable Development Goals and to actors that have a donation history either on-chain or in real-world. Proof Of Fire is a superposition of three underlying mechanisms.</p>
+                  <p>The Proof Of 5ire is the first multi-layered consensus mechanism & reward distribution scheme that prioritizes sustainability, the 5irechain is the first blockchain to implement it. Proof Of 5ire assures higher yields to network actors that are in harmony with the United Nation 17 Sustainable Development Goals and to actors that have a donation history either on-chain or in real-world. Proof Of 5ire is a superposition of three underlying mechanisms.</p>
               </div>
               <div>
                   <div className={styles.footerBody}>
@@ -177,25 +170,11 @@ function Body(props) {
                       ))}
                   </div>
               </div>
-              {/* <div className={styles.footerLast}>
-                <Button label="Learn More" className={styles.button}/>
-                <h1>Participate in 5ire Ecosystem become a </h1>
-              </div>
-              <div className={styles.buttonList}>
-                {
-                  buttonsLabels.map((label, index) => (
-                  <div>
-                    <Button label={label} className={styles.button}/>
-                    <Content size="1" className={styles.buttonListText}>{buttonsLabelsText[index]}</Content>
-                  </div>
-                  ))
-                }
-              </div> */}
          </div>
         </footer>
         <div className={styles.textStyle}>
             <img src={quote} alt="quote"/>
-             <p><span>We have changed the Technology. </span>We are changing the way how world looking at the future of businesses. We are Using technology to make a shift from the ‘For Profit’ Paradigm to ‘For Benefit’ Paradigm.</p>
+             <p><span>5ire</span> is  building the world <span>5.0</span> & sustainability  is the heart. <span>Together</span> we build global collaboration and governance systems of the future.</p>
         </div>
       </section>
 
@@ -206,8 +185,8 @@ function Body(props) {
               <img src={paradigm} className={styles.paradigmImage} alt="paradigm"/>
             </div>
             <div className={styles.exploreContent}>
-              <h1>A New Paradigm for Sustainability</h1>
-              <p>5ire and its dapps are transparent and open source. You can build on top or fork code and reuse functionalities that others have already built. If you don't want to learn a new language you can just interact with open source code using Rust and other existing languages.</p>
+              <h1>Redefining New Standards for Sustainability</h1>
+              <p>The 5irechain runtime provides tooling for IoT, on-chain governance, Defi primitives, Self-sovereign digital identity management, Zero knowledge primitives and e-governance. 5irechain has the capability to execute EVM smart contracts with full compatibility with ethereum and WebAssembly WASM smart contracts</p>
               <Button label="Build on 5ire" btnClick={() => window.open('https://5ire.gitbook.io/5ire-wiki/developer-guide/untitled/')} className={styles.button}/>
             </div>
         </header>

@@ -2,7 +2,8 @@
 
 .techHeader {
     text-align: center;
-    margin: 10rem 20rem;
+    margin: 10rem auto;
+    width: 80%;
     h1 {
         @include heading($font-size: 4.2rem, $color: #000040);
     }
@@ -10,8 +11,9 @@
 
 .techBoxStyles {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 
     .techBox {
         cursor: pointer;
@@ -36,9 +38,10 @@
     margin: 10rem auto;
     justify-content: center;
     flex-wrap: wrap;
+    width: 95%;
     .Applogo {
-        width: 50rem;
-        height: 40rem;
+        width: 45rem;
+        height: 35rem;
     }
     .Content {
         display: flex;
@@ -58,8 +61,12 @@
     justify-content: space-around;
     padding: 2rem;
     flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
     .aboutBodyHead1 {
-        width: 10%;
+        width: 10rem;
+        margin: 0 6rem;
         h1 {
             @include heading($font-size: 3.2rem);
         }
@@ -68,8 +75,8 @@
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        width: 20%;
-        padding: 1rem;
+        width: 25rem;
+        margin: 0 4rem;
         h1 {
             @include heading($font-size: 2.4rem, $color: #000040)
         }
@@ -81,27 +88,33 @@
 
 .aboutBody2 {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
     padding: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    flex-direction: column;
     .aboutBodyHead2 {
-        width: 10%;
+        text-align: center;
         h1 {
             @include heading($font-size: 3.2rem);
         }
     }
-
-    .aboutBodyContent2 {
+    .aboutBodyContent {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
-        flex-direction: column;
-        width: 20%;
-        padding: 1rem;
-        h1 {
-            @include heading($font-size: 2.4rem, $color: #000040)
-        }
-        p {
-            @include content($font-size: 1.5rem, $color: #000040);
+        .aboutBodyContent2 {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 25rem;
+            h1 {
+                @include heading($font-size: 2.4rem, $color: #000040, $line-height: 3rem)
+            }
+            p {
+                @include content($font-size: 1.5rem, $color: #000040);
+            }
         }
     }
  }
@@ -155,13 +168,18 @@
 @media only screen and (max-width: 640px) { 
     .techHeader {
         text-align: center;
-        margin: 10rem 2rem;
+        margin: 10rem 0rem;
+        padding: 0 2rem;
+        width: 100%;
+        box-sizing: border-box;
         h1 {
             @include heading($font-size: 2.2rem);
         }
     }
 
         .imageContent {
+            box-sizing: border-box;
+            width: 100%;
             .Applogo {
                 width: 35rem;
                 height: 30rem;
@@ -178,10 +196,13 @@
 
     .aboutBody1 {
         padding: 2rem;
-
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 0rem;
         .aboutBodyHead1 {
             width: 100%;
             text-align: left;
+            margin: 0 0;
             h1 {
                 @include heading($font-size: 3.2rem);
             }
@@ -189,6 +210,7 @@
         .aboutBodyContent1 {
             width: 100%;
             text-align: left;
+            margin: 0rem;
             p {
                 @include content($font-size: 1.5rem, $color: #000040);
             }
@@ -197,6 +219,9 @@
 
     .aboutBody2 {
         padding: 2rem;
+        margin: 0 0rem;
+        box-sizing: border-box;
+        width: 100%;
         .aboutBodyHead2 {
             width: 100%;
             text-align: left;
@@ -204,12 +229,13 @@
                 @include heading($font-size: 3.2rem);
             }
         }
-
-        .aboutBodyContent2 {
-            width: 100%;
-            text-align: left;
-            p {
-                @include content($font-size: 1.5rem, $color: #000040);
+        .aboutBodyContent {
+            .aboutBodyContent2 {
+                width: 100%;
+                text-align: left;
+                p {
+                    @include content($font-size: 1.5rem, $color: #000040);
+                }
             }
         }
      }
