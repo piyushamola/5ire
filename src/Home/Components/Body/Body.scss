@@ -656,6 +656,8 @@
  .textStyle {
    padding: 2rem;
    margin: 0 auto;
+   width: 100%;
+   box-sizing: border-box;
    p {
      span {
       color: #0071FF;
