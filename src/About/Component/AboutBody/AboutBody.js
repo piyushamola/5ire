@@ -41,8 +41,8 @@ function AboutBody(props) {
                     <h1>5ire Mission</h1>
                 </div>
                 <div className={styles.aboutBodyContent1}>
-                    <p>5ireChain aims to become a sustainable for-benefit and democratic ecosystem that focuses on positive impact. Purely decentralised and highly secure!</p>
-                    <p>No one is in charge of the services and everyone can participate in the ecosystem with no privileges for certain parties.</p>
+                    <p>5ire aims to become THE launchpad FOR the 5th industrial revolution where self-sovereign decentralized organizations are empowered to work towards achieving the United Nations 2030 Agenda. 5ire will empower teams to build solutions for a sustainable & decentralized future.  This will be done by creating unions and confederations between communities & DAOs that will be democratically funded by the 5ire treasury. 5ire is inspired by how sovereign nations split their yearly treasury into specialized treasuries managed by competing ministries & creates the governance and assets management systems of the future while assuring protection and privacy of all stakeholders by combining Trusted execution environments and Blockchain technologies to achieve high levels of security & truth.</p>
+                   
                 </div>
             </div>
             <div className={styles.aboutBody2}>
@@ -50,15 +50,14 @@ function AboutBody(props) {
                     <h1>About 5irechain </h1>
                 </div>
                 <div className={styles.aboutBodyContent2}>
-                    <p>5irechain can connect with a variety of blockchains hence enabling cross- blockchain transfers of any type of data in a trustless manner - there is no dependence on any central party.</p>
-                    <p>5irechain is built to embed the for-benefit paradigm deeply inside the blockchain runtime logic. Only by having this change at the core of the blockchain, we can ensure that the upper logic and activity will follow.</p>
-                    <p >All of this in the most human-focused sustainable way where bringing value to existence is highly incentivized.Financial services on top of 5irechain are superior to their centralized counterparts.</p>
-                    <p>With 5irechain, there is immense possibility of various financial applications and services existing in the most sustainable way with its user-centric vision that does not include intermediaries. We invite other blockchains and projects on top of 5irechain to adopt this vision and innovate in the way they utilize these mechanisms.</p>
+                    <p>Distributed ledger technology enables the achievement of a cryptographic truth backed by mathematical assumptions and physical laws. Enabling the separation of facts and narratives & solving inefficiencies caused by paper form agreements.</p>
+                    <p>5ire believes that the true powers of blockchain are yet to be seen. 5irechain nodes are designed to bring 700+ ESG data sources on-chain using a network of decentralized oracle and off-chain workers to build immutable sources of sustainability indexes and standards.</p>
+                    <p >The runtime of 5irechain is modular & rich bringing forth governance and democracy mechanisms, self-sovereign digital identity management, trusted execution environment, zero-knowledge primitives, and metaverses. 5ire is able to execute EVM smart contracts with ethereum tooling full compatibility and WebAssembly smart contracts that provide more utility, security, and upgradability.</p>
+                    <p>5irechain is able to interoperate and cross-transfer with almost all the existing blockchain platforms & aims to become a sharded network of connected blockchains and ecosystems that will lead the 5th industrial revolution.</p>
                 </div>
             </div>
             <div className={styles.AboutHeader}>
-                <h1>Built by us, for the world. </h1>
-                <h1>With one goal to create IMPACT.</h1>
+                <h1>5ire bring forth Truth not Trust </h1>
             </div>
             <div className={styles.MeetTeam}>
                 <h1>Meet Our Team</h1>

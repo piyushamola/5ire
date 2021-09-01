@@ -42,12 +42,7 @@ const backGroundImagebanner2 = {
 
 const aboutImages = [icon1, icon2, icon3, icon4, icon5, icon6];
 
-const aboutPara = ["5irechain empowers sustainability in order to build the ecosystems of tomorrow while having UN SDGs as the common value system. 5ire uses Machine Learning to track +700 ESG data sources in real time and provide sustainability standards.",
-                    "5irechain’s transparent on-chain governance mechanism allows everyone to democratically participate in the network and propose changes. For the purpose of assuring a justified fair representation of all the stakeholders.",
-                    "5irechain is able to seamlessly upgrade its runtime logic without hard forking. These upgrades are enacted through the 5irechain governance mechanism. 5irechain is able to evolve and apply changes seamlessly",
-                    "5irechain has the ability to interoperate with a variety of blockchains. Enabling cross-blockchain transfers of any type of data through bridges with older blockchains and new ecosystems",
-                    "5irechain aims to be the leader of sustainability standards leveraging the true power of DLT technology, Oracles, Trusted Execution Environment (TEE), AI and UN SDGs indicators. To move the world to the 5th industrial revolution.",
-                    "5irechain runtime modules can serve as building blocks for several fields including IoT, on-chain Governance, Defi primitives, digital identity plus to execute EVM smart contract with  ethereum tooling full compatibility And WebAssembly WASM smart contract."];
+const aboutPara = [""];
 
 const aboutHeading = ["Sustainability by Design ", "On-chain Governance and Democracy", "Future-proof and Forkless upgradeability",
 "Interoperability & cross-chain Transfers", "On-chain Governance and Democracy", "Future-proof and Forkless upgradeability"];
@@ -55,9 +50,9 @@ const aboutHeading = ["Sustainability by Design ", "On-chain Governance and Demo
 const proofOfFireImages = [icon7, icon8, icon9];
 
 const proofOfFireHeading = ["Nominated Proof of Stake", "Proof of Benefit", "Proof of Donation"];
-const proofOfFireParas = ["Nominated Proof of Stake guarantees democracy and justified fair representation for network actors.",
-                          "A governance based mechanism and reward distribution scheme that empower network actors based on their commitment to the United Nation 17 Sustainable Development Goals (SDGs).",
-                        "A Donation oriented scheme that focuses on rewarding charity-oriented activities. These activities can be either on-chain or in the real world."];
+const proofOfFireParas = ["",
+                          "",
+                        ""];
 
 function Body(props) {
 
@@ -75,10 +70,10 @@ function Body(props) {
                 Welcome To 5ire
             </h1>
             <h2>
-               <span>Humanity, </span>Purpose and Inclusivity
+             Blockchain * Sustainability = 5IRE
             </h2>
             <p>
-               5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit. 5irechain implements sustainability by design while it ensures democracy and governance, interoperability, high transactional throughput, strong security guarantees and forkless upgradeability.
+               5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy. 
             </p>
             <Button label="Explore More" btnClick={() => window.scroll(0, 700)} className={styles.button}/>
         </div>
@@ -90,8 +85,8 @@ function Body(props) {
           <div>
             <div className={styles.getStartedText}>
               <div>
-                <p>5ire build the sustainable future of human collaborations & reduce barriers of entry. </p>
-                <p> Be part of the 5th industrial revolution. </p>
+                <p>Accelerating the implementation of the United Nations 2030 Sustainability Development Goals Agenda.   </p>
+                <p> Aiming to bring the paradigm shift from For-profit to for-benefit economy.  </p>
               </div>
             <Button label="See Roadmap" btnClick={() => history.push('/roadmap')} className={styles.button}/>
             </div>
@@ -161,8 +156,7 @@ function Body(props) {
               <div className={styles.footerContent}>
                   <h1>Proof of 5ire </h1>
                   <p>The first sustainable by design hybrid consensus and reward distribution mechanism</p>
-                  <p>The Proof Of 5ire is the first multi-layered consensus mechanism & reward distribution scheme that prioritizes sustainability, the 5irechain is the first blockchain to implement it. Proof Of 5ire assures higher yields to network actors that are in harmony with the United Nation 17 Sustainable Development Goals and to actors that have a donation history either on-chain or in real-world. Proof Of 5ire is a superposition of three underlying mechanisms.</p>
-              </div>
+                  </div>
               <div>
                   <div className={styles.footerBody}>
                       { proofOfFireImages.map((img, index) => (
@@ -174,7 +168,7 @@ function Body(props) {
         </footer>
         <div className={styles.textStyle}>
             <img src={quote} alt="quote"/>
-             <p><span>5ire</span> is  building the world <span>5.0</span> & sustainability  is the heart. <span>Together</span> we build global collaboration and governance systems of the future.</p>
+             <p>   </p>
         </div>
       </section>
 

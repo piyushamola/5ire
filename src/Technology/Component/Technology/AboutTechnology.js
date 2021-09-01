@@ -13,9 +13,9 @@ const techBoxesHeading = ["Github", "Documentation", "Chat"];
 const techBoxesPara = ["Latest version & history", "Goto to 5ire Wiki", "Lets talk"];
 const aboutTechImages = [icon7, icon8, icon9];
 const aboutTechHeading = ["Sophisticated Runtime", "Transparent Governance", "GRANDPA & BABE - Reliable Consensus Mechanism"];
-const aboutTechParas = ["The 5irechain runtime is built with a modular approach and self-upgradability. Allowing the composition of smart contracts logic and runtime modules over several fields including IoT and multilayered Oracles, on-chain Governance, Defi primitives, Self-sovereign digital identity management, Zk primitives and e-governance. 5irechain is able to execute EVM and WASM smart contracts.",
-"By being based on WebAssembly, 5irechain is able to upgrade its runtime logic without hard forking. 5irechain governance & democracy mechanisms are designed to establish a transparent, accountable and binding process  for  upgrading the network assure the empowerment of working groups that work toward the implementation of the 2030 Agenda. Hence, most importantly staying loyal to the sustainability and the for-benefit goals of the network.",
-"5irechain is using hybrid consensus, combining BABE and GRANDPA for block production and provable finality, respectively allowing a fast block production and a higher level of security. GRANDPA algorithm reaches and finalizes consensus quickly, across networks big and small. Providing decentralization, transparency and security to the 5ire ecosystem older blockchains couldn’t achieve."];
+const aboutTechParas = ["5irechain highlights primitives and building blocks that can be combined to create different tools and schemes that will help in the shift from the fourth industrial revolution to the fifth. 5irechain invites everyone to be creative in the way they interact with the 5ire ecosystem.",
+"The 5irechain runtime is built with a modular approach and self-upgradability. Allowing the composition of smart contracts logic and runtime modules over several fields, including IoT & multilayered Oracles, On-chain governance, Defi primitives, Self-sovereign digital identity management, Zero-knowledge primitives, and e-governance. 5irechain is able to execute EVM and WASM smart contracts.",
+"By being based on WebAssembly, 5irechain is able to upgrade its runtime logic without hard forking. 5irechain governance & democracy mechanisms are designed to establish a transparent,accountable, and binding process for upgrading the network to assure the empowerment of working groups that work toward the implementation of the 2030 Agenda. Hence, most importantly, staying loyal to the sustainability and the for-benefit goals of the network. "];
 
 const links = ["https://github.com/orgs/5ire-org/", "https://5ire.gitbook.io/5ire-wiki/", "https://matrix.to/#/#5ire:matrix.org"]
 
@@ -24,7 +24,7 @@ function AboutTechnology(props) {
     return (
         <div>
             <div className={styles.techHeader}>
-                <h1>World’s first User-Centric, Transparent & Secure Sustainability driven ecosystem</h1>
+                <h1>World’s first User-Centric, Transparent & Secure Sustainability-driven Ecosystem</h1>
             </div>
             <div className={styles.techBoxStyles}>
             {
@@ -41,9 +41,7 @@ function AboutTechnology(props) {
                  <img src={logo} className={styles.Applogo} alt="logo" />
             </div>
             <div className={styles.Content}>
-                <p>5irechain’s main goal is to create a for-benefit ecosystem. This is achieved by embedding sustainability in the base layers of the network and also on the upper decision making that democratically guides the network.</p>
-                <p>5irechain is built with substrate and bring forth sophisticated runtime, virtual machines, off-chain workers and governance mechanisms that assure the empowerment of working groups and decentralized organizations that work toward the implementation of the 2030 Agenda</p>
-                <p>5irechain aims to become the 5th industrial revolution standard by applying heterogeneous sharding to its network and build an interoperable future where communities & blockchains self-govern and bring true impact</p>
+                <p>5irechain’s primary goal is to create a for-benefit ecosystem. This is achieved by embedding sustainability in the network’s base layers and the upper decision-making that democratically guides the network. 5irechain is built with substrate and brings forth a sophisticated runtime, virtual machines, off-chain workers & oracles, self-sovereign digital identity management and governance mechanisms that assure the empowerment of working groups, decentralized autonomous organizations, and collectives that work toward the implementation of the 2030 Agenda. 5irechain aims to become the 5th industrial revolution standard by applying heterogeneous sharding to its network and build an interoperable future where communities & blockchains self-govern and bring true impact.</p>
             </div>
         </div>
         <div className={styles.aboutBody1}>
@@ -66,26 +64,26 @@ function AboutTechnology(props) {
                 <div className={styles.aboutBodyContent}>
                     <div className={styles.aboutBodyContent2}>
                             <h1>Council Members</h1>
-                            <p>The Council is an on-chain entity that is an assembly of elected actors; it consists of a fixed number of actors. It also held responsibility for governance tasks.</p>
+                            <p>The Council is an on-chain entity that assembles elected actors; it consists of a fixed number of actors. It also holds responsibility for governance tasks.</p>
                     </div>
                     <div className={styles.aboutBodyContent2}>
                             <h1>Technical Committee</h1>
-                            <p>Members that have demonstrated good knowledge of the 5irechain workflow and runtime. Composed of teams that are actively building 5ireChain</p>
+                            <p>Members who have demonstrated good knowledge of the 5irechain workflow and runtime and composed of teams actively building 5ireChain.</p>
                     </div>
                     <div className={styles.aboutBodyContent2}>
                             <h1>Sustainability Reporters DAOs</h1>
-                            <p>Sustainability standards Reporters that have experience on each one of the 17 SDGs, and help on the validation of governance proposals</p>
+                            <p>Global sustainability standards Reports working groups with experience on each of the 17 SDGs and help with the validation of governance proposals.</p>
                     </div>
                     <div className={styles.aboutBodyContent2}>
                         <h1>DAOs & Working Groups</h1>
-                        <p>Organizations and working groups that work toward the implementation of the United Nations 2030 Agenda and teams that build 5ire.</p>
+                        <p>Organisations and working groups that work towards implementing the United Nations 2030 Agenda and teams that build 5ire.</p>
                     </div>
                 </div>
             </div>
 
             <div className={styles.finalDescription}>
                 <h1>Innovative Technology</h1>
-                <p>5irechain highlights primitives and building blocks that can be combined to further create tools and schemes that will help in the shift from the fourth industrial revolution to the fifth. 5irechain invites everyone to be creative in the way they interact with the 5ire ecosystem</p>
+                <p>5irechain highlights primitives and building blocks that can be combined to create different tools and schemes that will help in the shift from the fourth industrial revolution to the fifth. 5irechain invites everyone to be creative in the way they interact with the 5ire ecosystem.</p>
                 <div>
                     <div className={styles.aboutTeam}>
                     { aboutTechImages.map((img, index) => (
