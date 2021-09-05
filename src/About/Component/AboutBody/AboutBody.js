@@ -1,6 +1,19 @@
 import React from 'react';
 import styles from './AboutBody.scss';
 
+
+//our partners
+
+import partners from '../../../assets2/Partners.png'
+// advisors
+
+import joe from '../../../assets2/advisors/Joe.png';
+import mathew from '../../../assets2/advisors/Mathew.png';
+import RichardSwart from '../../../assets2/advisors/RichardSwart.png';
+import Rongaron from '../../../assets2/advisors/Rongaron.png';
+import sam from '../../../assets2/advisors/Sam.png';
+import yechuanHu from '../../../assets2/advisors/YechuanHu.png';
+
 // team
 import PG from '../../../assets2/teamPictures/PG.png';
 import PD from '../../../assets2/teamPictures/PD.png';
@@ -45,20 +58,20 @@ const aboutTeamSubPara = ["Co Founder","Co Founder", "Co Founder", "Head of Glob
 // Advisors 
 
 
-const advisorsImages = [PG, PD, VM];
-const advisorsHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Matilla"];
-const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
-const advisorsSubPara = ["Co Founder","Co Founder", "Co Founder"];
+const advisorsImages = [joe, mathew, RichardSwart, Rongaron, sam, yechuanHu];
+const advisorsHeadings = ["Mathew Neimera", "Mathew Neimera", "Mathew Neimera", "Mathew Neimera", "Mathew Neimera","Mathew Neimera"];
+const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}];
+const advisorsSubPara = ["President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing","President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing"];
 const responsiveForAdvisors = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 5,
+    items: 3,
     slidesToSlide: 1 // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 3,
-    slidesToSlide: 1 // optional, default to 1.
+    slidesToSlide: 2 // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -145,14 +158,14 @@ function AboutBody(props) {
             <div className={styles.ourAdvisors}>
              <h1>Our Advisors</h1>
             </div>
-            <div className={styles.aboutAdvisors}>
+            {/* <div className={styles.aboutAdvisors}>
                       { advisorsImages.map((img, index) => (
                         <ImageHeadingContent image={img} heading={advisorsHeadings[index]} subHead={advisorsSubPara[index]}
                         imgSize={advisorsImageSize[index]}
                         headingStyles={styles.headingStyles}
                         subHeadStyles={styles.subheadingStyles}/>
                       ))}
-            </div>
+            </div> */}
             <div className={styles.aboutAdvisorsMobile}>
                 <CarouselComp responsive={responsiveForAdvisors}>
                 { advisorsImages.map((img, index) => (
@@ -163,6 +176,12 @@ function AboutBody(props) {
                           ))}
                 </CarouselComp>
               </div>
+             <div className={styles.ourAdvisors}>
+                <h1>Our Partners</h1>
+            </div>
+            <div className={styles.parterns}>
+            <img src={partners}  alt="partners" />
+            </div>
             <Footer/>
 
         </div>

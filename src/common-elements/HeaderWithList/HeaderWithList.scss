@@ -1,19 +1,18 @@
+@import '../../common-styles/typography';
+
 .listStyles {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
     h1 {
-        font-size: 1.8rem;
-        color: #5C5AB8;
+        @include heading($font-size: 1.8rem, $color: #5C5AB8);
     }
 
     li {
-        font-size: 1.4rem;
-        color: #404F77;
-        line-height: 3rem;
         list-style: none;
         cursor: pointer;
+        @include content($font-size: 1.4rem, $color: #404F77, $line-height: 3rem);
     }
 
     li:hover { 
@@ -29,15 +28,12 @@
     .listStyles {
 
         h1 {
-            font-size: 1.5rem;
-            color: #5C5AB8;
+            @include heading($font-size: 1.5rem, $color: #5C5AB8);
         }
 
         li {
-            font-size: 1.2rem;
-            color: #404F77;
-            line-height: 3rem;
             list-style: none;
+            @include content($font-size: 1.2rem, $color: #404F77, $line-height: 3rem);
         }
     }
 

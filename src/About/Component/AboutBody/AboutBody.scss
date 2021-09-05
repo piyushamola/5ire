@@ -93,16 +93,25 @@
   }
   
   .aboutAdvisorsMobile {
-    display: none;
+
+    .subheadingStyles {
+      @include heading($color: #000400, $font-size: 1rem, $line-height: 1rem);
+      text-align: center;
+    }
   }
-  
-  
+
     .ourAdvisors {
       margin-top: 9rem;
       h1 {
         @include heading($font-size: 5.4rem, $line-height:6.4rem, $color: #000040);
         text-align: center;
       }
+    }
+
+    .parterns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
 @media only screen and (max-width: 640px) {
@@ -163,9 +172,9 @@
     }
 
 
-    .aboutAdvisors {
-        display: none;
-    }
+    // .aboutAdvisors {
+    //     display: none;
+    // }
   
     .aboutAdvisorsMobile {
       display: block;
@@ -176,7 +185,7 @@
       }
   
       .subheadingStyles {
-        @include heading($color: #000400, $font-size: 2rem, $line-height: 1rem);
+        @include heading($color: #000400, $font-size: 1rem, $line-height: 1rem);
         text-align: center;
       }
     }
@@ -186,5 +195,14 @@
       h1 {
         font-size: 24px;
       }
+    }
+
+
+    .parterns {
+      img {
+        width: 30rem;
+        height: 23rem;
+      }
+
     }
 }

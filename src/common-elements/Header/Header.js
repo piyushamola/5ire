@@ -22,7 +22,7 @@ function Header(props) {
   const history = useHistory();
     return (
       <div>
-          <div className={styles.topHeader}>
+        <div className={styles.topHeader}>
             <a onClick={() => window.open(WhitePaper, '_blank')}>Whitepaper</a>
             <a>Lightpaper</a>
             <a onClick={() => window.open('https://5ire.gitbook.io/5ire-wiki/')}>Wiki</a>
@@ -40,7 +40,6 @@ function Header(props) {
             <NavigationItem link="/technology" >Technology</NavigationItem>
             <NavigationItem link="/about">About</NavigationItem>
             <NavigationItem link="/roadmap">RoadMap</NavigationItem>
-            <NavigationItem link="/">Career</NavigationItem>
             <NavigationItem link="/contact">Contact</NavigationItem>
         </div>
         <div className={styles.burgerIcon} onClick={() => setSideBarState(!sideBarState)}>

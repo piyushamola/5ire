@@ -26,6 +26,15 @@ import PD from '../../../assets2/teamPictures/PD.png';
 import VM from '../../../assets2/teamPictures/VM.png';
 
 
+// advisors 
+
+import joe from '../../../assets2/advisors/Joe.png';
+import mathew from '../../../assets2/advisors/Mathew.png';
+import RichardSwart from '../../../assets2/advisors/RichardSwart.png';
+import Rongaron from '../../../assets2/advisors/Rongaron.png';
+import sam from '../../../assets2/advisors/Sam.png';
+import yechuanHu from '../../../assets2/advisors/YechuanHu.png';
+
 // logos
 
 
@@ -102,6 +111,31 @@ const responsiveForLogos = {
     breakpoint: { max: 1024, min: 464 },
     items: 3,
     slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
+
+
+// advisors 
+
+const advisorsImages = [joe, mathew, RichardSwart, Rongaron, sam, yechuanHu];
+const advisorsHeadings = ["Mathew Neimera", "Mathew Neimera", "Mathew Neimera", "Mathew Neimera", "Mathew Neimera","Mathew Neimera"];
+const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}];
+const advisorsSubPara = ["President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing","President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing"];
+const responsiveForAdvisors = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3,
+    slidesToSlide: 2 // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -202,7 +236,7 @@ function Body(props) {
               <div className={styles.footerContent}>
                   <h1>Proof of 5ire </h1>
                   <p>The first sustainable by design hybrid consensus and reward distribution mechanism</p>
-                  </div>
+              </div>
               <div className={styles.proofOfFireBoxes}>
                   <div className={styles.footerBody}>
                       { proofOfFireImages.map((img, index) => (
@@ -215,8 +249,8 @@ function Body(props) {
                         </div>
                       ))}
                   </div>
-                  <div>
-                  <Button label="Learn More"  btnClick={() => history.push('/technology')} className={styles.button} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}/>
+                  <div className={styles.buttonStyles}>
+                  <Button label="Learn More"  btnClick={() => history.push('/technology')} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}/>
                   </div>
               </div>
          </div>
@@ -274,19 +308,19 @@ function Body(props) {
         <div className={styles.foundersFeatured}>
            <h1>Our Advisors</h1>
         </div>
-        <div className={styles.aboutTeam}>
+        {/* <div className={styles.aboutTeam}>
                       { teamImages.map((img, index) => (
                         <ImageHeadingContent image={img} heading={aboutTeamHeadings[index]} subHead={aboutTeamSubPara[index]}
                         imgSize={aboutImageSize[index]}
                         headingStyles={styles.headingStyles}
                         subHeadStyles={styles.subheadingStyles}/>
                       ))}
-         </div>
-         <div className={styles.aboutTeamMobile}>
-             <CarouselComp responsive={responsiveForTeam}>
-             { teamImages.map((img, index) => (
-                        <ImageHeadingContent image={img} heading={aboutTeamHeadings[index]} subHead={aboutTeamSubPara[index]}
-                        imgSize={aboutImageSize[index]}
+         </div> */}
+         <div className={styles.aboutAdvisors}>
+             <CarouselComp responsive={responsiveForAdvisors}>
+             { advisorsImages.map((img, index) => (
+                        <ImageHeadingContent image={img} heading={advisorsHeadings[index]} subHead={advisorsSubPara[index]}
+                        imgSize={advisorsImageSize[index]}
                         headingStyles={styles.headingStyles}
                         subHeadStyles={styles.subheadingStyles}/>
                       ))}

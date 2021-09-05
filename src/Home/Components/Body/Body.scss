@@ -210,9 +210,10 @@
    @include flex($flex-direction: column);
     .footerBody {
      @include flex($justify-content: space-between);
-      width: 60%;
+      width: 70%;
       margin: 5rem auto;
       .proofAddition {
+        margin-right: 7rem;
         @include flex($justify-content: space-evenly, $align-items: center);
         .headingStyles {
           @include heading($color: white, $font-size: 2rem, $line-height: 3.6rem)
@@ -223,11 +224,10 @@
 }
 
 .featuresHeading {
-  width: 70%;
-  margin: 0 auto;
   h1 {
     @include heading($font-size: 3.2rem, $line-height: 3.6rem, $color: #000040);
     text-align: center;
+    margin-right: 3rem;
   }
 }
 
@@ -302,6 +302,16 @@
     margin: 0 auto;
   }
 }
+
+
+.aboutAdvisors {
+
+  .subheadingStyles {
+    @include heading($color: #000400, $font-size: 1rem, $line-height: 1rem);
+    text-align: center;
+  }
+}
+
 
 
 
@@ -488,12 +498,19 @@
   .proofOfFireBoxes {
      .footerBody {
        .proofAddition {
+         margin-right: 0rem;
          .headingStyles {
            text-align: center;
          }
        }
      }
    }
+}
+
+.featuresHeading {
+  h1 {
+    margin-right : 0rem;
+  }
 }
 
 }
@@ -534,5 +551,6 @@
       font-size: 24px;
     }
   }
+
 }
 }

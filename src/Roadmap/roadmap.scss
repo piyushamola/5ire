@@ -1,7 +1,21 @@
+.imgbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .roadmap{
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
 
 @media only screen and (max-width: 640px) {
-    .roadmap {
-        width: 100vw;
-        height: 100vh;
+
+    .imgbox {
+        .roadmap{
+            max-width: 100%;
+            margin: auto;
+        }
     }
 }
