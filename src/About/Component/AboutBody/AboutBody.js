@@ -26,20 +26,21 @@ import ImageHeadingContent from '../../../common-elements/ImageHeadingContent/Im
 import FlipCard from '../../../common-elements/flipCard/flipCard';
 import Footer from '../../../common-elements/Footer/Footer';
 
-const teamImages = [PG, PD, VM, SAI, Zak, Avid, Serge];
+const teamImages = [PG, PD, VM, Serge, SAI, Zak, Avid];
 const aboutTeamParas = ["Serial social entrepreneur, investor, public speaker and writer creating 5th Industrial Revolution and championing UN SDGs. India President - 5thelement.group ; Entrepreneur 35 Under 35, Asiaone 40 under 40 Most Influential Leaders, Greenbiz Global 30 Under 30, BP Scholar, WEF Global Shaper, Ambassador at One Young World, Al Gore’s Climate Leader. MBA – IIFT Delhi. Exec Ed – UChicago / UOxford",
     "Prateek is a Blockchain enthusiast , investor and veteran Internet Marketer. He conceptualised the proprietary 5IRE consensus mechanism and reward protocols. In his internet marketing days, he clocked 8-figure affiliate revenues and helped incubate many startups. He founded Kaching Media and multiple internet marketing companies. He is also a heavy proponent of work life balance and healthy living",
 "Ex-EU lawyer, Venture Capitalist & Futurist. Incubated 40+ Projects including Qtum, Tron & Aleph Zero ; Advisor at the EU Blockchain Observatory , World Future Society & UN USA ; Member of Singularity University",
+"Cofounder of Node Kapital, investing and scaling in DEFI, NFT, Gaming, Esports, Metaverse, & Infrastructure, Layer 1/2 solutions. He previously successfully led and scaled Talent Spot Group into a global business USD 120 Million in revenue Polyglot, fluent in Arabic Chinese English French Armenian Completed his grad degree at Stanford University",
 "Visionary Technology Leader with a record of accomplishment creating technology strategies and products that address across industry opportunities. He has 11+ years of Experience in strategy management MBA - Stephen M. Ross School of Business",
 "A security of information systems engineer with an experience  on communication protocols and E2E encryption.  Cryptography, Blockchain and Intellectual property protection & DRM Researcher",
 "Software  engineer  turned Social entreprenuer with an experience in   building for-benefit  businesses and enterprise management. He also has a knack  for Graphic & UI/UX Design. Exec Ed - Indian Institute of Management, Ranchi",
-"Cofounder of Node Kapital, investing and scaling in DEFI, NFT, Gaming, Esports, Metaverse, & Infrastructure, Layer 1/2 solutions. He previously successfully led and scaled Talent Spot Group into a global business USD 120 Million in revenue Polyglot, fluent in Arabic Chinese English French Armenian Completed his grad degree at Stanford University"];
+];
 
-const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Matilla", "Sai Kossireddy", "Zakaria Salek", "Rahul Rautela", "Serge Ajamian"];
+const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Matilla", "Serge Ajamian", "Sai Kossireddy", "Zakaria Salek", "Rahul Rautela",];
 
 const aboutImageSize = [{ width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}];
 
-const aboutTeamSubPara = ["Co Founder","Co Founder", "Co Founder", "Head of Strategy Management", "Head of Blockchain Research & Development", "Head of Operations & Design", "Head of Global Growth & Partnerships"];
+const aboutTeamSubPara = ["Co Founder","Co Founder", "Co Founder", "Head of Global Growth & Partnerships", "Head of Strategy Management", "Head of Blockchain Research & Development", "Head of Operations & Design"];
 
 // Advisors 
 
@@ -111,9 +112,20 @@ function AboutBody(props) {
            </header>
               <div className={styles.teamFlipFlop}>
                       { teamImages.map((img, index) => (
+                        index <= 3 && <div>
                         <FlipCard image={img} paraAfterFlip={aboutTeamParas[index]} heading={aboutTeamHeadings[index]} subPara={aboutTeamSubPara[index]}
                             imgSize={aboutImageSize[index]}
                         />
+                        </div>
+                      ))}
+              </div>
+              <div className={styles.teamFlipFlop}>
+                      { teamImages.map((img, index) => (
+                        index > 3 && <div>
+                        <FlipCard image={img} paraAfterFlip={aboutTeamParas[index]} heading={aboutTeamHeadings[index]} subPara={aboutTeamSubPara[index]}
+                            imgSize={aboutImageSize[index]}
+                        />
+                        </div>
                       ))}
               </div>
             <div className={styles.founders}>
