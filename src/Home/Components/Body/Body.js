@@ -2,8 +2,6 @@ import React from 'react';
 
 import fire from '../../../assets2/fire.png'
 
-import paradigm from '../../../assets2/paradigm.svg';
-
 // Assets2
 import sdg from '../../../assets2/sdg.png';
 import icon1 from '../../../assets2/icon1.svg';
@@ -12,12 +10,30 @@ import icon3 from '../../../assets2/icon3.svg';
 import icon4 from '../../../assets2/icon4.svg';
 import icon5 from '../../../assets2/icon5.svg';
 import icon6 from '../../../assets2/icon6.svg';
-import icon7 from '../../../assets2/icon7.svg';
-import icon8 from '../../../assets2/icon8.svg';
-import icon9 from '../../../assets2/icon9.svg';
-import banner2 from '../../../assets2//foundedby.png';
 import quote from '../../../assets2/quote.svg';
 
+
+// Proof of fire
+import NPOS from '../../../assets2/ProofOfFire/NPOS.png';
+import POB from '../../../assets2/ProofOfFire/proofofbenefit.png';
+import POD from '../../../assets2/ProofOfFire/proofofdonation.png'
+
+
+// Teams images 
+
+import PG from '../../../assets2/teamPictures/PG.png';
+import PD from '../../../assets2/teamPictures/PD.png';
+import VM from '../../../assets2/teamPictures/VM.png';
+
+
+// logos
+
+
+import ted from '../../../assets2/logos/ted.png'
+import forbes from '../../../assets2/logos/Forbes-logo.png'
+import entrepreneur from '../../../assets2/logos/Entrepreneur_logo.png'
+import globe from '../../../assets2/logos/globe.png'
+import nasdaq from '../../../assets2/logos/nasdaq.png'
 
 // components
 import ImageHeadingContent from '../../../common-elements/ImageHeadingContent/ImageHeadingContent'
@@ -34,25 +50,68 @@ import styles from './Body.scss'
 import { useHistory } from "react-router-dom";
 
 
-const backGroundImagebanner2 = {
-  backgroundImage: `url(${banner2})`,
-  backgroundSize: '100% 100%',
-  backgroundRepeat: "no-repeat",
-};
-
+// features
 const aboutImages = [icon1, icon2, icon3, icon4, icon5, icon6];
-
-const aboutPara = [""];
-
 const aboutHeading = ["Sustainability by Design ", "On-chain Governance and Democracy", "Future-proof and Forkless upgradeability",
 "Interoperability & cross-chain Transfers", "On-chain Governance and Democracy", "Future-proof and Forkless upgradeability"];
 
-const proofOfFireImages = [icon7, icon8, icon9];
 
+// proof of fire
+const proofOfFireImages = [NPOS, POB, POD];
+const proofOfFireDimensions = [{width: '10.7rem', height: '12.2rem'}, { width: '12.8rem', height: '12.2rem'}, { width: '11.8rem', height: '10.5rem'}];
 const proofOfFireHeading = ["Nominated Proof of Stake", "Proof of Benefit", "Proof of Donation"];
-const proofOfFireParas = ["",
-                          "",
-                        ""];
+
+// team
+const teamImages = [PG, PD, VM];
+const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Matilla"];
+const aboutImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
+const aboutTeamSubPara = ["Co Founder","Co Founder", "Co Founder"];
+const responsiveForTeam = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
+
+
+//logos
+
+const logos = [nasdaq, forbes, ted, entrepreneur, globe];
+const logosDimensions = [{ width: '16rem', height: '4rem', marginTop: '2.5rem'}, { width: '14.7rem', height: '8.3rem', marginBottom: '4rem'}, { width: '12.3rem', height: '4.5rem', marginTop: '2rem'}, { width: '23.8rem', height: '9rem', marginBottom: '4rem'}, { width: '11.2rem', height: '9.4rem', marginBottom:'4rem'}];
+const commonStylesLogos = {
+  marginLeft: '8rem',
+}
+const responsiveForLogos = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
+
+
+// Main Component
 
 function Body(props) {
 
@@ -70,7 +129,7 @@ function Body(props) {
                 Welcome To 5ire
             </h1>
             <h2>
-             Blockchain * Sustainability = 5IRE
+             Blockchain X Sustainability = 5IRE
             </h2>
             <p>
                5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy. 
@@ -92,12 +151,32 @@ function Body(props) {
             </div>
           </div>
         </div>
-        {/* style={aboutHeadStyle[index]} */}
-         <div className={styles.aboutBody}>
-              { aboutImages.map((img, index) => (
-                <AboutInfo image={img}  para={aboutPara[index]} heading={aboutHeading[index]}/>
-              ))}
-          </div>
+        <div className={styles.aboutFireContent}>
+            <div className={styles.whatIsFire}>
+                <h1>What is 5ire ?</h1>
+                <p>5IRE is a Collaborative Blockchain-Driven Platform with an innovative SDG driven consensus mechanism , with a mission to bring a paradigm shift from “For Profit” to “For Benefit” across the globe, as every single transaction on the 5IRE Ecosystem Contributes to Social Impact.</p>
+            </div>
+            <div className={styles.learnMoreAbout}>
+                  <div className={styles.learnMoreAboutText}>
+                    <p>Learn more about</p>
+                    <h1>5irechain Technology </h1>
+                  </div>
+                  <Button label="Discover 5ire" btnClick={() => history.push('/technology')} className={styles.button}/>
+            </div>
+        </div>
+        <div className={styles.whyFireContent}>
+            <div className={styles.whyIsFire}>
+                <h1>Why 5IR ?</h1>
+                <p>In contrast to trends in the Fourth Revolution toward dehumanization, technology and innovation best practices need to be bent back toward the service of humanity.5ire is a milestone in smooth transitioning of the world from 4IR to 5IR. Also its breakthrough to help the world in achieving the UN SDGs in the fast and efficient way.</p>
+            </div>
+            <div className={styles.learnMoreAbout}>
+                  <div className={styles.learnMoreAboutText}>
+                    <p>Learn more about</p>
+                    <h1>5th Industrial Revolution</h1>
+                  </div>
+                  <Button label="Learn More About 5IR"  btnClick={() => window.open('https://www.youtube.com/watch?v=RDiHaHPOVH0')} className={styles.button}/>
+            </div>
+        </div>
        </div>
       </section>
       <section className={styles.AboutFire}>
@@ -113,83 +192,109 @@ function Body(props) {
             </div>
           </header>
       </section>
-
+      <div className={styles.quoteStyle}>
+            <img src={quote} alt="quote"/>
+             <p><span>Society & environment. </span>is where we all meet, where all have a mutual interest, the one thing all of us share. </p>
+        </div>
       <section className={styles.WhyFire}>
-        <header className={styles.whyFireHeader}>
-          <div className={styles.learnWhatContent}>
-            <div className={styles.whatFireContent}>
-              <h1>What is 5ire ?</h1>
-              <p>5IRE is an ecosystem that brings forth DLT technology and innovation for the service of humanity with a mission to bring a paradigm shift from “For Profit” to “For Benefit” across the globe. Providing systems and technologies that will eliminate the inefficiencies of digital exchange and communication.</p>
-            </div>
-            <div className={styles.LearnAbout}>
-               <div>
-                <p>Learn more about <br/> <b>5irechain Technology</b></p>
-              </div>
-              <Button label="Discover 5ire" btnClick={() => history.push('/technology')} className={styles.button}/>
-           </div>
-        </div>
-        <div className={styles.learnWhyContent}>
-           <div className={styles.whyFireContent}>
-               <div>
-                <p>In contrast to trends in the Fourth Revolution toward dehumanization, technology and innovation best practices need to be bent back toward the service of humanity.
-                 5ire is a milestone in smooth transitioning of the world from 4IR to 5IR. </p>
-
-                 <p>Also its breakthrough to help the world in achieving the UN SDGs in the fast and efficient way.</p>
-              </div>
-              <Button label="Learn More About 5IR"  btnClick={() => window.open('https://www.youtube.com/watch?v=RDiHaHPOVH0')} className={styles.button}/>
-           </div>
-            <div className={styles.whyFireHeading}>
-              <h1>Why 5IR ?</h1>
-            </div>
-        </div>
-        </header>
-        <div className={styles.founder}>
-          <div style={backGroundImagebanner2}>
-            <div className={styles.founderContent}>
-              <h1>Founded by some of the pioneers in Impact & Blockchain Industry</h1>
-              <Button label="Learn about 5ire Team" btnClick={() => history.push('/about')} className={styles.button}/>
-            </div>
-          </div>
-        </div>
         <footer>
           <div className={styles.footerStyles}>
               <div className={styles.footerContent}>
                   <h1>Proof of 5ire </h1>
                   <p>The first sustainable by design hybrid consensus and reward distribution mechanism</p>
                   </div>
-              <div>
+              <div className={styles.proofOfFireBoxes}>
                   <div className={styles.footerBody}>
                       { proofOfFireImages.map((img, index) => (
-                        <ImageHeadingContent image={img} para={proofOfFireParas[index]} heading={proofOfFireHeading[index]}/>
+                        <div className={styles.proofAddition}>
+                          <div>
+                            <ImageHeadingContent image={img}  heading={proofOfFireHeading[index]} 
+                                  imgSize={proofOfFireDimensions[index]}
+                                  headingStyles={styles.headingStyles}/>
+                            </div>
+                        </div>
                       ))}
+                  </div>
+                  <div>
+                  <Button label="Learn More"  btnClick={() => history.push('/technology')} className={styles.button} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}/>
                   </div>
               </div>
          </div>
+         <div className={styles.featuresHeading}><h1>Features</h1></div>
+         <div className={styles.features}>
+              { aboutImages.map((img, index) => (
+                <AboutInfo image={img} heading={aboutHeading[index]}/>
+              ))}
+          </div>
         </footer>
-        <div className={styles.textStyle}>
-            <img src={quote} alt="quote"/>
-             <p>   </p>
-        </div>
       </section>
 
 
-      <section className={styles.Explore}>
-        <header className={styles.aboutExplore}>
-            <div>
-              <img src={paradigm} className={styles.paradigmImage} alt="paradigm"/>
-            </div>
-            <div className={styles.exploreContent}>
-              <h1>Redefining New Standards for Sustainability</h1>
-              <p>The 5irechain runtime provides tooling for IoT, on-chain governance, Defi primitives, Self-sovereign digital identity management, Zero knowledge primitives and e-governance. 5irechain has the capability to execute EVM smart contracts with full compatibility with ethereum and WebAssembly WASM smart contracts</p>
-              <Button label="Build on 5ire" btnClick={() => window.open('https://5ire.gitbook.io/5ire-wiki/developer-guide/untitled/')} className={styles.button}/>
+      <section className={styles.foundersSection}>
+        <header className={styles.founder}>
+            <div className={styles.founderContent}>
+              <h1>Founded by some of the pioneers in Impact & Blockchain Industry</h1>
             </div>
         </header>
-        <div className={styles.whyBody}>
-           <h1>FOUNDERS FEATURED IN</h1>
+        <div className={styles.aboutTeam}>
+                      { teamImages.map((img, index) => (
+                        <ImageHeadingContent image={img} heading={aboutTeamHeadings[index]} subHead={aboutTeamSubPara[index]}
+                        imgSize={aboutImageSize[index]}
+                        headingStyles={styles.headingStyles}
+                        subHeadStyles={styles.subheadingStyles}/>
+                      ))}
+         </div>
+         <div className={styles.aboutTeamMobile}>
+             <CarouselComp responsive={responsiveForTeam}>
+             { teamImages.map((img, index) => (
+                        <ImageHeadingContent image={img} heading={aboutTeamHeadings[index]} subHead={aboutTeamSubPara[index]}
+                        imgSize={aboutImageSize[index]}
+                        headingStyles={styles.headingStyles}
+                        subHeadStyles={styles.subheadingStyles}/>
+                      ))}
+             </CarouselComp>
+          </div>
+         <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <Button label="Meet Fire Team" btnClick={() => history.push('/about')}/>
+         </div>
+        <div className={styles.foundersFeatured}>
+           <h1>Founders Featured In</h1>
         </div>
-        <footer>
-            <CarouselComp/>
-        </footer>
+        <div className={styles.logosCarousel}>
+            <CarouselComp responsive={responsiveForLogos}>
+              {
+                logos.map((logo, index) => (
+                  <>
+                    <img src={logo} style={{...logosDimensions[index], ...commonStylesLogos}} alt={logo} />
+                    </>
+                  ))
+              }
+            </CarouselComp>
+        </div>
+        <div className={styles.foundersFeatured}>
+           <h1>Our Advisors</h1>
+        </div>
+        <div className={styles.aboutTeam}>
+                      { teamImages.map((img, index) => (
+                        <ImageHeadingContent image={img} heading={aboutTeamHeadings[index]} subHead={aboutTeamSubPara[index]}
+                        imgSize={aboutImageSize[index]}
+                        headingStyles={styles.headingStyles}
+                        subHeadStyles={styles.subheadingStyles}/>
+                      ))}
+         </div>
+         <div className={styles.aboutTeamMobile}>
+             <CarouselComp responsive={responsiveForTeam}>
+             { teamImages.map((img, index) => (
+                        <ImageHeadingContent image={img} heading={aboutTeamHeadings[index]} subHead={aboutTeamSubPara[index]}
+                        imgSize={aboutImageSize[index]}
+                        headingStyles={styles.headingStyles}
+                        subHeadStyles={styles.subheadingStyles}/>
+                      ))}
+             </CarouselComp>
+          </div>
+         <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '5rem'}}>
+            <Button label="Learn more about our Advisors" style={{ width: '30rem'}} btnClick={() => history.push('/about')}/>
+         </div>
         <Footer/>
       </section>
    </div>

@@ -22,23 +22,11 @@
     }
 
     h1{
-     font-family: "Futura";
-     font-style: normal;
-     font-weight: bold;
-     font-size: 5.4rem;
-     line-height: 6.4rem;
-     letter-spacing: -0.05em;
-     color: #000040;
+     @include heading($font-size: 6.4rem, $line-height: 6.4rem);
     }
  
     h2 {
-     font-family: "Roboto";
-     font-style: normal;
-     font-weight: normal;
-     font-size: 24px;
-     line-height: 32px;
-     letter-spacing: -0.02em;
-     color: #000040;
+     @include heading();
  
      span {
        color: #0071FF;
@@ -46,16 +34,8 @@
     }
  
     p {
-     font-family: "Roboto";
-     font-style: normal;
-     font-weight: normal;
-     font-size: 15px;
-     line-height: 24px;
-     /* or 160% */
      text-align: center;
-     letter-spacing: -0.02em;
-     color: #1E1E25;
-     width: 45%;
+     @include content($color: #1E1E25, $font-size: 1.5rem, $line-height: 2.4rem)
     }
  
     .button {
@@ -69,28 +49,12 @@
 .GetStartedContainer {
   .getStartedInfo {
     background:#000040;
-
     .getStartedText {
       @include flex($justify-content: center);
-      margin: 0 auto;
-      padding: 5rem;
-
-      p:first-child {
-        font-family: Futura;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 2.5rem;
-        letter-spacing: -0.02em;
-        color: #FFFFFF;
-        width: 70%;
-      }
+      padding: 4rem;
       p {
-        font-family: Futura;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 2.5rem;
-        letter-spacing: -0.02em;
-        color: #FFFFFF;
+        @include content($font-size: 1.9rem, $line-height: 3.4rem);
+        width: 80%;
       }
       .button {
         background: #D0DDEC;
@@ -100,20 +64,75 @@
 
   }
 
-  .aboutBody {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0rem auto;
-    width: 70%;
-  }
+  .aboutFireContent {
+    padding: 5rem;
+    background: #EAF0F8;
+    @include flex($justify-content: center);
+      .whatIsFire {
+        width: 50%;
+        h1 {
+          @include heading($font-size: 6.4rem, $line-height: 6rem)
+        }
+
+        p {
+          @include content($font-size: 1.5rem, $line-height: 2.4rem, $color: #000040);
+          width: 80%;
+        }
+      }
+
+      .learnMoreAbout {
+          @include flex($justify-content: space-between, $flex-direction: column, $align-items: normal);
+        .learnMoreAboutText {
+          p {
+            @include content($font-size: 3.2rem, $line-height: 1rem, $color: #000040);
+          }
+  
+          h1 {
+            @include heading($font-size: 3.2rem, $line-height: 1rem);
+          }
+        }
+        button {
+          margin-top: 3.2rem;
+        }
+      }
+   }
+
+   .whyFireContent {
+    padding: 5rem;
+    background: #000040;
+    @include flex($justify-content: center);
+      .whyIsFire {
+        width: 50%;
+        h1 {
+          @include heading($font-size: 6.4rem, $line-height: 6rem, $color: white)
+        }
+
+        p {
+          @include content($font-size: 1.5rem, $line-height: 2.4rem, $color: white);
+          width: 80%;
+        }
+      }
+
+      .learnMoreAbout {
+          @include flex($justify-content: space-between, $flex-direction: column, $align-items: normal);
+        .learnMoreAboutText {
+          p {
+            @include content($font-size: 3.2rem, $line-height: 1rem, $color:white);
+          }
+  
+          h1 {
+            @include heading($font-size: 3.2rem, $line-height: 1rem, $color: white);
+          }
+        }
+        button {
+          margin-top: 3.2rem;
+        }
+      }
+   }
 
 }
 
 .AboutFire {
-  margin-top: 5rem;
   .parentHeader {
     background: #EAF0F8;
     .aboutHeader {
@@ -123,24 +142,16 @@
 
       .aboutContent {
           h1 {
-            font-family: Futura;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 3.2rem;
-            color: #000040;
+            @include heading($font-size: 4.4rem);
           }
           p {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-size: 3rem;
-            line-height: 5rem;
-            color: #000040;
-            width: 40rem
+            @include content($font-size: 3.2rem, $line-height: 4.4rem, $color: #000040);
+            width: 50rem
           }
       }
 
       .aboutImageContainer {
-        width: 50rem;
+        width: 55rem;
         height: 100%;
         .aboutImage {
           height: 100%;
@@ -153,149 +164,28 @@
 
 }
 
-
-.WhyFire {
-  .whyFireHeader {
-   .learnWhatContent {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .whatFireContent {
-        background: #000040;
-        padding: 10rem 8rem;
-        flex: 1;
-        h1 {
-          font-family: "Futura";
-          font-style: normal;
-          font-weight: bold;
-          font-size: 64px;
-          line-height: 64px;
-          letter-spacing: -0.02rem;
-          color: #FFFFFF;
-        }
-
-        p {
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: normal;
-          font-size: 15px;
-          line-height: 24px;
-          letter-spacing: -0.02em;
-          color: #BAD3E6;
-
-        }
-      }
-
-      .LearnAbout {
-        background: #EAF0F8;
-        padding: 10.5rem 8rem;
-        flex: 1;
-        p {
-          font-family: Futura;
-          font-style: normal;
-          font-size: 32px;
-          line-height: 40px;
-          letter-spacing: -0.02em;
-          color: #000040;
-        }
-
-        .button {
-          margin-top: 4.8rem;
-         }
-
-      }
-
-      .whyFireContent {
-        p {
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: normal;
-          font-size: 15px;
-          line-height: 24px;
-          /* or 160% */
-
-          letter-spacing: -0.02em;
-
-          color: #000040;
-        }
-      }
-   }
-
-   .learnWhyContent {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .whyFireContent {
-          flex: 1;
-          background: #EAF0F8;
-          padding: 10rem 8rem;
-        p {
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: normal;
-          font-size: 15px;
-          line-height: 24px;
-          letter-spacing: -0.02em;
-          color: #000040;
-         }
-
-         .button {
-          margin-top: 4.8rem;
-         }
-      }
-
-      .whyFireHeading {
-        background: #000040;
-        padding: 14rem 8rem;
-        flex: 1;
-
-        h1 {
-          font-family: Futura;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 64px;
-          line-height: 64px;
-          letter-spacing: -0.02em;
-          color: #FFFFFF;
-        }
-      }
-   }
-  }
-
-  .founder {
-
-  .founderContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10rem 0;
-
-    h1 {
-      font-family: "Futura";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 6.4rem;
-      line-height: 8.4rem;
-      /* or 131% */
-      text-align: center;
-      letter-spacing: -0.02em;
-      color: #FFFFFF;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 70%
-  }
-
-    .button {
-      margin-top: 4.8rem;
+.quoteStyle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+  margin: 0 auto;
+  width: 70%;
+  p {
+    span {
+     color: #0071FF;
     }
+   @include content($font-size: 2.2rem, $color: black, $line-height: 4rem, $letter-spacing: 0.02rem );
+  }
+  img {
+    width: 6rem;
+    height: 6rem;
+    align-self: flex-start;
   }
 }
+
+.WhyFire {
 .footerStyles {
   padding: 5rem;
   background: #000040;
@@ -306,151 +196,110 @@
     align-items: center;
 
     h1 {
-      font-family: Futura;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 32px;
-      letter-spacing: -0.02em;
-      color: #FFFFFF;
+      @include heading($font-size: 3.2rem, $line-height: 3.2rem, $color: white);
       text-align: center;
-    }
-    p:first-child {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 24px;
-      text-align: center;
-      letter-spacing: -0.02em;
-      color: #FFFFFF;
-      width: 70%;
     }
 
     p {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 24px;
+      @include content($font-size: 1.8rem, $line-height: 2.4rem);
       text-align: center;
-      letter-spacing: -0.02em;
-      color: #BAD3E6;
-      width: 70%;
     }
   }
 
-  .footerBody {
+  .proofOfFireBoxes {
+   @include flex($flex-direction: column);
+    .footerBody {
+     @include flex($justify-content: space-between);
+      width: 60%;
+      margin: 5rem auto;
+      .proofAddition {
+        @include flex($justify-content: space-evenly, $align-items: center);
+        .headingStyles {
+          @include heading($color: white, $font-size: 2rem, $line-height: 3.6rem)
+        }
+      }
+    }
+  }
+}
+
+.featuresHeading {
+  width: 70%;
+  margin: 0 auto;
+  h1 {
+    @include heading($font-size: 3.2rem, $line-height: 3.6rem, $color: #000040);
+    text-align: center;
+  }
+}
+
+  .features {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    margin: 0rem auto;
+    width: 65%;
+    padding: 5rem 0;
   }
-}
-
- .textStyle {
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   flex-direction: column;
-   padding: 5rem;
-   margin: 0 auto;
-   width: 65%;
-   p {
-     span {
-      color: #0071FF;
-     }
-    @include content($font-size: 3.2rem, $color: black, $line-height: 4rem);
-   }
-   img {
-     width: 6rem;
-     height: 6rem;
-     align-self: flex-start;
-   }
- }
-
 
 }
 
 
 
 
-
-.Explore {
-  margin-top: 5rem;
-  .aboutExplore {
+.foundersSection {
+  .founder {
     background: #000040;
+  .founderContent {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding: 5rem 0rem;
-    margin: 0 auto;
+    padding: 10rem 0;
 
-    .paradigmImage {
-      height: 45rem;
-      width: 45rem;
-    }
-    .exploreContent {
-      h1 {
-      font-family: Futura;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 4rem;
-      line-height: 6.5rem;
-      letter-spacing: -0.02rem;
-      color: #FFFFFF;
-      width: 50rem;
-      }
-
-      p {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 24px;
-        /* or 160% */
-        letter-spacing: -0.02em;
-        width: 50rem;
-        color: #BAD3E6;
-
-      }
-
-      .button {
-        margin-top: 4.8rem;
-      }
-    }
+    h1 {
+      @include heading($font-size: 6.4rem, $line-height: 6.4rem, $color: white);
+      text-align: center;
+      width: 70%
   }
 
-  .whyBody {
+    .button {
+      margin-top: 4.8rem;
+    }
+  }
+}
+
+.aboutTeam {
+  @include flex($justify-content: space-evenly);
+  margin: 5rem auto;
+  width: 70%;
+    .headingStyles {
+      @include heading($color: #000040, $font-size: 2rem, $line-height: 0.5rem);
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .subheadingStyles {
+      @include heading($color: #000400, $font-size: 2rem, $line-height: 0.5rem);
+      text-align: center;
+    }
+}
+
+.aboutTeamMobile {
+  display: none;
+}
+
+
+  .foundersFeatured {
     margin-top: 9rem;
     h1 {
-      font-family: Futura;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 54px;
-      line-height: 64px;
-      letter-spacing: -0.05em;
-      color: #000040;
+      @include heading($font-size: 5.4rem, $line-height:6.4rem, $color: #000040);
       text-align: center;
     }
   }
 
-  .expHeading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-    h1 {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 32px;
-      letter-spacing: -0.02em;
-      color: #000040;
-    }
+  .logosCarousel {
+    width: 85%;
+    margin: 0 auto;
   }
 }
 
@@ -473,37 +322,17 @@
      }
 
      h1{
-      font-family: Futura;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 18px;
-      /* identical to box height, or 100% */
-      letter-spacing: -0.05em;
-      color: #000040;
+      @include heading($font-size: 1.8rem);
      }
 
      h2 {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 32px;
-      /* identical to box height, or 229% */
-      letter-spacing: -0.02em;
-      color: #000040;
+      @include heading($font-size: 1.4rem, $line-height: 3.2rem);
      }
 
      p {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 24px;
-      /* or 200% */
-      letter-spacing: -0.02em;
-      color: #1E1E25;
       width: 90%;
+      text-align: center;
+      @include content($color: #1E1E25, $font-size: 1.2rem, $line-height: 2.4rem)
      }
 
      .button {
@@ -518,56 +347,95 @@
     background:#000040;
 
     .getStartedText {
-      padding: 5rem 2rem;
-
-      p:first-child {
-        font-size: 3rem;
-        letter-spacing: -0.02rem;
-        width: 100%;
-        text-align: center;
-      }
+      padding: 5rem 2.5rem;
       p {
-        font-size: 2rem;
-        letter-spacing: -0.02rem;
-        text-align: center;
-      }
-
-      .button {
-        margin: 0 auto;
+        @include content($font-size: 1.8rem, $line-height: 3.4rem);
+        width: 100%;
       }
   }
 
   }
+
+  .aboutFireContent {
+    padding: 2.5rem;
+      .whatIsFire {
+        width: 100%;
+        h1 {
+          @include heading($font-size: 3.2rem)
+        }
+
+        p {
+          @include content($font-size: 1.5rem, $line-height: 2.4rem, $color: #000040);
+          width: 100%;
+        }
+      }
+
+      .learnMoreAbout {
+          @include flex($justify-content: space-between, $flex-direction: row, $align-items: center);
+        .learnMoreAboutText {
+          p {
+            @include content($font-size: 1.8rem, $line-height: 1rem, $color: #000040);
+          }
+
+          h1 {
+            @include heading($font-size: 2.4rem, $line-height: 1rem);
+          }
+        }
+        button {
+          margin-top: 3.2rem;
+        }
+      }
+   }
+
+   .whyFireContent {
+    padding: 2.5rem;
+      .whyIsFire {
+        width: 100%;
+        h1 {
+          @include heading($font-size: 3.2rem, $color: white)
+        }
+
+        p {
+          @include content($font-size: 1.5rem, $line-height: 2.4rem, $color: white);
+          width: 100%;
+        }
+      }
+
+      .learnMoreAbout {
+          @include flex($justify-content: space-between, $flex-direction: row, $align-items: center);
+        .learnMoreAboutText {
+          p {
+            @include content($font-size: 1.8rem, $line-height: 1rem, $color: white);
+          }
+
+          h1 {
+            @include heading($font-size: 2.4rem, $line-height: 1rem);
+          }
+        }
+        button {
+          margin-top: 3.2rem;
+        }
+      }
+   }
+
 
 }
 
 .AboutFire {
   .parentHeader {
     .aboutHeader {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
       padding: 2rem;
       margin: 0 auto;
 
       .aboutContent {
-          h1 {
-            font-family: Futura;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 2.4rem;
-            color: #000040;
-            text-align: center;
-          }
+        h1 {
+          @include heading($font-size: 2.4rem);
+          text-align: center;
+        }
           p {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-size: 1.8rem;
-            line-height: 2.6rem;
-            color: #000040;
-            width: 100%;
+            @include content($font-size: 2.4rem, $line-height: 3.2rem, $color: #000040);
             text-align: center;
+            width: 100%;
           }
       }
     }
@@ -575,76 +443,41 @@
 
 }
 
-.WhyFire {
-  .whyFireHeader {
-   .learnWhatContent {
-
-      .whatFireContent {
-        padding: 2rem;
-        h1 {
-          font-size: 44px;
-          text-align: center;
-        }
-
-        p {
-          text-align: center;
-
-        }
-      }
-
-      .LearnAbout {
-        padding: 2rem;
-        p {
-          font-size: 32px;
-          text-align: center;
-        }
-
-        .button {
-          margin: 2rem 6rem;
-         }
-      }
-   }
-
-   .learnWhyContent {
-      flex-direction: column-reverse;
-
-      .whyFireContent {
-          padding: 2rem;
-
-         .button {
-          margin: 2rem 6rem;
-         }
-      }
-
-      .whyFireHeading {
-        padding: 2rem;
-        width: 89%;
-        h1 {
-          font-size: 44px;
-          text-align: center;
-        }
-      }
-   }
+.quoteStyle {
+  padding: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  p {
+    span {
+     color: #0071FF;
+    }
+    @include content($font-size: 1.8rem, $color: black, $line-height: 3.2rem);
   }
-
-  .founder {
-  .founderContent {
-    padding: 2rem;
-    h1 {
-      font-size: 2.4rem;
-      line-height: 3.2rem;
-      width: 100%;
-  }
+  img {
+    width: 5rem;
+    height: 6rem;
   }
 }
+
+.footerBody {
+  .proofAddition {
+
+    .headingStyles {
+      @include heading($color: white, $font-size: 2rem, $line-height: 3.6rem)
+    }
+    .plusSymbol {
+      display: none;
+    }
+  }
+}
+
+.WhyFire {
 .footerStyles {
   padding: 2rem;
   .footerContent {
     padding: 1rem;
     h1 {
-      width: 100%;
-    }
-    p:first-child {
       width: 100%;
     }
 
@@ -653,60 +486,41 @@
     }
   }
 }
- .textStyle {
-   padding: 2rem;
-   margin: 0 auto;
-   width: 100%;
-   box-sizing: border-box;
-   p {
-     span {
-      color: #0071FF;
-     }
-    font-family: "Roboto";
-    font-size: 24px;
-   }
-   img {
-     width: 5rem;
-     height: 6rem;
-   }
- }
-
 
 }
 
-.Explore {
-  margin-top: 3rem;
-  .aboutExplore {
-    padding: 2rem;
-    flex-direction: column-reverse;
-
-    .paradigmImage {
-      height: 25rem;
-      width: 25rem;
-    }
-    .exploreContent {
+.foundersSection {
+  .founder {
+    .founderContent {
+      padding: 2rem;
       h1 {
-      font-size: 44px;
-      line-height: 56px;
-      width: 32rem;
-      text-align: center;
-      }
-
-      p {
-        font-size: 15px;
-        line-height: 24px;
-        width: 32rem;
-        margin: 2rem auto;
-        text-align: center;
-      }
-
-      .button {
-        margin: 2rem 6rem;
-      }
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        width: 100%;
+    }
     }
   }
-  .whyBody {
-    margin-top: 4rem;
+
+  .aboutTeam {
+      display: none;
+  }
+
+  .aboutTeamMobile {
+    display: block;
+    .headingStyles {
+      @include heading($color: #000040, $font-size: 2rem, $line-height: 0rem);
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .subheadingStyles {
+      @include heading($color: #000400, $font-size: 2rem, $line-height: 1rem);
+      text-align: center;
+    }
+  }
+
+  .foundersFeatured {
+    margin-top: 2rem;
     h1 {
       font-size: 24px;
     }

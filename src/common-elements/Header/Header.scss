@@ -4,7 +4,8 @@
 .appLogo {
     height: 6.4rem;
     width: 6.4rem;
-    pointer-events: none;
+    cursor: pointer;
+
 }
 
 .Header {
@@ -37,20 +38,24 @@
     box-shadow: inset 1px -3px 0px rgba(0, 0, 0, 0.1);
 
     a {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 16px;
-        /* identical to box height, or 107% */
-        letter-spacing: -0.02em;
-        color: #404F77;
+        @include content($color: #6F6969, $font-size: 1.8rem, $font-weight: 700);
         margin: 0 3rem;
         cursor: pointer;
     }
 
     a:hover {
         color: #40A4C8;
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+
+    .Logo {
+        margin: 0 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
 
@@ -119,6 +124,17 @@
 
     .topHeader{
         @include flex($justify-content: center, $align-items: center);
-        padding: 2rem 1rem;
+        padding: 2rem 0rem;
+
+        a {
+            font-size: 1.2rem;
+            margin: 0 1rem;
+        }
+
+        .Logo {
+            width: 2rem;
+            height: 2rem;
+            margin: 0 1rem;
+        }
     }
 }

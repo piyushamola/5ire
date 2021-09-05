@@ -1,263 +1,254 @@
 @import '../../../common-styles/typography';
 
-.techHeader {
-    text-align: center;
+.aboutPageHeader {
+    width: 70%;
     margin: 10rem auto;
-    width: 80%;
+
     h1 {
-        @include heading($font-size: 4.2rem, $color: #000040);
-    }
-}
-
-.techBoxStyles {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-
-    .techBox {
-        cursor: pointer;
-        width: 30rem;
-        background: #000040;
-        border-radius: 1rem;
+        @include heading($font-size: 3.6rem, $line-height: 3.8rem);
         text-align: center;
-        align-items: center;
-        margin: 4rem auto;
-        h1 {
-            @include heading($font-size: 3rem, $color: white)
-        }
-
-        p {
-            @include content($font-size: 2rem, $color: white);
-        }
     }
 }
 
-.imageContent {
-    display: flex;
+
+.proofOfFire {
+    padding: 5rem;
+    background: #000040;
+    .proofOfFireContent {
+
+      h1 {
+        @include heading($font-size: 3.2rem, $line-height: 3.2rem, $color: white);
+        text-align: center;
+      }
+
+      p {
+        @include content($font-size: 1.8rem, $line-height: 2.4rem);
+        text-align: center;
+      }
+    }
+
+    .proofOfFireBoxes {
+      .footerBody {
+       @include flex($justify-content: space-evenly);
+        width: 80%;
+        margin: 5rem auto;
+          .headingStyles {
+            @include heading($color: white, $font-size: 2.4rem, $line-height: 1.6rem)
+          }
+          .paragraphStyles {
+              @include content($font-size: 1.8rem, $line-height: 2.4rem);
+              width: 35rem;
+          }
+      }
+    }
+  }
+
+  .imageContent {
     margin: 10rem auto;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 95%;
+    width: 85%;
+    @include flex($justify-content: space-evenly);
     .Applogo {
-        width: 45rem;
-        height: 35rem;
+        width: 64rem;
+        height: 64rem;
     }
     .Content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 0 3rem;
-        width: 50%;
+        width: 40%;
         p {
-            @include content($color: #000040, $font-size: 2rem);
+            @include content($color: #000040, $font-size: 2.4rem,$line-height: 3.2rem, $font-weight: 700);
          }
     }
 }
 
-
-.aboutBody1 {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    flex-wrap: wrap;
-    width: 70%;
+.consensusHeading {
+    @include flex($justify-content: flex-start);
+    width: 65%;
     margin: 0 auto;
-    box-sizing: border-box;
-    .aboutBodyHead1 {
-        width: 10rem;
-        margin: 0 6rem;
-        h1 {
-            @include heading($font-size: 3.2rem);
-        }
-    }
-    .aboutBodyContent1 {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        width: 25rem;
-        margin: 0 4rem;
-        h1 {
-            @include heading($font-size: 2.4rem, $color: #000040)
-        }
-        p {
-            @include content($font-size: 1.5rem, $color: #000040);
-        }
+    h1 {
+        @include heading($font-size:3.2rem);
     }
 }
 
-.aboutBody2 {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    width: 70%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    flex-direction: column;
-    .aboutBodyHead2 {
-        text-align: center;
-        h1 {
-            @include heading($font-size: 3.2rem);
+.consensusActors {
+    .consensusActorsBody {
+     @include flex($justify-content: space-evenly);
+      width: 85%;
+      margin: 5rem auto;
+        .headingStyles {
+          @include heading($font-size: 2.4rem, $line-height: 6.4rem)
         }
-    }
-    .aboutBodyContent {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        .aboutBodyContent2 {
+        .paragraphStyles {
+            @include content($font-size: 1.8rem, $line-height: 3.6rem, $color: black);
+            width: 46rem;
+        }
+
+        .containerStyles {
             display: flex;
-            justify-content: space-around;
             flex-direction: column;
-            width: 25rem;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 2rem;
+        }
+    }
+  }
+
+  .buildFire {
+      background-color: #000040;
+      padding: 5rem;
+     .buildFireContainer {
+          .buildFireHeading {
+            width: 80%;
+            margin: 0 auto;
+              text-align: center;
             h1 {
-                @include heading($font-size: 2.4rem, $color: #000040, $line-height: 3rem)
-            }
-            p {
-                @include content($font-size: 1.5rem, $color: #000040);
-            }
-        }
-    }
- }
-
- .finalDescription {
-     background: #000040;
-     padding: 5rem;
-     h1 {
-         @include heading($font-size: 2.4rem, $color: #FFFFFF);
-         text-align: center;
-     }
-     p {
-         @include content($font-size: 2rem, $color: white);
-         text-align: center;
-     }
-
-     .aboutTeam {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        flex-wrap: wrap;
-        text-align: left;
-        .imageStyles{
-            height: 5rem;
-            width: 5rem;
-            align-self: flex-start;
+                @include heading($font-size: 3.2rem, $line-height: 6.4rem, $color: white);
+              }
           }
-          .headingStyles {
-            @include heading($color: white, $font-size: 2rem);
-            text-align: left;
+
+          .imageContent {
+            @include flex($justify-content: space-evenly);
+            margin: 5rem auto;
+              .headingStyles {
+                @include heading($font-size: 2.4rem, $line-height: 3.2rem, $color: white);
+                width: 30rem;
+                margin-top: 2rem;
+              }
+              .containerStyles {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-start;
+                  align-items: flex-start;
+                  padding: 2rem;
+              }
           }
-          .paraStyles {
-            @include content($color: white, $font-size: 1.5rem);
-            text-align: left;
-          }
-    }
-}
+      }
+  }
 
+  .technologyStack {
+      margin: 10rem auto;
+    .techstackHeading {
 
-
-.finalFooter {
-    text-align: center;
-    margin: 10rem auto;
-    p {
-        @include content($color: #0093D1, $font-size: 4.4rem, $line-height: 2.4rem);
-    }
-}
-
-
-
-@media only screen and (max-width: 640px) { 
-    .techHeader {
-        text-align: center;
-        margin: 10rem 0rem;
-        padding: 0 2rem;
-        width: 100%;
-        box-sizing: border-box;
         h1 {
-            @include heading($font-size: 2.2rem);
+            @include heading($font-size: 3.2rem, $line-height: 6.4rem);
+            text-align: center;
         }
     }
+
+    .cardStyles {
+        width: 80%;
+        margin: 0 auto;
+        @include flex($justify-content: space-evenly);
+
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+.aboutPageHeader {
+    width: 100%;
+    margin: 10rem auto;
+    padding: 0 2rem;
+
+    h1 {
+        @include heading($font-size: 1.8rem, $line-height: 2.8rem);
+        text-align: center;
+    }
+}
+
+.proofOfFire {
+    padding: 1rem;
+    .proofOfFireBoxes {
+      .footerBody {
+       @include flex($justify-content: space-evenly);
+        width: 100%;
+        margin: 5rem auto;
+          .headingStyles {
+            @include heading($color: white, $font-size: 2.4rem, $line-height: 1.6rem);
+            margin-top: 2rem;
+          }
+          .paragraphStyles {
+              @include content($font-size: 1.8rem, $line-height: 2.4rem);
+              width: 100%;
+              text-align: center;
+          }
+      }
+    }
+  }
+
+  .imageContent {
+    margin: 2rem auto;
+    width: 100%;
+    @include flex($justify-content: space-evenly, $flex-direction: column-reverse);
+    .Applogo {
+        width: 26rem;
+        height: 26rem;
+    }
+    .Content {
+        width: 100%;
+        padding: 1rem;
+        p {
+            @include content($color: #000040, $font-size: 1.8rem,$line-height: 2.7rem, $font-weight: 700);
+            text-align: center;
+         }
+    }
+  }
+
+  .consensusHeading {
+      width: 100%;
+      padding: 2rem;
+      h1 {
+          @include heading($font-size:3.2rem);
+      }
+  }
+
+  .consensusActors {
+    .consensusActorsBody {
+      width: 100%;
+      margin: 0 auto;
+        .headingStyles {
+          @include heading($font-size: 2.4rem, $line-height: 6.4rem)
+        }
+        .paragraphStyles {
+            @include content($font-size: 1.8rem, $line-height: 3.6rem, $color: black);
+            width: 100%;
+        }
+        .containerStyles {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 2rem;
+        }
+    }
+  }
+
+
+  .buildFire {
+    background-color: #000040;
+    padding: 1rem;
+   .buildFireContainer {
+        .buildFireHeading {
+          width: 100%;
+          h1 {
+              @include heading($font-size: 2.4rem, $line-height: 3.2rem, $color: white);
+            }
+        }
 
         .imageContent {
-            box-sizing: border-box;
-            width: 100%;
-            .Applogo {
-                width: 35rem;
-                height: 30rem;
-            }
-            .Content {
-                width: 100%;
-                text-align: left;
-                p {
-                    @include content($color: #000040, $font-size: 1.5rem);
-                }
-            }
-    }
-
-
-    .aboutBody1 {
-        padding: 2rem;
-        width: 100%;
-        box-sizing: border-box;
-        margin: 0 0rem;
-        .aboutBodyHead1 {
-            width: 100%;
-            text-align: left;
-            margin: 0 0;
-            h1 {
-                @include heading($font-size: 3.2rem);
-            }
-        }
-        .aboutBodyContent1 {
-            width: 100%;
-            text-align: left;
-            margin: 0rem;
-            p {
-                @include content($font-size: 1.5rem, $color: #000040);
+          @include flex($justify-content: space-evenly);
+          margin: 5rem auto;
+            .headingStyles {
+              @include heading($font-size: 2.4rem, $line-height: 3.2rem, $color: white);
+              width: 100%;
             }
         }
     }
-
-    .aboutBody2 {
-        padding: 2rem;
-        margin: 0 0rem;
-        box-sizing: border-box;
-        width: 100%;
-        .aboutBodyHead2 {
-            width: 100%;
-            text-align: left;
-            h1 {
-                @include heading($font-size: 3.2rem);
-            }
-        }
-        .aboutBodyContent {
-            .aboutBodyContent2 {
-                width: 100%;
-                text-align: left;
-                p {
-                    @include content($font-size: 1.5rem, $color: #000040);
-                }
-            }
-        }
-     }
-     .finalDescription {
-         padding: 2rem;
-        h1 {
-            @include heading($font-size: 2rem, $color: #FFFFFF);
-            text-align: left;
-        }
-        p {
-            @include content($font-size: 1.5rem, $color: white);
-            text-align: left;
-        }
-        .aboutTeam {
-            margin-left: 2rem;
-        }
-     }
-
-     .finalFooter {
-
-        p {
-            @include content($color: #0093D1, $font-size: 3.4rem, $line-height: 2.4rem);
-        }
 }
+
+
+.technologyStack {
+  .cardStyles {
+      width: 100%;
+  }
+}
+
 }

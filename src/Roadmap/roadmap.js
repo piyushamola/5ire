@@ -7,7 +7,9 @@ function roadmap(props) {
     return (
         <div>
             <Header/>
-            <img src={Roadmap} className={styles.roadmap} alt="about"/>
+            <div>
+             <img src={Roadmap} className={styles.roadmap} alt="about"/>
+            </div>
             <Footer/>
         </div>
     );

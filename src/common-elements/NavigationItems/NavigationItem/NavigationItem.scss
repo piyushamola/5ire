@@ -1,12 +1,7 @@
+@import '../../../common-styles/typography';
+
 .NavigationItem {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 16px;
-    /* identical to box height, or 107% */
-    letter-spacing: -0.02em;
-    color: #404F77;
+    @include content($font-size: 1.5rem, $line-height: 1.6rem, $color: #404F77, $font-weight: 500);
     list-style: none;
 
     a {

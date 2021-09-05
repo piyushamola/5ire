@@ -1,36 +1,9 @@
+@import '../../common-styles/typography';
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-
-    .imageStyles {
-        height: 5.2rem;
-        width: 5.9rem;
-        margin-top: 3rem;
-    }
-
-    p {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 24px;
-        letter-spacing: -0.02em;
-        color: #BAD3E6;
-        width: 35rem;
-        text-align: center;
-    }
-
-    h1 {
-        font-family: Futura;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 36px;
-        letter-spacing: -0.02em;
-        color: #FFFFFF;
-        width: 35rem;
-        text-align: center;
-    }
+    justify-content: flex-start;
+    padding: 2rem;
 }

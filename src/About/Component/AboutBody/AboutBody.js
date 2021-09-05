@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from './AboutBody.scss';
 
-// import Content from '../../../common-elements/typography/Content/Content';
-// import Heading from '../../../common-elements/typography/Heading/Heading';
+// team
 import PG from '../../../assets2/teamPictures/PG.png';
 import PD from '../../../assets2/teamPictures/PD.png';
 import VM from '../../../assets2/teamPictures/VM.png';
@@ -11,10 +10,20 @@ import Zak from '../../../assets2/teamPictures/Zak.png';
 import Avid from '../../../assets2/teamPictures/Avid.png';
 import Serge from '../../../assets2/teamPictures/Serge.png';
 
+//logo 
+
+import ted from '../../../assets2/logos/ted.png'
+import forbes from '../../../assets2/logos/Forbes-logo.png'
+import entrepreneur from '../../../assets2/logos/Entrepreneur_logo.png'
+import globe from '../../../assets2/logos/globe.png'
+import nasdaq from '../../../assets2/logos/nasdaq.png'
+
+// carousel
+
 import CarouselComp from '../../../common-elements/Carousel/Carousel.js';
-
-
 import ImageHeadingContent from '../../../common-elements/ImageHeadingContent/ImageHeadingContent'
+
+import FlipCard from '../../../common-elements/flipCard/flipCard';
 import Footer from '../../../common-elements/Footer/Footer';
 
 const teamImages = [PG, PD, VM, SAI, Zak, Avid, Serge];
@@ -28,60 +37,120 @@ const aboutTeamParas = ["Serial social entrepreneur, investor, public speaker an
 
 const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Matilla", "Sai Kossireddy", "Zakaria Salek", "Rahul Rautela", "Serge Ajamian"];
 
+const aboutImageSize = [{ width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}];
+
 const aboutTeamSubPara = ["Co Founder","Co Founder", "Co Founder", "Head of Strategy Management", "Head of Blockchain Research & Development", "Head of Operations & Design", "Head of Global Growth & Partnerships"];
+
+// Advisors 
+
+
+const advisorsImages = [PG, PD, VM];
+const advisorsHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Matilla"];
+const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
+const advisorsSubPara = ["Co Founder","Co Founder", "Co Founder"];
+const responsiveForAdvisors = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
+
+// logo styles 
+const logos = [nasdaq, forbes, ted, entrepreneur, globe];
+const logosDimensions = [{ width: '16rem', height: '4rem', marginTop: '2.5rem'}, { width: '14.7rem', height: '8.3rem', marginBottom: '4rem'}, { width: '12.3rem', height: '4.5rem', marginTop: '2rem'}, { width: '23.8rem', height: '9rem', marginBottom: '4rem'}, { width: '11.2rem', height: '9.4rem', marginBottom:'4rem'}];
+const commonStylesLogos = {
+  marginLeft: '8rem',
+}
+const responsiveForLogos = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
 
 function AboutBody(props) {
     return (
         <div>
-            <div className={styles.AboutHeader}>
-                <h1>About 5ire - A Revolutionary Blockchain</h1>
-            </div>
-            <div className={styles.aboutBody1}>
-                <div className={styles.aboutBodyHead1}>
-                    <h1>5ire Mission</h1>
-                </div>
-                <div className={styles.aboutBodyContent1}>
-                    <p>5ire aims to become THE launchpad FOR the 5th industrial revolution where self-sovereign decentralized organizations are empowered to work towards achieving the United Nations 2030 Agenda. 5ire will empower teams to build solutions for a sustainable & decentralized future.  This will be done by creating unions and confederations between communities & DAOs that will be democratically funded by the 5ire treasury. 5ire is inspired by how sovereign nations split their yearly treasury into specialized treasuries managed by competing ministries & creates the governance and assets management systems of the future while assuring protection and privacy of all stakeholders by combining Trusted execution environments and Blockchain technologies to achieve high levels of security & truth.</p>
-                   
-                </div>
-            </div>
-            <div className={styles.aboutBody2}>
-                <div className={styles.aboutBodyHead2}>
-                    <h1>About 5irechain </h1>
-                </div>
-                <div className={styles.aboutBodyContent2}>
-                    <p>Distributed ledger technology enables the achievement of a cryptographic truth backed by mathematical assumptions and physical laws. Enabling the separation of facts and narratives & solving inefficiencies caused by paper form agreements.</p>
-                    <p>5ire believes that the true powers of blockchain are yet to be seen. 5irechain nodes are designed to bring 700+ ESG data sources on-chain using a network of decentralized oracle and off-chain workers to build immutable sources of sustainability indexes and standards.</p>
-                    <p >The runtime of 5irechain is modular & rich bringing forth governance and democracy mechanisms, self-sovereign digital identity management, trusted execution environment, zero-knowledge primitives, and metaverses. 5ire is able to execute EVM smart contracts with ethereum tooling full compatibility and WebAssembly smart contracts that provide more utility, security, and upgradability.</p>
-                    <p>5irechain is able to interoperate and cross-transfer with almost all the existing blockchain platforms & aims to become a sharded network of connected blockchains and ecosystems that will lead the 5th industrial revolution.</p>
-                </div>
+            <div className={styles.aboutFirstHeader}>
+              <h1>5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy. </h1>
             </div>
             <div className={styles.AboutHeader}>
-                <h1>5ire bring forth Truth not Trust </h1>
+                <h1>Our Mission</h1>
+                <p>5ire aims to become a blockchain ecosystem for the 5th industrial revolution, where self-sovereign decentralized organizations are empowered & incentivized toward accelerating the implementation of the United Nations 2030 Agenda for Sustainable Development. </p>
             </div>
-            <div className={styles.MeetTeam}>
-                <h1>Meet Our Team</h1>
+            <div className={styles.aboutFire}>
+                <h1>About 5IRE</h1>
+                <p>5ire is a blockchain ecosystem where collectives build the 5th industrial revolution while it assures democracy and justified fair representation to everyone & Governance to guarantee the longevity of our Sustainable vision.</p>
             </div>
-            <div>
-                  <div className={styles.aboutTeam}>
+            <header className={styles.founder}>
+              <div className={styles.founderContent}>
+                <h1>Founded by some of the pioneers in Impact & Blockchain Industry</h1>
+              </div>
+           </header>
+              <div className={styles.teamFlipFlop}>
                       { teamImages.map((img, index) => (
-                        <ImageHeadingContent image={img} para={aboutTeamParas[index]} heading={aboutTeamHeadings[index]} subPara={aboutTeamSubPara[index]}
-                        imgSize={styles.imageStyles}
-                        headingStyles={styles.headingStyles}
-                        paragraphStyles={styles.paraStyles}
-                        subParaStyles={styles.subheadingStyles}/>
+                        <FlipCard image={img} paraAfterFlip={aboutTeamParas[index]} heading={aboutTeamHeadings[index]} subPara={aboutTeamSubPara[index]}
+                            imgSize={aboutImageSize[index]}
+                        />
                       ))}
-                  </div>
-            </div>
+              </div>
             <div className={styles.founders}>
-                <h1>FOUNDERS FEATURED IN</h1>
+                <h1>Founders Featured In</h1>
             </div>
-            <footer>
-                <CarouselComp/>
-            </footer>
-            <div className={styles.finalFooter}>
-                <p>Want to Join 5ire ?</p>
+            <div className={styles.logosCarousel}>
+            <CarouselComp responsive={responsiveForLogos}>
+              {
+                logos.map((logo, index) => (
+                  <>
+                    <img src={logo} style={{...logosDimensions[index], ...commonStylesLogos}} alt={logo} />
+                    </>
+                  ))
+              }
+            </CarouselComp>
             </div>
+            <div className={styles.ourAdvisors}>
+             <h1>Our Advisors</h1>
+            </div>
+            <div className={styles.aboutAdvisors}>
+                      { advisorsImages.map((img, index) => (
+                        <ImageHeadingContent image={img} heading={advisorsHeadings[index]} subHead={advisorsSubPara[index]}
+                        imgSize={advisorsImageSize[index]}
+                        headingStyles={styles.headingStyles}
+                        subHeadStyles={styles.subheadingStyles}/>
+                      ))}
+            </div>
+            <div className={styles.aboutAdvisorsMobile}>
+                <CarouselComp responsive={responsiveForAdvisors}>
+                { advisorsImages.map((img, index) => (
+                            <ImageHeadingContent image={img} heading={advisorsHeadings[index]} subHead={advisorsSubPara[index]}
+                            imgSize={advisorsImageSize[index]}
+                            headingStyles={styles.headingStyles}
+                            subHeadStyles={styles.subheadingStyles}/>
+                          ))}
+                </CarouselComp>
+              </div>
             <Footer/>
 
         </div>

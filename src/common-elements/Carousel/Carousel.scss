@@ -1,14 +1,3 @@
-.carouselStyle {
-        justify-content: center;
-        align-items: center;
-        width: 95%;
-        margin: 10rem auto;
-}
-
-
-@media only screen and (max-width: 640px) {
-    .carouselStyle {
-        margin: 2rem auto;
-    }
-
+.Carousel {
+    margin: 8rem auto;
 }

@@ -1,175 +1,158 @@
 @import '../../../common-styles/typography';
 
+
+.aboutFirstHeader {
+    width: 60%;
+    margin: 10rem auto;
+     h1 {
+         @include heading($font-size: 2.4rem, $line-height: 2.8rem);
+         text-align: center;
+     }
+}
+
 .AboutHeader {
     background: #000040;
     padding: 12rem 0rem;
     text-align: center;
     h1 {
-        @include heading();
-        font-size: 4rem;
-        color: white;
-    }
-}
-
-
-.aboutBody1 {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    flex-wrap: wrap;
-    .aboutBodyHead1 {
-        width: 15rem;
-        h1 {
-            @include heading($font-size: 3.2rem);
-        }
-    } 
-    .aboutBodyContent1 {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        width: 50%;
-        padding: 1rem;
-        p {
-            @include content($font-size: 1.5rem, $color: #000040);
-        }
-    }
-}
-
-.aboutBody2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem;
-    .aboutBodyHead2 {
-        width: 15rem;
-        h1 {
-            @include heading($font-size: 3.2rem);
-        }
+        @include heading($font-size: 6.4rem, $line-height: 6.4rem, $color: white);
     }
 
-    .aboutBodyContent2 {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        width: 50%;
-        padding: 1rem;
-        p {
-            @include content($font-size: 1.5rem, $color: #000040);
-        }
-    }
- }
-
-
- .MeetTeam {
-    text-align: center;
-    h1 {
-        @include heading($font-size: 5.4rem);
-    }
-}
-
-.aboutTeam {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 5rem 15rem;
-
-    .imageStyles{
-        height: 25rem;
-        width: 25rem;
-      }
-      .headingStyles {
-        @include heading($color: #0093D1, $font-size: 2.4rem, $line-height: 2.4rem)
-      }
-
-      .subheadingStyles {
-        @include heading($color: #0093D1, $font-size: 1.8rem, $line-height: 2.4rem);
-        width: 25rem;
+    p {
+        @include content($font-size: 1.8rem, $line-height: 2.4rem);
+        width: 80%;
         text-align: center;
-      }
+        margin: 0 auto;
+    }
+}
 
-      .paraStyles {
-        @include content($color: #000040, $font-size: 1.5rem, $line-height: 2.4rem);
-      }
+.aboutFire {
+   @extend .AboutHeader;
+   background: #EAF0F8;
+
+   h1 {
+       color: #000040;
+   }
+
+   p {
+       color: #000040
+   }
+}
+
+.founder {
+  .founderContent {
+    width: 70%;
+    margin: 0 auto;
+    h1 {
+      @include heading($font-size: 5.4rem, $line-height: 6.4rem);
+      text-align: center;
+  }
+
+  }
+}
+
+
+.teamFlipFlop {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   align-items: center;
+   width: 80%;
+   margin: 0 auto;
+   padding: 5rem;
 }
 
 .founders {
     margin: 10rem 2rem;
     h1 {
         text-align: center;
-        @include heading($color: #000040, $font-size: 3.4rem, $line-height: 4.4rem);
+        @include heading($color: #000040, $font-size: 5.4rem, $line-height: 4.4rem);
     };
 }
 
-.finalFooter {
-    text-align: center;
-    margin: 10rem auto;
-    p {
-        @include content($color: #0093D1, $font-size: 4.4rem, $line-height: 2.4rem);
+.logosCarousel {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+
+  .aboutAdvisors {
+    @include flex($justify-content: space-evenly);
+    margin: 5rem auto;
+    width: 70%;
+      .headingStyles {
+        @include heading($color: #000040, $font-size: 2rem, $line-height: 0.5rem);
+        text-align: center;
+        margin-top: 3rem;
+      }
+  
+      .subheadingStyles {
+        @include heading($color: #000400, $font-size: 2rem, $line-height: 0.5rem);
+        text-align: center;
+      }
+  }
+  
+  .aboutAdvisorsMobile {
+    display: none;
+  }
+  
+  
+    .ourAdvisors {
+      margin-top: 9rem;
+      h1 {
+        @include heading($font-size: 5.4rem, $line-height:6.4rem, $color: #000040);
+        text-align: center;
+      }
     }
-}
-
-
 
 @media only screen and (max-width: 640px) {
 
+    .aboutFirstHeader {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+
     .AboutHeader {
+        padding: 2rem;
         h1 {
-            @include heading();
-            font-size: 3rem;
+            @include heading($font-size: 3.2rem, $line-height: 6.4rem, $color: white);
+        }
+
+        p {
+            @include content($font-size: 1.8rem, $line-height: 2.4rem);
+            width: 100%;
         }
     }
 
-    .aboutBody1 {
-        padding: 0rem;
+    .aboutFire {
+        background: #EAF0F8;
 
-        .aboutBodyHead1 {
-            width: 100%;
-            text-align: center;
-            h1 {
-                @include heading($font-size: 3.2rem);
-            }
-        }
-        .aboutBodyContent1 {
-            width: 100%;
-            padding: 2rem;
-            text-align: center;
-            p {
-                @include content($font-size: 1.5rem, $color: #000040);
-            }
-        }
-    }
-
-    .aboutBody2 {
-        padding: 0rem;
-        .aboutBodyHead2 {
-            width: 100%;
-            text-align: center;
-            h1 {
-                @include heading($font-size: 3.2rem);
-            }
+        h1 {
+            color: #000040;
         }
 
-        .aboutBodyContent2 {
-            width: 100%;
-            padding: 2rem;
-            text-align: center;
-            p {
-                @include content($font-size: 1.5rem, $color: #000040);
-            }
+        p {
+            color: #000040
         }
      }
 
+     .founder {
+        .founderContent {
+          padding: 2rem;
+          width: 100%;
+          h1 {
+            @include heading($font-size: 3.2rem, $line-height: 5rem);
+            text-align: center;
+        }
+        }
+      }
 
- .MeetTeam {
-    text-align: center;
-    h1 {
-        @include heading($font-size: 3.4rem);
-    }
-}
 
-
+      .teamFlipFlop {
+         width: 100%;
+         padding: 0;
+        }
 
     .founders {
         h1 {
@@ -177,10 +160,30 @@
             @include heading($color: #000040, $font-size: 2.4rem, $line-height: 4.4rem);
         };
     }
-    .finalFooter {
 
-        p {
-            @include content($color: #0093D1, $font-size: 3.4rem, $line-height: 2.4rem);
-        }
-}
+
+    .aboutAdvisors {
+        display: none;
+    }
+  
+    .aboutAdvisorsMobile {
+      display: block;
+      .headingStyles {
+        @include heading($color: #000040, $font-size: 2rem, $line-height: 0rem);
+        text-align: center;
+        margin-top: 3rem;
+      }
+  
+      .subheadingStyles {
+        @include heading($color: #000400, $font-size: 2rem, $line-height: 1rem);
+        text-align: center;
+      }
+    }
+  
+    .ourAdvisors {
+      margin-top: 2rem;
+      h1 {
+        font-size: 24px;
+      }
+    }
 }
