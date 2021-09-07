@@ -4,11 +4,12 @@ import styles from './Foooter.scss';
 
 import privacyPolicy from '../../assets2/documents/privacyPolicy.pdf';
 import WhitePaper from '../../assets2/documents/WhitePaper.pdf';
+import LightPaper from '../../assets2/documents/LightPaper.pdf';
 
 const FinalFooterHeading = ["General", "Technology", "Community", "Legal"];
 
 const FinalFooterList = [[{ label: "About", link:'/about' }, { label: "Support", link: '/contact'}],
-                          [{ label: "Technology", link: '/technology'}, { label: "Roadmap", link: '/roadmap'}, { label: "Lightpaper", link: ''}, { label: "Whitepaper", link: '', open: WhitePaper}],
+                          [{ label: "Technology", link: '/technology'}, { label: "Roadmap", link: '/roadmap'}, { label: "Lightpaper", link: '', open: LightPaper}, { label: "Whitepaper", link: '', open: WhitePaper}],
                           [{ label: "Community", link: '/contact'}, {label: "Documentation", link: '', open : 'https://5ire.gitbook.io/5ire-wiki/'}, {label: "Element Chat", link: '', open: 'https://matrix.to/#/#5ire:matrix.org'}, { label: "Medium", link: '', open: 'https://medium.com/@5ireChain'}],
                           [{ label: "Privacy Policy", link: '', open: privacyPolicy }]
                         ];

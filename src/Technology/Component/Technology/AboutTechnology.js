@@ -54,8 +54,8 @@ const consensusPara = ["Secure the network by participating in the production & 
 const governanceDimensions = [{width: '8.4rem', height: '6.4rem'}, {width: '8.4rem', height: '6.4rem'}, {width: '8.4rem', height: '6.4rem'}, {width: '8.4rem', height: '6.4rem'}];
 const governanceImages = [CouncilMembers, technicalCommittee, sustainibility, daoWorking];
 const governanceHeading = ["Council Members", "Technical Committee", "Sustainability Reporters DAOs", "DAOs & Working Groups"];
-const governancePara = ["The Council is an on-chain entity that assembles a fixed number of elected actors that holds responsibility for governance tasks.", 
-                        "Members that have demonstrated  knowledge of the 5ireChain workflow and runtime and it is composed of teams actively building 5ireChain.",
+const governancePara = ["The Council is an on-chain entity that assembles a fixed number of elected actors that hold responsibility for governance tasks.", 
+                        "Composed of members proactively building the 5ire Chain runtime",
                     " Global sustainability standards Reports working groups that have experience in the 17 SDGs they also help with the validation of governance proposals.",
                 "Organizations & working groups that work towards implementing the United Nations 2030 Agenda for Sustainable Development and teams that build 5ire. "];
 

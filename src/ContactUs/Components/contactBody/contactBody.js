@@ -8,7 +8,7 @@ function contactBody(props) {
     return (
         <div>
              <div className={styles.techHeader}>
-                <h1>5IRE transforming internet of information to internet of value.</h1>
+                <h1>5ire: Transforming Internet of Information to Internet of Value</h1>
             </div>
             <div className={styles.techBoxStyles}>
                 {

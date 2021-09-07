@@ -53,15 +53,15 @@ const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Matilla", "
 
 const aboutImageSize = [{ width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}];
 
-const aboutTeamSubPara = ["Co Founder","Co Founder", "Co Founder", "Head of Global Growth & Partnerships", "Head of Strategy Management", "Head of Blockchain Research & Development", "Head of Operations & Design"];
+const aboutTeamSubPara = ["Co Founder & CEO","Co Founder & CMO", "Co Founder & CBO", "Head of Advisory Council | Strategic Advisor to the CEO", "Head of Strategy Management", "Head of Blockchain Research & Development", "Head of Operations & Design"];
 
 // Advisors 
 
 
 const advisorsImages = [joe, mathew, RichardSwart, Rongaron, sam, yechuanHu];
-const advisorsHeadings = ["Mathew Neimera", "Mathew Neimera", "Mathew Neimera", "Mathew Neimera", "Mathew Neimera","Mathew Neimera"];
+const advisorsHeadings = ["Joe Vezzani", "Mathew Neimerg", "Richard Swart", "Ron Garan", "Sam Goldman","Antoni Zolciak"];
 const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}];
-const advisorsSubPara = ["President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing","President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing"];
+const advisorsSubPara = ["CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "Ex-director, UC Berkeley", "Astronaut NASA ", "Founder & President, d.Light", "Co-founder & CMO Aleph Zero, Harvard"];
 const responsiveForAdvisors = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -116,11 +116,11 @@ function AboutBody(props) {
             </div>
             <div className={styles.aboutFire}>
                 <h1>About 5IRE</h1>
-                <p>5ire is a blockchain ecosystem where collectives build the 5th industrial revolution while it assures democracy and justified fair representation to everyone & Governance to guarantee the longevity of our Sustainable vision.</p>
+                <p>  5ireChain is a smart contract platform where individuals and enterprises can develop, build,  transact and participate in economic growth while preserving the enviroment. While assuring democracy and justified fair representation of stakeholders. </p>
             </div>
             <header className={styles.founder}>
               <div className={styles.founderContent}>
-                <h1>Founded by some of the pioneers in Impact & Blockchain Industry</h1>
+                <h1>Founded by Global Impact Champions & Blockchain Pioneers</h1>
               </div>
            </header>
               <div className={styles.teamFlipFlop}>

@@ -61,8 +61,8 @@ import { useHistory } from "react-router-dom";
 
 // features
 const aboutImages = [icon1, icon2, icon3, icon4, icon5, icon6];
-const aboutHeading = ["Sustainability by Design ", "On-chain Governance and Democracy", "Future-proof and Forkless upgradeability",
-"Interoperability & cross-chain Transfers", "On-chain Governance and Democracy", "Future-proof and Forkless upgradeability"];
+const aboutHeading = ["Sustainability by Design ", "On-chain Governance & Democracy", "Future-proof upgradeability",
+"Interoperability & Cross-chain Transfers", "Transactional scalability", "Security for everyone"];
 
 
 // proof of fire
@@ -74,7 +74,7 @@ const proofOfFireHeading = ["Nominated Proof of Stake", "Proof of Benefit", "Pro
 const teamImages = [PG, PD, VM];
 const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Matilla"];
 const aboutImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
-const aboutTeamSubPara = ["Co Founder","Co Founder", "Co Founder"];
+const aboutTeamSubPara = ["Co Founder & CEO","Co Founder & CMO", "Co Founder & CBO"];
 const responsiveForTeam = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -123,9 +123,9 @@ const responsiveForLogos = {
 // advisors 
 
 const advisorsImages = [joe, mathew, RichardSwart, Rongaron, sam, yechuanHu];
-const advisorsHeadings = ["Mathew Neimera", "Mathew Neimera", "Mathew Neimera", "Mathew Neimera", "Mathew Neimera","Mathew Neimera"];
+const advisorsHeadings = ["Joe Vezzani", "Mathew Neimerg", "Richard Swart", "Ron Garan", "Sam Goldman","Antoni Zolciak"];
 const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}];
-const advisorsSubPara = ["President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing","President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing"];
+const advisorsSubPara = ["CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "Ex-director, UC Berkeley", "Astronaut NASA ", "Founder & President, d.Light", "Co-founder & CMO Aleph Zero, Harvard"];
 const responsiveForAdvisors = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -166,9 +166,9 @@ function Body(props) {
              Blockchain X Sustainability = 5IRE
             </h2>
             <p>
-               5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy. 
+               5ireChain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy. 
             </p>
-            <Button label="Explore More" btnClick={() => window.scroll(0, 700)} className={styles.button}/>
+            <Button label="Know More" btnClick={() => window.scroll(0, 700)} className={styles.button}/>
         </div>
         </div>
       </div>
@@ -178,8 +178,7 @@ function Body(props) {
           <div>
             <div className={styles.getStartedText}>
               <div>
-                <p>Accelerating the implementation of the United Nations 2030 Sustainability Development Goals Agenda.   </p>
-                <p> Aiming to bring the paradigm shift from For-profit to for-benefit economy.  </p>
+                <p>5IRE mission is to Accelerate the implementation of the United Nations 2030 Agenda for Sustainable Development.   </p>
               </div>
             <Button label="See Roadmap" btnClick={() => history.push('/roadmap')} className={styles.button}/>
             </div>
@@ -188,7 +187,7 @@ function Body(props) {
         <div className={styles.aboutFireContent}>
             <div className={styles.whatIsFire}>
                 <h1>What is 5ire ?</h1>
-                <p>5IRE is a Collaborative Blockchain-Driven Platform with an innovative SDG driven consensus mechanism , with a mission to bring a paradigm shift from “For Profit” to “For Benefit” across the globe, as every single transaction on the 5IRE Ecosystem Contributes to Social Impact.</p>
+                <p>5ire is a blockchain ecosystem that brings forward Sustainability, Technology & Innovation to build the 5th industrial revolution.</p>
             </div>
             <div className={styles.learnMoreAbout}>
                   <div className={styles.learnMoreAboutText}>
@@ -201,7 +200,8 @@ function Body(props) {
         <div className={styles.whyFireContent}>
             <div className={styles.whyIsFire}>
                 <h1>Why 5IR ?</h1>
-                <p>In contrast to trends in the Fourth Revolution toward dehumanization, technology and innovation best practices need to be bent back toward the service of humanity.5ire is a milestone in smooth transitioning of the world from 4IR to 5IR. Also its breakthrough to help the world in achieving the UN SDGs in the fast and efficient way.</p>
+                <p>In contrast to trends in the Fourth Industrial Revolution toward dehumanization, technology and innovation best practices need to be bent back toward the service of humanity.
+5ire is a gateway in the smooth transitioning of the world from 4IR to 5IR. </p>
             </div>
             <div className={styles.learnMoreAbout}>
                   <div className={styles.learnMoreAboutText}>
@@ -217,8 +217,8 @@ function Body(props) {
           <header className={styles.parentHeader}>
               <div className={styles.aboutHeader}>
                 <div className={styles.aboutContent}>
-                  <h1>5ire’s language =</h1>
-                  <p>United Nation’s Sustainable Development Goals</p>
+                  <h1>5ire’s lingo =</h1>
+                  <p>United Nations' Sustainable Development Goals</p>
                 </div>
                 <div className={styles.aboutImageContainer}>
                   <img src={sdg} className={styles.aboutImage} alt="about"/>
@@ -228,7 +228,7 @@ function Body(props) {
       </section>
       <div className={styles.quoteStyle}>
             <img src={quote} alt="quote"/>
-             <p><span>Society & environment. </span>is where we all meet, where all have a mutual interest, the one thing all of us share. </p>
+             <p><span>Society & environment </span>is where we all meet, where all have a mutual interest, the one thing all of us share. </p>
         </div>
       <section className={styles.WhyFire}>
         <footer>
@@ -267,7 +267,7 @@ function Body(props) {
       <section className={styles.foundersSection}>
         <header className={styles.founder}>
             <div className={styles.founderContent}>
-              <h1>Founded by some of the pioneers in Impact & Blockchain Industry</h1>
+              <h1>Founded by Global Impact Champions & Blockchain Pioneers</h1>
             </div>
         </header>
         <div className={styles.aboutTeam}>
@@ -289,7 +289,7 @@ function Body(props) {
              </CarouselComp>
           </div>
          <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <Button label="Meet Fire Team" btnClick={() => history.push('/about')}/>
+            <Button label="Meet 5IRE Team" btnClick={() => history.push('/about')}/>
          </div>
         <div className={styles.foundersFeatured}>
            <h1>Founders Featured In</h1>
@@ -306,7 +306,7 @@ function Body(props) {
             </CarouselComp>
         </div>
         <div className={styles.foundersFeatured}>
-           <h1>Our Advisors</h1>
+           <h1>Our Global Advisory Council & Braintrust Network</h1>
         </div>
         {/* <div className={styles.aboutTeam}>
                       { teamImages.map((img, index) => (

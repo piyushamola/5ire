@@ -6,8 +6,8 @@ import github from '../../assets2/headerIcons/github.png'
 import twitter from '../../assets2/headerIcons/twitter.png'
 
 import NavigationItem from '../NavigationItems/NavigationItem/NavigationItem'
-import WhitePaper from '../../assets2/documents/WhitePaper.pdf';
-
+import WhitePaper from '../../assets2/documents/WhitePaper.pdf'
+import LightPaper from '../../assets2/documents/LightPaper.pdf';
 
 import { useHistory } from "react-router-dom";
 
@@ -24,7 +24,7 @@ function Header(props) {
       <div>
         <div className={styles.topHeader}>
             <a onClick={() => window.open(WhitePaper, '_blank')}>Whitepaper</a>
-            <a>Lightpaper</a>
+            <a onClick={() => window.open(LightPaper, '_blank')}>Lightpaper</a>
             <a onClick={() => window.open('https://5ire.gitbook.io/5ire-wiki/')}>Wiki</a>
             <img src={github}  onClick={() => window.open("https://github.com/orgs/5ire-org/") }  className={styles.Logo} alt="logo" />
             <img src={twitter} onClick={() => window.open('https://twitter.com/5ireChain') } className={styles.Logo} alt="logo" />

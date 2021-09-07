@@ -80,6 +80,7 @@
     @include flex($justify-content: space-evenly);
     margin: 5rem auto;
     width: 70%;
+    
       .headingStyles {
         @include heading($color: #000040, $font-size: 2rem, $line-height: 0.5rem);
         text-align: center;
@@ -102,6 +103,8 @@
 
     .ourAdvisors {
       margin-top: 9rem;
+      width: 85%;
+      margin: 0 auto;
       h1 {
         @include heading($font-size: 5.4rem, $line-height:6.4rem, $color: #000040);
         text-align: center;
