@@ -1,3 +1,9 @@
 .Carousel {
-    margin: 8rem auto;
+    margin: 4rem auto;
+}
+
+@media only screen and (max-width: 640px) {
+    .Carousel {
+       margin-top: 4rem;
+    }
 }

@@ -10,9 +10,10 @@
 
 .Header {
     display: flex;
-    justify-content: space-evenly;
-    background: #F9FCFF;
+    justify-content: space-between;
     padding: 1rem 0rem;
+    width: 70%;
+    margin: 0 auto;
 }
 
 
@@ -29,42 +30,42 @@
 }
 
 .logoStyles {
-    margin-right: 5rem;
+    margin-left: 5rem;
 }
 
 .topHeader{
-    @include flex($justify-content: flex-end, $align-items: center);
-    padding: 2rem 25rem 2rem 0;
     box-shadow: inset 1px -3px 0px rgba(0, 0, 0, 0.1);
-
-    a {
-        @include content($color: #6F6969, $font-size: 1.8rem, $font-weight: 700);
-        margin: 0 3rem;
-        cursor: pointer;
-    }
-
-    a:hover {
-        color: #40A4C8;
-    }
-
-    img {
-        cursor: pointer;
-    }
-
-
-    .Logo {
-        margin: 0 3rem;
-        width: 2.5rem;
-        height: 2.5rem;
+    padding: 2rem;
+    .topHeaderInner {
+        @include flex($justify-content: flex-end, $align-items: center);
+        margin: 0 auto;
+        width: 70%;
+        a {
+            @include content($color: #6F6969, $font-size: 1.8rem, $font-weight: 700);
+            margin: 0 3rem;
+            cursor: pointer;
+        }
+        a:hover {
+            color: #40A4C8;
+        }
+        img {
+            cursor: pointer;
+        }
+        .Logo {
+            margin: 0 3rem;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
     }
 }
 
 
 @media only screen and (max-width: 640px) {
     .Header {
+        width: 100%;
         display: flex;
         background: #F9FCFF;
-        padding: 2rem 1rem;
+        padding: 2rem;
         flex-direction: row-reverse;
         justify-content: space-between;
         background: #FFFFFF;
@@ -73,10 +74,9 @@
     }
 
     .appLogo {
-        height: 6rem;
-        width: 6rem;
+        height: 3rem;
+        width: 3rem;
         pointer-events: none;
-        margin-right: 2rem;
     }
     .flexItems {
         display: flex;
@@ -117,24 +117,20 @@
         transform: translateX(-100%);
     }
 
-    .logoStyles {
-        align-self: center;
-        margin: 0 auto;
-    }
-
     .topHeader{
-        @include flex($justify-content: center, $align-items: center);
-        padding: 2rem 0rem;
+        .topHeaderInner {
+            @include flex($justify-content: center, $align-items: center);
+            width: 100%;
+            a {
+                font-size: 1.2rem;
+                margin: 0 1rem;
+            }
 
-        a {
-            font-size: 1.2rem;
-            margin: 0 1rem;
-        }
-
-        .Logo {
-            width: 2rem;
-            height: 2rem;
-            margin: 0 1rem;
+            .Logo {
+                width: 2rem;
+                height: 2rem;
+                margin: 0 1rem;
+            }
         }
     }
 }

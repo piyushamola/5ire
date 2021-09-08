@@ -89,7 +89,7 @@ const commonStylesLogos = {
 const responsiveForLogos = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 5,
+    items: 4,
     slidesToSlide: 1 // optional, default to 1.
   },
   tablet: {
@@ -116,7 +116,7 @@ function AboutBody(props) {
             </div>
             <div className={styles.aboutFire}>
                 <h1>About 5IRE</h1>
-                <p>  5ireChain is a smart contract platform where individuals and enterprises can develop, build,  transact and participate in economic growth while preserving the enviroment. While assuring democracy and justified fair representation of stakeholders. </p>
+                <p>5ireChain is a smart contract platform where individuals and enterprises can develop, build,  transact and participate in economic growth while preserving the enviroment. While assuring democracy and justified fair representation of stakeholders. </p>
             </div>
             <header className={styles.founder}>
               <div className={styles.founderContent}>
@@ -156,23 +156,16 @@ function AboutBody(props) {
             </CarouselComp>
             </div>
             <div className={styles.ourAdvisors}>
-             <h1>Our Advisors</h1>
+                 <h1>Our Global Advisory Council & Braintrust Network</h1>
             </div>
-            {/* <div className={styles.aboutAdvisors}>
-                      { advisorsImages.map((img, index) => (
-                        <ImageHeadingContent image={img} heading={advisorsHeadings[index]} subHead={advisorsSubPara[index]}
-                        imgSize={advisorsImageSize[index]}
-                        headingStyles={styles.headingStyles}
-                        subHeadStyles={styles.subheadingStyles}/>
-                      ))}
-            </div> */}
             <div className={styles.aboutAdvisorsMobile}>
                 <CarouselComp responsive={responsiveForAdvisors}>
                 { advisorsImages.map((img, index) => (
                             <ImageHeadingContent image={img} heading={advisorsHeadings[index]} subHead={advisorsSubPara[index]}
                             imgSize={advisorsImageSize[index]}
                             headingStyles={styles.headingStyles}
-                            subHeadStyles={styles.subheadingStyles}/>
+                            subHeadStyles={styles.subheadingStyles}
+                            containerClass={styles.containerClass}/>
                           ))}
                 </CarouselComp>
               </div>

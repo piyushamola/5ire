@@ -67,7 +67,7 @@ const aboutHeading = ["Sustainability by Design ", "On-chain Governance & Democr
 
 // proof of fire
 const proofOfFireImages = [NPOS, POB, POD];
-const proofOfFireDimensions = [{width: '10.7rem', height: '12.2rem'}, { width: '12.8rem', height: '12.2rem'}, { width: '11.8rem', height: '10.5rem'}];
+const proofOfFireDimensions = [{width: '10.7rem', height: '12.2rem'}, { width: '12.8rem', height: '12.2rem'}, { width: '11.8rem', height: '10.5rem', marginTop: '2rem'}];
 const proofOfFireHeading = ["Nominated Proof of Stake", "Proof of Benefit", "Proof of Donation"];
 
 // team
@@ -104,7 +104,7 @@ const commonStylesLogos = {
 const responsiveForLogos = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 5,
+    items: 4,
     slidesToSlide: 1 // optional, default to 1.
   },
   tablet: {
@@ -175,14 +175,14 @@ function Body(props) {
       <section className={styles.GetStartedContainer}>
        <div>
          <div className={styles.getStartedInfo}>
-          <div>
             <div className={styles.getStartedText}>
-              <div>
+              <div className={styles.getStartedDiv}>
                 <p>5IRE mission is to Accelerate the implementation of the United Nations 2030 Agenda for Sustainable Development.   </p>
               </div>
-            <Button label="See Roadmap" btnClick={() => history.push('/roadmap')} className={styles.button}/>
+              <div className={styles.getStartedRoadMap}>
+                <Button label="See Roadmap" btnClick={() => history.push('/roadmap')} className={styles.button}/>
+              </div>
             </div>
-          </div>
         </div>
         <div className={styles.aboutFireContent}>
             <div className={styles.whatIsFire}>
@@ -194,7 +194,9 @@ function Body(props) {
                     <p>Learn more about</p>
                     <h1>5irechain Technology </h1>
                   </div>
-                  <Button label="Discover 5ire" btnClick={() => history.push('/technology')} className={styles.button}/>
+                  <div className={styles.fireChainTechBtn}>
+                     <Button label="Discover 5ire" btnClick={() => history.push('/technology')} className={styles.button}/>
+                  </div>
             </div>
         </div>
         <div className={styles.whyFireContent}>
@@ -208,7 +210,9 @@ function Body(props) {
                     <p>Learn more about</p>
                     <h1>5th Industrial Revolution</h1>
                   </div>
-                  <Button label="Learn More About 5IR"  btnClick={() => window.open('https://www.youtube.com/watch?v=RDiHaHPOVH0')} className={styles.button}/>
+                  <div className={styles.fireChainTechBtn}>
+                     <Button label="Learn More About 5IR"  btnClick={() => window.open('https://www.youtube.com/watch?v=RDiHaHPOVH0')} className={styles.button}/>
+                  </div>
             </div>
         </div>
        </div>
@@ -240,13 +244,10 @@ function Body(props) {
               <div className={styles.proofOfFireBoxes}>
                   <div className={styles.footerBody}>
                       { proofOfFireImages.map((img, index) => (
-                        <div className={styles.proofAddition}>
-                          <div>
                             <ImageHeadingContent image={img}  heading={proofOfFireHeading[index]} 
                                   imgSize={proofOfFireDimensions[index]}
+                                  containerClass={styles.containerClass}
                                   headingStyles={styles.headingStyles}/>
-                            </div>
-                        </div>
                       ))}
                   </div>
                   <div className={styles.buttonStyles}>
@@ -254,11 +255,20 @@ function Body(props) {
                   </div>
               </div>
          </div>
-         <div className={styles.featuresHeading}><h1>Features</h1></div>
-         <div className={styles.features}>
-              { aboutImages.map((img, index) => (
-                <AboutInfo image={img} heading={aboutHeading[index]}/>
-              ))}
+         <div className={styles.featuresData}>
+            <div className={styles.featuresHeading}><h1>Features</h1></div>
+            <div className={styles.featuresRow}>
+                  <div className={styles.features}>
+                        { aboutImages.map((img, index) => (
+                          index % 2 === 1 && <AboutInfo image={img} heading={aboutHeading[index]}/>
+                        ))}
+                    </div>
+                    <div className={styles.features}>
+                        { aboutImages.map((img, index) => (
+                        index % 2 === 0 &&  <AboutInfo image={img} heading={aboutHeading[index]}/>
+                        ))}
+                    </div>
+              </div>
           </div>
         </footer>
       </section>
@@ -284,7 +294,8 @@ function Body(props) {
                         <ImageHeadingContent image={img} heading={aboutTeamHeadings[index]} subHead={aboutTeamSubPara[index]}
                         imgSize={aboutImageSize[index]}
                         headingStyles={styles.headingStyles}
-                        subHeadStyles={styles.subheadingStyles}/>
+                        subHeadStyles={styles.subheadingStyles}
+                        containerClass={styles.containerClass}/>
                       ))}
              </CarouselComp>
           </div>
@@ -308,21 +319,14 @@ function Body(props) {
         <div className={styles.foundersFeatured}>
            <h1>Our Global Advisory Council & Braintrust Network</h1>
         </div>
-        {/* <div className={styles.aboutTeam}>
-                      { teamImages.map((img, index) => (
-                        <ImageHeadingContent image={img} heading={aboutTeamHeadings[index]} subHead={aboutTeamSubPara[index]}
-                        imgSize={aboutImageSize[index]}
-                        headingStyles={styles.headingStyles}
-                        subHeadStyles={styles.subheadingStyles}/>
-                      ))}
-         </div> */}
          <div className={styles.aboutAdvisors}>
              <CarouselComp responsive={responsiveForAdvisors}>
              { advisorsImages.map((img, index) => (
                         <ImageHeadingContent image={img} heading={advisorsHeadings[index]} subHead={advisorsSubPara[index]}
                         imgSize={advisorsImageSize[index]}
                         headingStyles={styles.headingStyles}
-                        subHeadStyles={styles.subheadingStyles}/>
+                        subHeadStyles={styles.subheadingStyles}
+                        containerClass={styles.containerClass}/>
                       ))}
              </CarouselComp>
           </div>

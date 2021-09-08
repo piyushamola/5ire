@@ -12,7 +12,7 @@
 
 
 .proofOfFire {
-    padding: 5rem;
+    padding: 3rem 0rem;
     background: #000040;
     .proofOfFireContent {
 
@@ -38,18 +38,19 @@
           .paragraphStyles {
               @include content($font-size: 1.8rem, $line-height: 2.4rem);
               width: 35rem;
+              text-align: center;
           }
       }
     }
   }
 
   .imageContent {
-    margin: 10rem auto;
+    margin: 5rem auto;
     width: 85%;
     @include flex($justify-content: space-evenly);
     .Applogo {
-        width: 64rem;
-        height: 64rem;
+        width: 44rem;
+        height: 44rem;
     }
     .Content {
         width: 40%;
@@ -60,25 +61,25 @@
 }
 
 .consensusHeading {
-    @include flex($justify-content: flex-start);
-    width: 65%;
+    width: 62%;
     margin: 0 auto;
+    text-align: left;
     h1 {
-        @include heading($font-size:3.2rem);
+        @include heading($font-size: 3.2rem);
     }
 }
 
 .consensusActors {
     .consensusActorsBody {
-     @include flex($justify-content: space-evenly);
-      width: 85%;
+     @include flex($justify-content: space-between);
+      width: 62%;
       margin: 5rem auto;
         .headingStyles {
-          @include heading($font-size: 2.4rem, $line-height: 6.4rem)
+          @include heading($font-size: 2.4rem, $line-height: 3.6rem);
         }
         .paragraphStyles {
-            @include content($font-size: 1.8rem, $line-height: 3.6rem, $color: black);
-            width: 46rem;
+            @include content($font-size: 1.8rem, $line-height: 2.4rem, $color: black);
+            width: 40rem;
         }
 
         .containerStyles {
@@ -86,14 +87,14 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            padding: 2rem;
+            margin: 2rem 0rem;
         }
     }
   }
 
   .buildFire {
       background-color: #000040;
-      padding: 5rem;
+      padding: 2rem;
      .buildFireContainer {
           .buildFireHeading {
             width: 80%;
@@ -106,6 +107,7 @@
 
           .imageContent {
             @include flex($justify-content: space-evenly);
+            width: 80%;
             margin: 5rem auto;
               .headingStyles {
                 @include heading($font-size: 2.4rem, $line-height: 3.2rem, $color: white);
@@ -117,18 +119,18 @@
                   flex-direction: column;
                   justify-content: flex-start;
                   align-items: flex-start;
-                  padding: 2rem;
+                  margin: 2rem;
               }
           }
       }
   }
 
   .technologyStack {
-      margin: 10rem auto;
+      margin: 5rem auto;
     .techstackHeading {
 
         h1 {
-            @include heading($font-size: 3.2rem, $line-height: 6.4rem);
+            @include heading($font-size: 3.2rem, $line-height: 3.2rem);
             text-align: center;
         }
     }
@@ -145,17 +147,17 @@
 
 .aboutPageHeader {
     width: 100%;
-    margin: 10rem auto;
+    margin: 3rem auto;
     padding: 0 2rem;
 
     h1 {
-        @include heading($font-size: 1.8rem, $line-height: 2.8rem);
+        @include heading($font-size: 2.4rem, $line-height: 2.8rem);
         text-align: center;
     }
 }
 
 .proofOfFire {
-    padding: 1rem;
+    padding: 2rem;
     .proofOfFireBoxes {
       .footerBody {
        @include flex($justify-content: space-evenly);
@@ -194,29 +196,32 @@
 
   .consensusHeading {
       width: 100%;
-      padding: 2rem;
+      @include flex($justify-content: center);
       h1 {
-          @include heading($font-size:3.2rem);
+          @include heading($font-size:3.2rem, $line-height: 2rem);
       }
   }
 
   .consensusActors {
+    padding: 2rem;
     .consensusActorsBody {
       width: 100%;
-      margin: 0 auto;
+      margin: 2rem auto;
         .headingStyles {
-          @include heading($font-size: 2.4rem, $line-height: 6.4rem)
+          @include heading($font-size: 2.4rem, $line-height: 2.4rem);
+          text-align: center;
         }
         .paragraphStyles {
-            @include content($font-size: 1.8rem, $line-height: 3.6rem, $color: black);
+            @include content($font-size: 1.8rem, $line-height: 2.4rem, $color: black);
             width: 100%;
+            text-align: center;
         }
         .containerStyles {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            padding: 2rem;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0rem;
         }
     }
   }
@@ -224,21 +229,29 @@
 
   .buildFire {
     background-color: #000040;
-    padding: 1rem;
+    padding: 2rem;
+    text-align: center;
    .buildFireContainer {
+
         .buildFireHeading {
           width: 100%;
           h1 {
-              @include heading($font-size: 2.4rem, $line-height: 3.2rem, $color: white);
+              @include heading($font-size: 2.4rem, $line-height: 2.4rem, $color: white);
             }
         }
 
         .imageContent {
           @include flex($justify-content: space-evenly);
-          margin: 5rem auto;
+          margin: 4rem auto;
             .headingStyles {
-              @include heading($font-size: 2.4rem, $line-height: 3.2rem, $color: white);
+              @include heading($font-size: 1.8rem, $line-height: 2.4rem, $color: white);
               width: 100%;
+            }
+
+            .containerStyles {
+              margin: 2rem 0;
+              justify-content: center;
+              align-items: center;
             }
         }
     }
@@ -246,6 +259,7 @@
 
 
 .technologyStack {
+  margin: 2rem 0;
   .cardStyles {
       width: 100%;
   }

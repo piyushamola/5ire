@@ -2,7 +2,6 @@
 
 .aboutInfo {
    @include flex($justify-content: flex-start);
-    width: 45rem;
     padding: 1rem 0rem;
     .aboutDescImage {
         height: 5.2rem;
@@ -17,11 +16,11 @@
 
 @media only screen and (max-width: 640px) {
     .aboutInfo {
-        @include flex($justify-content: space-evenly);
-        padding: 2rem 0;
+        @include flex($justify-content: flex-start, $flex-direction: column);
+        padding: 2rem;
          h1 {
              @include heading($font-size: 1.8rem, $line-height: 3.6rem);
-             margin-left: 2rem;
+             margin: 1rem 0;
              text-align: center;
          }
      }

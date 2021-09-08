@@ -34,7 +34,7 @@ import Card from '../../../common-elements/Card/Card';
 
 // proof of fire
 const proofOfFireImages = [NPOS, POB, POD];
-const proofOfFireDimensions = [{width: '10.7rem', height: '12.2rem'}, { width: '12.8rem', height: '12.2rem'}, { width: '11.8rem', height: '10.5rem'}];
+const proofOfFireDimensions = [{width: '10.7rem', height: '12.2rem'}, { width: '12.8rem', height: '12.2rem', marginTop: '5rem'}, { width: '11.8rem', height: '10.5rem', marginTop: '2rem'}];
 const proofOfFireHeading = ["Nominated Proof of Stake", "Proof of Benefit", "Proof of Donation"];
 const proofOfHeadingPara = ["Nominated Proof of Stake guarantees security, democracy and justified fair representation of network actors.",
                             "A governance-based reward distribution process that incentivizes network actors based on their commitment with the United Nation Sustainable Development Goals.",
@@ -111,19 +111,19 @@ function AboutTechnology(props) {
           <div className={styles.consensusHeading}> 
               <h1>Consensus Actors</h1>
           </div>
-          <div className={styles.consensusActors}>
-                  <div className={styles.consensusActorsBody}>
-                      { consensusImages.map((img, index) => (
-                          <div>
-                            <ImageHeadingContent image={img}  heading={consensusHeadings[index]} para={consensusPara[index]}
-                                  imgSize={consensusImagesDimensions[index]}
-                                  headingStyles={styles.headingStyles}
-                                 paragraphStyles={styles.paragraphStyles}
-                                 containerClass={styles.containerStyles}/>
+        <div className={styles.consensusActors}>
+            <div className={styles.consensusActorsBody}>
+                { consensusImages.map((img, index) => (
+                <div>
+                    <ImageHeadingContent image={img}  heading={consensusHeadings[index]} para={consensusPara[index]}
+                            imgSize={consensusImagesDimensions[index]}
+                            headingStyles={styles.headingStyles}
+                            paragraphStyles={styles.paragraphStyles}
+                            containerClass={styles.containerStyles}/>
                             </div>
-                      ))}
-                  </div>
-              </div>
+                ))}
+            </div>
+        </div>
         <div className={styles.consensusHeading}> 
               <h1>Governance Actors</h1>
                 </div>

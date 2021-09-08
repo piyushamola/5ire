@@ -35,7 +35,7 @@
  
     p {
      text-align: center;
-     @include content($color: #1E1E25, $font-size: 1.5rem, $line-height: 2.4rem)
+     @include content($color: #1E1E25, $font-size: 1.8rem, $line-height: 2.4rem)
     }
  
     .button {
@@ -47,31 +47,38 @@
 
 
 .GetStartedContainer {
-  .getStartedInfo {
-    background:#000040;
-    .getStartedText {
-      @include flex($justify-content: center);
-      padding: 4rem;
-      p {
-        @include content($font-size: 1.9rem, $line-height: 3.4rem);
-        width: 80%;
-      }
-      .button {
-        background: #D0DDEC;
-        color: #323A78;
-       }
-  }
 
-  }
+    .getStartedInfo {
+      background:#000040;
+      padding: 5rem 0;
+      .getStartedText {
+        @include flex($justify-content: space-evenly);
+        width: 75%;
+        margin: 0 auto;
+        .getStartedDiv {
+          width: 60%;
+          p {
+            @include content($font-size: 1.8rem, $line-height: 3.2rem);
+          }
+        }
+        .getStartedRoadM {
+          .button {
+            background: #D0DDEC;
+            color: #323A78;
+          }
+        }
+    }
+
+    }
 
   .aboutFireContent {
-    padding: 5rem;
+    padding: 5rem 10rem;
     background: #EAF0F8;
     @include flex($justify-content: center);
       .whatIsFire {
         width: 50%;
         h1 {
-          @include heading($font-size: 6.4rem, $line-height: 6rem)
+          @include heading($font-size: 4.4rem, $line-height: 6rem)
         }
 
         p {
@@ -98,13 +105,14 @@
    }
 
    .whyFireContent {
-    padding: 5rem;
+    padding: 5rem 10rem;
     background: #000040;
     @include flex($justify-content: center);
       .whyIsFire {
+        margin-left: 4rem;
         width: 50%;
         h1 {
-          @include heading($font-size: 6.4rem, $line-height: 6rem, $color: white)
+          @include heading($font-size: 4.4rem, $line-height: 6rem, $color: white)
         }
 
         p {
@@ -176,7 +184,7 @@
     span {
      color: #0071FF;
     }
-   @include content($font-size: 2.2rem, $color: black, $line-height: 4rem, $letter-spacing: 0.02rem );
+   @include content($font-size: 2.2rem, $color: black, $line-height: 2rem, $letter-spacing: 0.03rem );
   }
   img {
     width: 6rem;
@@ -209,38 +217,40 @@
   .proofOfFireBoxes {
    @include flex($flex-direction: column);
     .footerBody {
-     @include flex($justify-content: space-between);
-      width: 70%;
-      margin: 5rem auto;
-      .proofAddition {
-        margin-right: 7rem;
-        @include flex($justify-content: space-evenly, $align-items: center);
+      width: 80%;
+      margin-right: 6rem;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+     @include flex($justify-content: space-evenly, $align-items: center);
         .headingStyles {
-          @include heading($color: white, $font-size: 2rem, $line-height: 3.6rem)
+          @include heading($color: white, $font-size: 2rem, $line-height: 2.6rem)
         }
-      }
+
+        .containerClass {
+          padding: 2rem;
+        }
     }
   }
 }
 
-.featuresHeading {
-  h1 {
-    @include heading($font-size: 3.2rem, $line-height: 3.6rem, $color: #000040);
-    text-align: center;
-    margin-right: 3rem;
+.featuresData {
+  margin: 2rem 0;
+  .featuresHeading {
+    h1 {
+      @include heading($font-size: 3.2rem, $line-height: 3.6rem, $color: #000040);
+      text-align: center;
+    }
   }
-}
-
-  .features {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0rem auto;
-    width: 65%;
-    padding: 5rem 0;
+  .featuresRow {
+    @include flex($justify-content: space-evenly);
+    .features {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
   }
-
+  }
 }
 
 
@@ -254,10 +264,10 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 10rem 0;
+    padding: 5rem 0;
 
     h1 {
-      @include heading($font-size: 6.4rem, $line-height: 6.4rem, $color: white);
+      @include heading($font-size: 4.4rem, $line-height: 6.4rem, $color: white);
       text-align: center;
       width: 70%
   }
@@ -290,9 +300,9 @@
 
 
   .foundersFeatured {
-    margin-top: 9rem;
+    margin: 15rem 0;
     h1 {
-      @include heading($font-size: 5.4rem, $line-height:6.4rem, $color: #000040);
+      @include heading($font-size: 4.4rem, $line-height: 4.4rem, $color: #000040);
       text-align: center;
     }
   }
@@ -307,9 +317,15 @@
 .aboutAdvisors {
   width: 85%;
   margin: 0 auto;
+  .headingStyles {
+    @include heading($color: #000040, $font-size: 2.4rem, $line-height: 2.4rem);
+  }
   .subheadingStyles {
-    @include heading($color: #000400, $font-size: 1rem, $line-height: 1rem);
+    @include heading($color: #000400, $font-size: 1.8rem, $line-height: 2rem);
     text-align: center;
+  }
+  .containerClass {
+    margin-bottom: 2rem;
   }
 }
 
@@ -324,8 +340,7 @@
        justify-content: flex-start;
        display: flex;
        flex-direction: column;
-       margin-top: 3rem auto;
-
+      padding: 0 1rem;
        .Applogo {
          height: 4.5rem;
          width: 4.5rem;
@@ -333,17 +348,17 @@
      }
 
      h1{
-      @include heading($font-size: 1.8rem);
+      @include heading($font-size: 2.4rem);
      }
 
      h2 {
-      @include heading($font-size: 1.4rem, $line-height: 3.2rem);
+      @include heading($font-size: 1.8rem, $line-height: 3.2rem);
      }
 
      p {
-      width: 90%;
+      width: 100%;
       text-align: center;
-      @include content($color: #1E1E25, $font-size: 1.2rem, $line-height: 2.4rem)
+      @include content($color: #1E1E25, $font-size: 1.8rem, $line-height: 2.4rem)
      }
 
      .button {
@@ -356,75 +371,94 @@
 .GetStartedContainer {
   .getStartedInfo {
     background:#000040;
-
+    padding: 3rem 2rem;
     .getStartedText {
-      padding: 5rem 2.5rem;
-      p {
-        @include content($font-size: 1.8rem, $line-height: 3.4rem);
+      @include flex($justify-content: space-evenly);
+      width: 100%;
+      .getStartedDiv {
         width: 100%;
+        p {
+          @include content($font-size: 1.8rem, $line-height: 3.2rem);
+          text-align: center;
+        }
+      }
+      .getStartedRoadM {
+        .button {
+          background: #D0DDEC;
+          color: #323A78;
+        }
       }
   }
 
   }
 
   .aboutFireContent {
-    padding: 2.5rem;
+    padding: 3rem 2rem;
       .whatIsFire {
         width: 100%;
         h1 {
-          @include heading($font-size: 3.2rem)
+          @include heading($font-size: 3.2rem);
+          text-align: center;
         }
 
         p {
           @include content($font-size: 1.5rem, $line-height: 2.4rem, $color: #000040);
           width: 100%;
+          text-align: center;
         }
       }
 
       .learnMoreAbout {
-          @include flex($justify-content: space-between, $flex-direction: row, $align-items: center);
+          @include flex($justify-content: space-between, $flex-direction: column, $align-items: center);
         .learnMoreAboutText {
           p {
             @include content($font-size: 1.8rem, $line-height: 1rem, $color: #000040);
+            text-align: center;
           }
 
           h1 {
             @include heading($font-size: 2.4rem, $line-height: 1rem);
+            text-align: center;
           }
         }
         button {
-          margin-top: 3.2rem;
+          margin-top: 1.2rem;
         }
       }
    }
 
    .whyFireContent {
-    padding: 2.5rem;
+    padding: 3rem 2rem;
       .whyIsFire {
+        margin-left: 0;
         width: 100%;
         h1 {
-          @include heading($font-size: 3.2rem, $color: white)
+          @include heading($font-size: 3.2rem, $color: white);
+          text-align: center;
         }
 
         p {
           @include content($font-size: 1.5rem, $line-height: 2.4rem, $color: white);
           width: 100%;
+          text-align: center;
         }
       }
 
       .learnMoreAbout {
-          @include flex($justify-content: space-between, $flex-direction: row, $align-items: center);
+          @include flex($justify-content: space-between, $flex-direction: column, $align-items: center);
         .learnMoreAboutText {
           p {
             @include content($font-size: 1.8rem, $line-height: 1rem, $color: white);
+            text-align: center;
           }
 
           h1 {
-            @include heading($font-size: 2.4rem, $line-height: 1rem);
+            @include heading($font-size: 2.4rem, $line-height: 1rem, $color: white);
+            text-align: center;
           }
         }
         button {
-          margin-top: 3.2rem;
+          margin-top: 1.2rem;
         }
       }
    }
@@ -435,7 +469,7 @@
 .AboutFire {
   .parentHeader {
     .aboutHeader {
-      padding: 2rem;
+      padding: 3rem 2rem;
       margin: 0 auto;
 
       .aboutContent {
@@ -455,7 +489,7 @@
 }
 
 .quoteStyle {
-  padding: 2rem;
+  padding: 3rem 2rem;
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
@@ -473,7 +507,6 @@
 
 .footerBody {
   .proofAddition {
-
     .headingStyles {
       @include heading($color: white, $font-size: 2rem, $line-height: 3.6rem)
     }
@@ -485,7 +518,7 @@
 
 .WhyFire {
 .footerStyles {
-  padding: 2rem;
+  padding: 3rem 2rem;
   .footerContent {
     padding: 1rem;
     h1 {
@@ -498,8 +531,9 @@
   }
   .proofOfFireBoxes {
      .footerBody {
+       width: 100%;
+       margin-right: 0rem;
        .proofAddition {
-         margin-right: 0rem;
          .headingStyles {
            text-align: center;
          }
@@ -508,18 +542,30 @@
    }
 }
 
-.featuresHeading {
-  h1 {
-    margin-right : 0rem;
+.featuresData {
+
+  .featuresHeading {
+    h1 {
+      @include heading($font-size: 3.2rem, $line-height: 3.6rem, $color: #000040);
+      text-align: center;
+    }
   }
-}
+  .featuresRow {
+    @include flex($justify-content: space-evenly);
+    .features {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  }
+  }
 
 }
 
 .foundersSection {
   .founder {
     .founderContent {
-      padding: 2rem;
+      padding: 3rem 2rem;
       h1 {
         font-size: 2.4rem;
         line-height: 3.2rem;
@@ -537,19 +583,24 @@
     .headingStyles {
       @include heading($color: #000040, $font-size: 2rem, $line-height: 0rem);
       text-align: center;
-      margin-top: 3rem;
     }
 
     .subheadingStyles {
-      @include heading($color: #000400, $font-size: 2rem, $line-height: 1rem);
+      @include heading($color: #000400, $font-size: 1.8rem, $line-height: 1rem);
       text-align: center;
+      margin-bottom: 2rem;
     }
+  .containerClass {
+    margin-bottom: 2rem;
+  }
+
+
   }
 
   .foundersFeatured {
-    margin-top: 2rem;
+    margin: 5rem 0rem 1rem 1rem;
     h1 {
-      font-size: 24px;
+      @include heading($font-size: 2.4rem);
     }
   }
 
