@@ -7,12 +7,14 @@ import styles from './AboutBody.scss';
 import partners from '../../../assets2/Partners.png'
 // advisors
 
+// advisors 
+
+import ian from '../../../assets2/advisors/Ian.png';
 import joe from '../../../assets2/advisors/Joe.png';
 import mathew from '../../../assets2/advisors/Mathew.png';
-import RichardSwart from '../../../assets2/advisors/RichardSwart.png';
-import Rongaron from '../../../assets2/advisors/Rongaron.png';
-import sam from '../../../assets2/advisors/Sam.png';
-import yechuanHu from '../../../assets2/advisors/YechuanHu.png';
+import David from '../../../assets2/advisors/David.png';
+import Alvaro from '../../../assets2/advisors/Alvaro.png';
+import Antoni from '../../../assets2/advisors/Antoni.png';
 
 // team
 import PG from '../../../assets2/teamPictures/PG.png';
@@ -40,28 +42,28 @@ import FlipCard from '../../../common-elements/flipCard/flipCard';
 import Footer from '../../../common-elements/Footer/Footer';
 
 const teamImages = [PG, PD, VM, Serge, SAI, Zak, Avid];
-const aboutTeamParas = ["Serial social entrepreneur, investor, public speaker and writer creating 5th Industrial Revolution and championing UN SDGs. India President - 5thelement.group ; Entrepreneur 35 Under 35, Asiaone 40 under 40 Most Influential Leaders, Greenbiz Global 30 Under 30, BP Scholar, WEF Global Shaper, Ambassador at One Young World, Al Gore’s Climate Leader. MBA – IIFT Delhi. Exec Ed – UChicago / UOxford",
-    "Prateek is a Blockchain enthusiast , investor and veteran Internet Marketer. He conceptualised the proprietary 5IRE consensus mechanism and reward protocols. In his internet marketing days, he clocked 8-figure affiliate revenues and helped incubate many startups. He founded Kaching Media and multiple internet marketing companies. He is also a heavy proponent of work life balance and healthy living",
-"Ex-EU lawyer, Venture Capitalist & Futurist. Incubated 40+ Projects including Qtum, Tron & Aleph Zero ; Advisor at the EU Blockchain Observatory , World Future Society & UN USA ; Member of Singularity University",
-"Cofounder of Node Kapital, investing and scaling in DEFI, NFT, Gaming, Esports, Metaverse, & Infrastructure, Layer 1/2 solutions. He previously successfully led and scaled Talent Spot Group into a global business USD 120 Million in revenue Polyglot, fluent in Arabic Chinese English French Armenian Completed his grad degree at Stanford University",
-"Visionary Technology Leader with a record of accomplishment creating technology strategies and products that address across industry opportunities. He has 11+ years of Experience in strategy management MBA - Stephen M. Ross School of Business",
-"A security of information systems engineer with an experience  on communication protocols and E2E encryption.  Cryptography, Blockchain and Intellectual property protection & DRM Researcher",
-"Software  engineer  turned Social entreprenuer with an experience in   building for-benefit  businesses and enterprise management. He also has a knack  for Graphic & UI/UX Design. Exec Ed - Indian Institute of Management, Ranchi",
+const aboutTeamParas = ["Serial social entrepreneur, investor, public speaker and writer creating 5th Industrial Revolution and championing UN SDGs. India President - 5thelement.group; Entrepreneur 35 Under 35, Asiaone 40 under 40 Most Influential Leaders, Greenbiz Global 30 Under 30, BP Scholar, WEF Global Shaper, Ambassador at One Young World, Al Gore’s Climate Leader. MBA – IIFT Delhi. Exec Ed – UChicago / UOxford",
+    "Prateek is a Blockchain enthusiast, investor and veteran Internet Marketer. He conceptualised the proprietary 5IRE consensus mechanism and reward protocols. In his internet marketing days, he clocked 8-figure affiliate revenues and helped incubate many startups. He founded Kaching Media and multiple internet marketing companies. He is also a heavy proponent of work life balance and healthy living.",
+"Venture Capitalist & Futurist. Incubated 40+ Projects including Qtum, Tron & Aleph Zero; Advisor at the EU Blockchain Observatory, World Future Society & UN USA; Member of Singularity University, Ex-EU Lawyer.",
+"Cofounder of Node Kapital, investing and scaling in DEFI, NFT, Gaming, Esports, Metaverse, Infrastructure & Layer 1/2 solutions. He previously successfully led and scaled Talent Spot Group into a global business with USD 120 Million in revenue. Polyglot - fluent in Arabic, Chinese, English, French, Armenian. Completed his grad degree at Stanford University.",
+"Visionary Technology Leader with a record of accomplishment creating technology strategies and products that address across industry opportunities. He has 15+ years of Experience in strategy management MBA - Stephen M. Ross School of Business",
+"A security of information systems engineer. Communication protocols and E2E encryption enthusiast. Cryptography, Blockchain and Intellectual property protection & DRM Researcher",
+"Software  engineer turned social entreprenuer with an experience in building for-benefit businesses and enterprise management. He also has a knack for Graphic & UI/UX Design. Exec Ed - Indian Institute of Management, Ranchi.",
 ];
 
-const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Matilla", "Serge Ajamian", "Sai Kossireddy", "Zakaria Salek", "Rahul Rautela",];
+const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Mattila", "Serge Ajamian", "Sai Kossireddy", "Zakaria Salek", "Rahul Rautela",];
 
 const aboutImageSize = [{ width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}];
 
-const aboutTeamSubPara = ["Co Founder & CEO","Co Founder & CMO", "Co Founder & CBO", "Head of Advisory Council | Strategic Advisor to the CEO", "Head of Strategy Management", "Head of Blockchain Research & Development", "Head of Operations & Design"];
+const aboutTeamSubPara = ["Co Founder & CEO","Co Founder & CMO", "Co Founder & CBO", "Head of Advisory Council Strategic Advisor to the CEO", "Head of Strategy Management", "Head of Blockchain Research & Development", "Head of Operations & Design"];
 
 // Advisors 
 
 
-const advisorsImages = [joe, mathew, RichardSwart, Rongaron, sam, yechuanHu];
-const advisorsHeadings = ["Joe Vezzani", "Mathew Neimerg", "Richard Swart", "Ron Garan", "Sam Goldman","Antoni Zolciak"];
-const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}];
-const advisorsSubPara = ["CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "Ex-director, UC Berkeley", "Astronaut NASA ", "Founder & President, d.Light", "Co-founder & CMO Aleph Zero, Harvard"];
+const advisorsImages = [ian, joe, mathew, David, Alvaro, Antoni];
+const advisorsHeadings = ["Ian Scarffe", "Joe Vezzani", "Mathew Neimerg", "David Marshall", "Alvaro Fernandaz","Antoni Zolciak"];
+const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
+const advisorsSubPara = ["Blockchain and Crypto Advisor", "CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero", "Co-Founder Marshland Capital", "Head of Strategy & Growth, Nsure Network ", "Co-founder & CMO Aleph Zero"];
 const responsiveForAdvisors = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -108,15 +110,15 @@ function AboutBody(props) {
     return (
         <div>
             <div className={styles.aboutFirstHeader}>
-              <h1>5irechain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy. </h1>
+              <h1>5ireChain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy. </h1>
             </div>
             <div className={styles.AboutHeader}>
                 <h1>Our Mission</h1>
                 <p>5ire aims to become a blockchain ecosystem for the 5th industrial revolution, where self-sovereign decentralized organizations are empowered & incentivized toward accelerating the implementation of the United Nations 2030 Agenda for Sustainable Development. </p>
             </div>
             <div className={styles.aboutFire}>
-                <h1>About 5IRE</h1>
-                <p>5ireChain is a smart contract platform where individuals and enterprises can develop, build,  transact and participate in economic growth while preserving the enviroment. While assuring democracy and justified fair representation of stakeholders. </p>
+                <h1>About 5ire</h1>
+                <p>5ire is a blockchain ecosystem where individuals and enterprises can develop, build,  transact and participate in sustainable economic growth while assuring democracy and justified fair representation of stakeholders. </p>
             </div>
             <header className={styles.founder}>
               <div className={styles.founderContent}>

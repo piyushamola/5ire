@@ -38,7 +38,7 @@ const proofOfFireDimensions = [{width: '10.7rem', height: '12.2rem'}, { width: '
 const proofOfFireHeading = ["Nominated Proof of Stake", "Proof of Benefit", "Proof of Donation"];
 const proofOfHeadingPara = ["Nominated Proof of Stake guarantees security, democracy and justified fair representation of network actors.",
                             "A governance-based reward distribution process that incentivizes network actors based on their commitment with the United Nation Sustainable Development Goals.",
-                                "Focuses on rewarding positive impact, that can either be on-chain or in real world."]
+                                "Focuses on rewarding positive impact that can either be on-chain or in the real world."]
 
 
 // consensus actors 
@@ -46,7 +46,7 @@ const proofOfHeadingPara = ["Nominated Proof of Stake guarantees security, democ
 const consensusImages = [ Validator, Nominator];
 const consensusImagesDimensions = [{width: '8.4rem', height: '6.4rem'}, {width: '8.4rem', height: '6.4rem'}];
 const consensusHeadings = ["Validator", "Nominator"];
-const consensusPara = ["Secure the network by participating in the production & verification of blocks and maintaining the consensus.",
+const consensusPara = ["Secure the network by participating in the production & verification of blocks, and maintaining the consensus.",
                         "Provide security to 5ireChain by electing validators and backing them with stake while receiving rewards."]
 
 
@@ -54,15 +54,15 @@ const consensusPara = ["Secure the network by participating in the production & 
 const governanceDimensions = [{width: '8.4rem', height: '6.4rem'}, {width: '8.4rem', height: '6.4rem'}, {width: '8.4rem', height: '6.4rem'}, {width: '8.4rem', height: '6.4rem'}];
 const governanceImages = [CouncilMembers, technicalCommittee, sustainibility, daoWorking];
 const governanceHeading = ["Council Members", "Technical Committee", "Sustainability Reporters DAOs", "DAOs & Working Groups"];
-const governancePara = ["The Council is an on-chain entity that assembles a fixed number of elected actors that hold responsibility for governance tasks.", 
-                        "Composed of members proactively building the 5ire Chain runtime",
-                    " Global sustainability standards Reports working groups that have experience in the 17 SDGs they also help with the validation of governance proposals.",
-                "Organizations & working groups that work towards implementing the United Nations 2030 Agenda for Sustainable Development and teams that build 5ire. "];
+const governancePara = ["The Council is an on-chain entity that assembles a fixed number of elected actors responsible for governance tasks.", 
+                        "Composed of members proactively building the 5ireChain runtime.",
+                    " Global sustainability standards working groups that have experience in the 17 SDGs also help validate governance proposals.",
+                "Organizations & working groups that work towards implementing the United Nations 2030 Agenda for Sustainable Development, and teams that build 5ireChain. "];
 
 
 // What can we build on fire
 
-const buildHeading = ["Governance & DAO frameworks for individuals investment funds & companies.", "Custom Blockchain, Smart contracts, IoT, AR/VR, AI solutions for UN SDGs & impact."];
+const buildHeading = ["Governance & DAO frameworks for individuals, investment funds & companies.", "Custom Blockchain, Smart contracts, IoT, AR/VR, AI solutions for UN SDGs & impact."];
 const buildImages = [GovernanceDao, customBlockChain ];
 const buildImagesDimensions = [{width: '8.4rem', height: '6.4rem'}, {width: '8.4rem', height: '6.4rem'}]
 
@@ -70,8 +70,8 @@ const buildImagesDimensions = [{width: '8.4rem', height: '6.4rem'}, {width: '8.4
 // Card 
 
 const headingCard = ["IoT & Smart Sensors", "Smart Contracts", "DAOs & Governance", "Decentralized Oracles", "Distributed Data Storage", "Self-sovereign Digital Identity", "Decentralized Naming Services", "Trusted Execution Environment (TEE)"];
-const headingPara = ["Real-time sustainable economy data collection & telemetry with sensors,  drones, meters & satellite integration.", "Rust-based WebAssembly ink! & Ethereum EVM  Solidity Smart Contracts for building Decentralized applications.",
-"On-chain collaboration & confederation frameworks for Decentralized autonomous organizations.", "Advanced decentralized data feeding & AI-based data analytics revealing SDG-related risks and impacts.","Blockchain and distributed storage for on-chain accounting of data transactions and DHT status. Enabling incentivized data storage and replication.",
+const headingPara = ["Real-time economy sustainability data collection & telemetry with sensors,  drones, meters & satellite integration.", "Rust-based WebAssembly ink! & Ethereum EVM  Solidity Smart Contracts for building Decentralized applications.",
+"On-chain collaboration & confederation frameworks for Decentralized autonomous organizations.", "Advanced decentralized data feeding & AI-based data analytics revealing SDG-related risks and impacts.","On-chain accounting of data transactions & DHT status enabling incentivized data storage & replication.",
 " DIDs and Credentials verification, aggregation and computation processes to provide privacy & transparency.", "Decentralized and permissionless naming protocols compatible with DNS as an alternative to existing Certificate Authorities.",
 "Custom state transition functions (STF) inside a Trusted Execution Environment to provide confidentiality & integrity."];
 
@@ -143,7 +143,7 @@ function AboutTechnology(props) {
               <div className={styles.buildFire}> 
                 <div className={styles.buildFireContainer}>
                     <div className={styles.buildFireHeading}>
-                         <h1>What can be build on 5IRE?</h1>
+                         <h1>What can be built on 5ire?</h1>
                     </div>
                     <div className={styles.imageContent}>
                         { buildImages.map((img, index) => (

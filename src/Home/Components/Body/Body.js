@@ -28,12 +28,12 @@ import VM from '../../../assets2/teamPictures/VM.png';
 
 // advisors 
 
+import ian from '../../../assets2/advisors/Ian.png';
 import joe from '../../../assets2/advisors/Joe.png';
 import mathew from '../../../assets2/advisors/Mathew.png';
-import RichardSwart from '../../../assets2/advisors/RichardSwart.png';
-import Rongaron from '../../../assets2/advisors/Rongaron.png';
-import sam from '../../../assets2/advisors/Sam.png';
-import yechuanHu from '../../../assets2/advisors/YechuanHu.png';
+import David from '../../../assets2/advisors/David.png';
+import Alvaro from '../../../assets2/advisors/Alvaro.png';
+import Antoni from '../../../assets2/advisors/Antoni.png';
 
 // logos
 
@@ -43,6 +43,7 @@ import forbes from '../../../assets2/logos/Forbes-logo.png'
 import entrepreneur from '../../../assets2/logos/Entrepreneur_logo.png'
 import globe from '../../../assets2/logos/globe.png'
 import nasdaq from '../../../assets2/logos/nasdaq.png'
+import inc500 from '../../../assets2/logos/inc500.png'
 
 // components
 import ImageHeadingContent from '../../../common-elements/ImageHeadingContent/ImageHeadingContent'
@@ -72,7 +73,7 @@ const proofOfFireHeading = ["Nominated Proof of Stake", "Proof of Benefit", "Pro
 
 // team
 const teamImages = [PG, PD, VM];
-const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Matilla"];
+const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Mattila"];
 const aboutImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
 const aboutTeamSubPara = ["Co Founder & CEO","Co Founder & CMO", "Co Founder & CBO"];
 const responsiveForTeam = {
@@ -96,8 +97,8 @@ const responsiveForTeam = {
 
 //logos
 
-const logos = [nasdaq, forbes, ted, entrepreneur, globe];
-const logosDimensions = [{ width: '16rem', height: '4rem', marginTop: '2.5rem'}, { width: '14.7rem', height: '8.3rem', marginBottom: '4rem'}, { width: '12.3rem', height: '4.5rem', marginTop: '2rem'}, { width: '23.8rem', height: '9rem', marginBottom: '4rem'}, { width: '11.2rem', height: '9.4rem', marginBottom:'4rem'}];
+const logos = [nasdaq, forbes, ted, entrepreneur, globe, inc500];
+const logosDimensions = [{ width: '16rem', height: '4rem', marginTop: '2.5rem'}, { width: '14.7rem', height: '8.3rem', marginBottom: '4rem'}, { width: '12.3rem', height: '4.5rem', marginTop: '2rem'}, { width: '23.8rem', height: '9rem', marginBottom: '4rem'}, { width: '11.2rem', height: '9.4rem', marginBottom:'4rem'}, { width: '11.2rem', height: '9.4rem', marginBottom:'4rem'}];
 const commonStylesLogos = {
   marginLeft: '8rem',
 }
@@ -122,10 +123,10 @@ const responsiveForLogos = {
 
 // advisors 
 
-const advisorsImages = [joe, mathew, RichardSwart, Rongaron, sam, yechuanHu];
-const advisorsHeadings = ["Joe Vezzani", "Mathew Neimerg", "Richard Swart", "Ron Garan", "Sam Goldman","Antoni Zolciak"];
-const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}];
-const advisorsSubPara = ["CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero, Ph.D. IBM High Performance Computing", "Ex-director, UC Berkeley", "Astronaut NASA ", "Founder & President, d.Light", "Co-founder & CMO Aleph Zero, Harvard"];
+const advisorsImages = [ian, joe, mathew, David, Alvaro, Antoni];
+const advisorsHeadings = ["Ian Scarffe", "Joe Vezzani", "Mathew Neimerg", "David Marshall", "Alvaro Fernandaz","Antoni Zolciak"];
+const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
+const advisorsSubPara = ["Blockchain and Crypto Advisor", "CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero", "Co-Founder Marshland Capital", "Head of Strategy & Growth, Nsure Network ", "Co-founder & CMO Aleph Zero"];
 const responsiveForAdvisors = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -163,7 +164,7 @@ function Body(props) {
                 Welcome To 5ire
             </h1>
             <h2>
-             Blockchain X Sustainability = 5IRE
+             Blockchain X Sustainability = 5ire
             </h2>
             <p>
                5ireChain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy. 
@@ -177,7 +178,7 @@ function Body(props) {
          <div className={styles.getStartedInfo}>
             <div className={styles.getStartedText}>
               <div className={styles.getStartedDiv}>
-                <p>5IRE mission is to Accelerate the implementation of the United Nations 2030 Agenda for Sustainable Development.   </p>
+                <p>5ire's mission is to accelerate the implementation of the United Nations 2030 Agenda for Sustainable Development.   </p>
               </div>
               <div className={styles.getStartedRoadMap}>
                 <Button label="See Roadmap" btnClick={() => history.push('/roadmap')} className={styles.button}/>
@@ -192,7 +193,7 @@ function Body(props) {
             <div className={styles.learnMoreAbout}>
                   <div className={styles.learnMoreAboutText}>
                     <p>Learn more about</p>
-                    <h1>5irechain Technology </h1>
+                    <h1>5ireChain Technology </h1>
                   </div>
                   <div className={styles.fireChainTechBtn}>
                      <Button label="Discover 5ire" btnClick={() => history.push('/technology')} className={styles.button}/>
@@ -202,8 +203,7 @@ function Body(props) {
         <div className={styles.whyFireContent}>
             <div className={styles.whyIsFire}>
                 <h1>Why 5IR ?</h1>
-                <p>In contrast to trends in the Fourth Industrial Revolution toward dehumanization, technology and innovation best practices need to be bent back toward the service of humanity.
-5ire is a gateway in the smooth transitioning of the world from 4IR to 5IR. </p>
+                <p>In contrast to trends in the Fourth Industrial Revolution toward dehumanization, technology, and innovation, best practices need to be bent back toward the service of humanity. 5ire is a gateway in the smooth transitioning of the world from 4IR to 5IR. </p>
             </div>
             <div className={styles.learnMoreAbout}>
                   <div className={styles.learnMoreAboutText}>
@@ -232,7 +232,7 @@ function Body(props) {
       </section>
       <div className={styles.quoteStyle}>
             <img src={quote} alt="quote"/>
-             <p><span>Society & environment </span>is where we all meet, where all have a mutual interest, the one thing all of us share. </p>
+             <p><span>Society & environment </span>is where we all meet; where all have a mutual interest; it is the one thing all of us share. </p>
         </div>
       <section className={styles.WhyFire}>
         <footer>
@@ -299,8 +299,8 @@ function Body(props) {
                       ))}
              </CarouselComp>
           </div>
-         <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <Button label="Meet 5IRE Team" btnClick={() => history.push('/about')}/>
+         <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' , marginBottom: '15rem'}}>
+            <Button label="Meet 5ire Team" btnClick={() => history.push('/about')}/>
          </div>
         <div className={styles.foundersFeatured}>
            <h1>Founders Featured In</h1>

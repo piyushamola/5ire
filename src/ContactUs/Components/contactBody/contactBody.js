@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './contactBody.scss';
 import Footer from '../../../common-elements/Footer/Footer';
 const techBoxesHeading = ["Twitter", "Element Chat", "Reddit", "Medium", "LinkedIn", "Telegram"];
-const links = ["https://twitter.com/5ireChain", "https://matrix.to/#/#5ire:matrix.org", "https://www.reddit.com/r/5ireChain/", "https://medium.com/@5ireChain", "https://www.linkedin.com/company/5irechain/", "https://t.me/FireChainOfficial"]
+const links = ["https://twitter.com/5ireChain", "https://matrix.to/#/#5ire:matrix.org", "https://www.reddit.com/r/5ireChain/", "https://medium.com/@5ireChain", "https://www.linkedin.com/company/5irechain/", "https://t.me/OfficialFireChain"]
 
 function contactBody(props) {
     return (

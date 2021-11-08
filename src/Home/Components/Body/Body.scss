@@ -254,8 +254,6 @@
 }
 
 
-
-
 .foundersSection {
   .founder {
     background: #000040;
@@ -298,9 +296,8 @@
   display: none;
 }
 
-
   .foundersFeatured {
-    margin: 15rem 0;
+    margin: 8rem 0;
     h1 {
       @include heading($font-size: 4.4rem, $line-height: 4.4rem, $color: #000040);
       text-align: center;
@@ -310,6 +307,7 @@
   .logosCarousel {
     width: 85%;
     margin: 0 auto;
+    margin-bottom: 15rem;
   }
 }
 
@@ -593,7 +591,6 @@
   .containerClass {
     margin-bottom: 2rem;
   }
-
 
   }
 

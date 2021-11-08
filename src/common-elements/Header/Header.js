@@ -41,7 +41,7 @@ function Header(props) {
             <NavigationItem link="/" exact active={true}>Home</NavigationItem>
             <NavigationItem link="/technology" >Technology</NavigationItem>
             <NavigationItem link="/about">About</NavigationItem>
-            <NavigationItem link="/roadmap">RoadMap</NavigationItem>
+            <NavigationItem link="/roadmap">Roadmap</NavigationItem>
             <NavigationItem link="/contact">Contact</NavigationItem>
         </div>
         <div className={styles.burgerIcon} onClick={() => setSideBarState(!sideBarState)}>
