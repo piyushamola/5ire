@@ -1,4 +1,7 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+
 import HeadingWithList from '../HeaderWithList/HeaderWithList';
 import styles from './Foooter.scss';
 
@@ -15,6 +18,7 @@ const FinalFooterList = [[{ label: "About", link:'/about' }, { label: "Support",
                         ];
 
 function Footer(props) {
+  const { t } = useTranslation();
     return (
         <footer className={styles.FinalFooterContainer}>
         <div className={styles.FinalFooter}>
@@ -24,7 +28,7 @@ function Footer(props) {
           </div>
           ))}
         </div>
-      <p className={styles.contentStyles}>All Rights Reserved &copy; 5ire 2021 | Kemp House, 160 City Rd, London EC1V 2NX, United Kingdom</p>
+      <p className={styles.contentStyles}>{t("All Rights Reserved")} &copy; {t("5ire 2021 | Kemp House, 160 City Rd, London EC1V 2NX, United Kingdom")}</p>
     </footer>
     );
 }

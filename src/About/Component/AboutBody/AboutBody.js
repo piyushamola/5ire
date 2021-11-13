@@ -1,4 +1,6 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next'
+
 import styles from './AboutBody.scss';
 
 
@@ -48,7 +50,7 @@ const aboutTeamParas = ["Serial social entrepreneur, investor, public speaker an
 "Cofounder of Node Kapital, investing and scaling in DEFI, NFT, Gaming, Esports, Metaverse, Infrastructure & Layer 1/2 solutions. He previously successfully led and scaled Talent Spot Group into a global business with USD 120 Million in revenue. Polyglot - fluent in Arabic, Chinese, English, French, Armenian. Completed his grad degree at Stanford University.",
 "Visionary Technology Leader with a record of accomplishment creating technology strategies and products that address across industry opportunities. He has 15+ years of Experience in strategy management MBA - Stephen M. Ross School of Business",
 "A security of information systems engineer. Communication protocols and E2E encryption enthusiast. Cryptography, Blockchain and Intellectual property protection & DRM Researcher",
-"Software  engineer turned social entreprenuer with an experience in building for-benefit businesses and enterprise management. He also has a knack for Graphic & UI/UX Design. Exec Ed - Indian Institute of Management, Ranchi.",
+"Software engineer turned social entreprenuer with an experience in building for-benefit businesses and enterprise management. He also has a knack for Graphic & UI/UX Design. Exec Ed - Indian Institute of Management, Ranchi.",
 ];
 
 const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Mattila", "Serge Ajamian", "Sai Kossireddy", "Zakaria Salek", "Rahul Rautela",];
@@ -63,7 +65,7 @@ const aboutTeamSubPara = ["Co Founder & CEO","Co Founder & CMO", "Co Founder & C
 const advisorsImages = [ian, joe, mathew, David, Alvaro, Antoni];
 const advisorsHeadings = ["Ian Scarffe", "Joe Vezzani", "Mathew Neimerg", "David Marshall", "Alvaro Fernandaz","Antoni Zolciak"];
 const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
-const advisorsSubPara = ["Blockchain and Crypto Advisor", "CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero", "Co-Founder Marshland Capital", "Head of Strategy & Growth, Nsure Network ", "Co-founder & CMO Aleph Zero"];
+const advisorsSubPara = ["Blockchain and Crypto Advisor", "CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero", "Co-Founder Marshland Capital", "Head of Strategy & Growth, Nsure Network", "Co-founder & CMO Aleph Zero"];
 const responsiveForAdvisors = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -107,28 +109,29 @@ const responsiveForLogos = {
 };
 
 function AboutBody(props) {
+  const { t } = useTranslation();
     return (
         <div>
             <div className={styles.aboutFirstHeader}>
-              <h1>5ireChain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy. </h1>
+              <h1>{t("5ireChain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy.")} </h1>
             </div>
             <div className={styles.AboutHeader}>
-                <h1>Our Mission</h1>
-                <p>5ire aims to become a blockchain ecosystem for the 5th industrial revolution, where self-sovereign decentralized organizations are empowered & incentivized toward accelerating the implementation of the United Nations 2030 Agenda for Sustainable Development. </p>
+                <h1>{t("Our Mission")}</h1>
+                <p>{t("5ire aims to become a blockchain ecosystem for the 5th industrial revolution, where self-sovereign decentralized organizations are empowered & incentivized toward accelerating the implementation of the United Nations 2030 Agenda for Sustainable Development.")} </p>
             </div>
             <div className={styles.aboutFire}>
-                <h1>About 5ire</h1>
-                <p>5ire is a blockchain ecosystem where individuals and enterprises can develop, build,  transact and participate in sustainable economic growth while assuring democracy and justified fair representation of stakeholders. </p>
+                <h1>{t("About 5ire")}</h1>
+                <p>{t("5ire is a blockchain ecosystem where individuals and enterprises can develop, build, transact and participate in sustainable economic growth while assuring democracy and justified fair representation of stakeholders.")} </p>
             </div>
             <header className={styles.founder}>
               <div className={styles.founderContent}>
-                <h1>Founded by Global Impact Champions & Blockchain Pioneers</h1>
+                <h1>{t("Founded by Global Impact Champions & Blockchain Pioneers")}</h1>
               </div>
            </header>
               <div className={styles.teamFlipFlop}>
                       { teamImages.map((img, index) => (
                         index <= 3 && <div>
-                        <FlipCard image={img} paraAfterFlip={aboutTeamParas[index]} heading={aboutTeamHeadings[index]} subPara={aboutTeamSubPara[index]}
+                        <FlipCard image={img} paraAfterFlip={t(aboutTeamParas[index])} heading={t(aboutTeamHeadings[index])} subPara={t(aboutTeamSubPara[index])}
                             imgSize={aboutImageSize[index]}
                         />
                         </div>
@@ -137,14 +140,14 @@ function AboutBody(props) {
               <div className={styles.teamFlipFlop}>
                       { teamImages.map((img, index) => (
                         index > 3 && <div>
-                        <FlipCard image={img} paraAfterFlip={aboutTeamParas[index]} heading={aboutTeamHeadings[index]} subPara={aboutTeamSubPara[index]}
+                        <FlipCard image={img} paraAfterFlip={t(aboutTeamParas[index])} heading={t(aboutTeamHeadings[index])} subPara={t(aboutTeamSubPara[index])}
                             imgSize={aboutImageSize[index]}
                         />
                         </div>
                       ))}
               </div>
             <div className={styles.founders}>
-                <h1>Founders Featured In</h1>
+                <h1>{t("Founders Featured In")}</h1>
             </div>
             <div className={styles.logosCarousel}>
             <CarouselComp responsive={responsiveForLogos}>
@@ -158,12 +161,12 @@ function AboutBody(props) {
             </CarouselComp>
             </div>
             <div className={styles.ourAdvisors}>
-                 <h1>Our Global Advisory Council & Braintrust Network</h1>
+                 <h1>{t("Our Global Advisory Council & Braintrust Network")}</h1>
             </div>
             <div className={styles.aboutAdvisorsMobile}>
                 <CarouselComp responsive={responsiveForAdvisors}>
                 { advisorsImages.map((img, index) => (
-                            <ImageHeadingContent image={img} heading={advisorsHeadings[index]} subHead={advisorsSubPara[index]}
+                            <ImageHeadingContent image={img} heading={t(advisorsHeadings[index])} subHead={t(advisorsSubPara[index])}
                             imgSize={advisorsImageSize[index]}
                             headingStyles={styles.headingStyles}
                             subHeadStyles={styles.subheadingStyles}
@@ -172,7 +175,7 @@ function AboutBody(props) {
                 </CarouselComp>
               </div>
              <div className={styles.ourAdvisors}>
-                <h1>Our Partners</h1>
+                <h1>{t("Our Partners")}</h1>
             </div>
             <div className={styles.parterns}>
             <img src={partners}  alt="partners" />

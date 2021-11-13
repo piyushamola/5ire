@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next'
 
 import fire from '../../../assets2/fire.png'
 
@@ -126,7 +127,7 @@ const responsiveForLogos = {
 const advisorsImages = [ian, joe, mathew, David, Alvaro, Antoni];
 const advisorsHeadings = ["Ian Scarffe", "Joe Vezzani", "Mathew Neimerg", "David Marshall", "Alvaro Fernandaz","Antoni Zolciak"];
 const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
-const advisorsSubPara = ["Blockchain and Crypto Advisor", "CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero", "Co-Founder Marshland Capital", "Head of Strategy & Growth, Nsure Network ", "Co-founder & CMO Aleph Zero"];
+const advisorsSubPara = ["Blockchain and Crypto Advisor", "CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero", "Co-Founder Marshland Capital", "Head of Strategy & Growth, Nsure Network", "Co-founder & CMO Aleph Zero"];
 const responsiveForAdvisors = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -151,6 +152,7 @@ const responsiveForAdvisors = {
 function Body(props) {
 
   const history = useHistory();
+  const { t } = useTranslation()
 
     return (
     <div>
@@ -161,15 +163,15 @@ function Body(props) {
               <img src={fire} className={styles.Applogo} alt="logo" />
             </div>
             <h1>
-                Welcome To 5ire
+               {t('Welcome To 5ire')}
             </h1>
             <h2>
-             Blockchain X Sustainability = 5ire
+              {t('Blockchain X Sustainability = 5ire')}
             </h2>
             <p>
-               5ireChain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy. 
+               {t('5ireChain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy')}
             </p>
-            <Button label="Know More" btnClick={() => window.scroll(0, 700)} className={styles.button}/>
+            <Button label={t('Know More')} btnClick={() => window.scroll(0, 700)} className={styles.button}/>
         </div>
         </div>
       </div>
@@ -178,40 +180,40 @@ function Body(props) {
          <div className={styles.getStartedInfo}>
             <div className={styles.getStartedText}>
               <div className={styles.getStartedDiv}>
-                <p>5ire's mission is to accelerate the implementation of the United Nations 2030 Agenda for Sustainable Development.   </p>
+                <p>{t("5ire's mission is to accelerate the implementation of the United Nations 2030 Agenda for Sustainable Development.")}</p>
               </div>
               <div className={styles.getStartedRoadMap}>
-                <Button label="See Roadmap" btnClick={() => history.push('/roadmap')} className={styles.button}/>
+                <Button label={t("See Roadmap")} btnClick={() => history.push('/roadmap')} className={styles.button}/>
               </div>
             </div>
         </div>
         <div className={styles.aboutFireContent}>
             <div className={styles.whatIsFire}>
-                <h1>What is 5ire ?</h1>
-                <p>5ire is a blockchain ecosystem that brings forward Sustainability, Technology & Innovation to build the 5th industrial revolution.</p>
+                <h1>{t("What is 5ire ?")}</h1>
+                <p>{t("5ire is a blockchain ecosystem that brings forward Sustainability, Technology & Innovation to build the 5th industrial revolution.")}</p>
             </div>
             <div className={styles.learnMoreAbout}>
                   <div className={styles.learnMoreAboutText}>
-                    <p>Learn more about</p>
-                    <h1>5ireChain Technology </h1>
+                    <p>{t("Learn more about")}</p>
+                    <h1>{t("5ireChain Technology")}</h1>
                   </div>
                   <div className={styles.fireChainTechBtn}>
-                     <Button label="Discover 5ire" btnClick={() => history.push('/technology')} className={styles.button}/>
+                     <Button label={t("Discover 5ire")} btnClick={() => history.push('/technology')} className={styles.button}/>
                   </div>
             </div>
         </div>
         <div className={styles.whyFireContent}>
             <div className={styles.whyIsFire}>
-                <h1>Why 5IR ?</h1>
-                <p>In contrast to trends in the Fourth Industrial Revolution toward dehumanization, technology, and innovation, best practices need to be bent back toward the service of humanity. 5ire is a gateway in the smooth transitioning of the world from 4IR to 5IR. </p>
+                <h1>{t("Why 5IR ?")}</h1>
+                <p>{t("In contrast to trends in the Fourth Industrial Revolution toward dehumanization, technology, and innovation, best practices need to be bent back toward the service of humanity. 5ire is a gateway in the smooth transitioning of the world from 4IR to 5IR.")} </p>
             </div>
             <div className={styles.learnMoreAbout}>
                   <div className={styles.learnMoreAboutText}>
-                    <p>Learn more about</p>
-                    <h1>5th Industrial Revolution</h1>
+                    <p>{t("Learn more about")}</p>
+                    <h1>{t("5th Industrial Revolution")}</h1>
                   </div>
                   <div className={styles.fireChainTechBtn}>
-                     <Button label="Learn More About 5IR"  btnClick={() => window.open('https://www.youtube.com/watch?v=RDiHaHPOVH0')} className={styles.button}/>
+                     <Button label={t("Learn More About 5IR")}  btnClick={() => window.open('https://www.youtube.com/watch?v=RDiHaHPOVH0')} className={styles.button}/>
                   </div>
             </div>
         </div>
@@ -221,8 +223,8 @@ function Body(props) {
           <header className={styles.parentHeader}>
               <div className={styles.aboutHeader}>
                 <div className={styles.aboutContent}>
-                  <h1>5ire’s lingo =</h1>
-                  <p>United Nations' Sustainable Development Goals</p>
+                  <h1>{t("5ire’s lingo =")}</h1>
+                  <p>{t("United Nations' Sustainable Development Goals")}</p>
                 </div>
                 <div className={styles.aboutImageContainer}>
                   <img src={sdg} className={styles.aboutImage} alt="about"/>
@@ -232,40 +234,40 @@ function Body(props) {
       </section>
       <div className={styles.quoteStyle}>
             <img src={quote} alt="quote"/>
-             <p><span>Society & environment </span>is where we all meet; where all have a mutual interest; it is the one thing all of us share. </p>
+             <p><span>{t("Society & environment")} </span>{t("is where we all meet; where all have a mutual interest; it is the one thing all of us share.")} </p>
         </div>
       <section className={styles.WhyFire}>
         <footer>
           <div className={styles.footerStyles}>
               <div className={styles.footerContent}>
-                  <h1>Proof of 5ire </h1>
-                  <p>The first sustainable by design hybrid consensus and reward distribution mechanism</p>
+                  <h1>{t("Proof of 5ire")} </h1>
+                  <p>{t("The first sustainable by design hybrid consensus and reward distribution mechanism")}</p>
               </div>
               <div className={styles.proofOfFireBoxes}>
                   <div className={styles.footerBody}>
                       { proofOfFireImages.map((img, index) => (
-                            <ImageHeadingContent image={img}  heading={proofOfFireHeading[index]} 
+                            <ImageHeadingContent image={img}  heading={t(proofOfFireHeading[index])}
                                   imgSize={proofOfFireDimensions[index]}
                                   containerClass={styles.containerClass}
                                   headingStyles={styles.headingStyles}/>
                       ))}
                   </div>
                   <div className={styles.buttonStyles}>
-                  <Button label="Learn More"  btnClick={() => history.push('/technology')} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}/>
+                  <Button label={t("Learn More")}  btnClick={() => history.push('/technology')} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}/>
                   </div>
               </div>
          </div>
          <div className={styles.featuresData}>
-            <div className={styles.featuresHeading}><h1>Features</h1></div>
+            <div className={styles.featuresHeading}><h1>{t("Features")}</h1></div>
             <div className={styles.featuresRow}>
                   <div className={styles.features}>
                         { aboutImages.map((img, index) => (
-                          index % 2 === 1 && <AboutInfo image={img} heading={aboutHeading[index]}/>
+                          index % 2 === 1 && <AboutInfo image={img} heading={t(aboutHeading[index])}/>
                         ))}
                     </div>
                     <div className={styles.features}>
                         { aboutImages.map((img, index) => (
-                        index % 2 === 0 &&  <AboutInfo image={img} heading={aboutHeading[index]}/>
+                        index % 2 === 0 &&  <AboutInfo image={img} heading={t(aboutHeading[index])}/>
                         ))}
                     </div>
               </div>
@@ -277,12 +279,12 @@ function Body(props) {
       <section className={styles.foundersSection}>
         <header className={styles.founder}>
             <div className={styles.founderContent}>
-              <h1>Founded by Global Impact Champions & Blockchain Pioneers</h1>
+              <h1>{t("Founded by Global Impact Champions & Blockchain Pioneers")}</h1>
             </div>
         </header>
         <div className={styles.aboutTeam}>
                       { teamImages.map((img, index) => (
-                        <ImageHeadingContent image={img} heading={aboutTeamHeadings[index]} subHead={aboutTeamSubPara[index]}
+                        <ImageHeadingContent image={img} heading={t(aboutTeamHeadings[index])} subHead={t(aboutTeamSubPara[index])}
                         imgSize={aboutImageSize[index]}
                         headingStyles={styles.headingStyles}
                         subHeadStyles={styles.subheadingStyles}/>
@@ -291,7 +293,7 @@ function Body(props) {
          <div className={styles.aboutTeamMobile}>
              <CarouselComp responsive={responsiveForTeam}>
              { teamImages.map((img, index) => (
-                        <ImageHeadingContent image={img} heading={aboutTeamHeadings[index]} subHead={aboutTeamSubPara[index]}
+                        <ImageHeadingContent image={img} heading={t(aboutTeamHeadings[index])} subHead={t(aboutTeamSubPara[index])}
                         imgSize={aboutImageSize[index]}
                         headingStyles={styles.headingStyles}
                         subHeadStyles={styles.subheadingStyles}
@@ -300,10 +302,10 @@ function Body(props) {
              </CarouselComp>
           </div>
          <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' , marginBottom: '15rem'}}>
-            <Button label="Meet 5ire Team" btnClick={() => history.push('/about')}/>
+            <Button label={t("Meet 5ire Team")} btnClick={() => history.push('/about')}/>
          </div>
         <div className={styles.foundersFeatured}>
-           <h1>Founders Featured In</h1>
+           <h1>{t("Founders Featured In")}</h1>
         </div>
         <div className={styles.logosCarousel}>
             <CarouselComp responsive={responsiveForLogos}>
@@ -317,12 +319,12 @@ function Body(props) {
             </CarouselComp>
         </div>
         <div className={styles.foundersFeatured}>
-           <h1>Our Global Advisory Council & Braintrust Network</h1>
+           <h1>{t("Our Global Advisory Council & Braintrust Network")}</h1>
         </div>
          <div className={styles.aboutAdvisors}>
              <CarouselComp responsive={responsiveForAdvisors}>
              { advisorsImages.map((img, index) => (
-                        <ImageHeadingContent image={img} heading={advisorsHeadings[index]} subHead={advisorsSubPara[index]}
+                        <ImageHeadingContent image={img} heading={t(advisorsHeadings[index])} subHead={t(advisorsSubPara[index])}
                         imgSize={advisorsImageSize[index]}
                         headingStyles={styles.headingStyles}
                         subHeadStyles={styles.subheadingStyles}
@@ -331,7 +333,7 @@ function Body(props) {
              </CarouselComp>
           </div>
          <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '5rem'}}>
-            <Button label="Learn more about our Advisors" style={{ width: '30rem'}} btnClick={() => history.push('/about')}/>
+            <Button label={t("Learn more about our Advisors")} style={{ width: '30rem'}} btnClick={() => history.push('/about')}/>
          </div>
         <Footer/>
       </section>
