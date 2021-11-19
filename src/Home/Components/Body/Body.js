@@ -172,7 +172,9 @@ function Body(props) {
                {t('5ireChain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy')}
             </p>
             <div className={styles.applyNow}>
+              <div className={styles.firePublicSale}>
               <h1>{t('5ire Public Sale is coming soon! Apply for White Listing')}</h1>
+              </div>
               <Button label={t('Apply Now')} btnClick={() => window.open("https://forms.gle/k2gz8TMeWbG8NC9R6")} className={styles.button}/>
             </div>
         </div>
