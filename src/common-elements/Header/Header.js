@@ -25,6 +25,11 @@ const languages = [
     code: 'en',
     name: 'English',
     symbol: 'EN'
+  },
+  {
+    code: 'ja',
+    name: '日本',
+    symbol: 'JA',
   }
 ]
 

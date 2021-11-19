@@ -34,7 +34,7 @@ import joe from '../../../assets2/advisors/Joe.png';
 import mathew from '../../../assets2/advisors/Mathew.png';
 import David from '../../../assets2/advisors/David.png';
 import Alvaro from '../../../assets2/advisors/Alvaro.png';
-import Antoni from '../../../assets2/advisors/Antoni.png';
+
 
 // logos
 
@@ -124,10 +124,10 @@ const responsiveForLogos = {
 
 // advisors 
 
-const advisorsImages = [ian, joe, mathew, David, Alvaro, Antoni];
-const advisorsHeadings = ["Ian Scarffe", "Joe Vezzani", "Mathew Neimerg", "David Marshall", "Alvaro Fernandaz","Antoni Zolciak"];
+const advisorsImages = [ian, joe, mathew, David, Alvaro];
+const advisorsHeadings = ["Ian Scarffe", "Joe Vezzani", "Mathew Neimerg", "David Marshall", "Alvaro Fernandaz"];
 const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
-const advisorsSubPara = ["Blockchain and Crypto Advisor", "CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero", "Co-Founder Marshland Capital", "Head of Strategy & Growth, Nsure Network", "Co-founder & CMO Aleph Zero"];
+const advisorsSubPara = ["Blockchain and Crypto Advisor", "CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero", "Co-Founder Marshland Capital", "Head of Strategy & Growth, Nsure Network"];
 const responsiveForAdvisors = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
