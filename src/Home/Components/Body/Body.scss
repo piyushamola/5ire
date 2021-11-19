@@ -37,9 +37,18 @@
      text-align: center;
      @include content($color: #1E1E25, $font-size: 1.8rem, $line-height: 2.4rem)
     }
- 
-    .button {
-     margin: 4.8rem auto;
+
+    .applyNow {
+      width: 55%;
+      margin: 0 auto;
+      @include flex($justify-content: space-evenly);
+      .button {
+        margin: 4.8rem auto;
+       }
+       h1 {
+         width: 75%;
+        @include heading($font-size: 2.4rem, $line-height: 2.4rem);
+       }
     }
   }
   }
@@ -253,6 +262,11 @@
   }
 }
 
+.youTubeVideo {
+  margin: 10rem 0;
+  @include flex($justify-content: center);
+}
+
 
 .foundersSection {
   .founder {
@@ -359,9 +373,18 @@
       @include content($color: #1E1E25, $font-size: 1.8rem, $line-height: 2.4rem)
      }
 
-     .button {
-      margin: 2rem auto;
-     }
+
+    .applyNow {
+      text-align: center;
+      width: 100%;
+      .button {
+        margin: 2rem auto;
+       }
+       h1 {
+        @include heading($font-size: 1.8rem, $line-height: 1.8rem);
+       }
+       @include flex($justify-content: space-between, $flex-direction: column, $align-items: center);
+    }
    }
   }
   }
@@ -556,9 +579,19 @@
       flex-direction: column;
     }
   }
-  }
+}
 
 }
+
+.youTubeVideo {
+  margin: 5rem 0;
+  @include flex($justify-content: center);
+  iframe {
+    width: 35rem;
+    height: 25rem;
+  }
+}
+
 
 .foundersSection {
   .founder {

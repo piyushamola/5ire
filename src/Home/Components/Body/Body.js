@@ -171,7 +171,10 @@ function Body(props) {
             <p>
                {t('5ireChain is a fifth-generation blockchain that aims to bring a paradigm shift from a for-profit to a for-benefit economy')}
             </p>
-            <Button label={t('Know More')} btnClick={() => window.scroll(0, 700)} className={styles.button}/>
+            <div className={styles.applyNow}>
+              <h1>{t('5ire Public Sale is coming soon! Apply for White Listing')}</h1>
+              <Button label={t('Apply Now')} btnClick={() => window.open("https://forms.gle/k2gz8TMeWbG8NC9R6")} className={styles.button}/>
+            </div>
         </div>
         </div>
       </div>
@@ -273,6 +276,16 @@ function Body(props) {
               </div>
           </div>
         </footer>
+      </section>
+
+      <section className={styles.youTubeVideo}>
+        <div>
+            <iframe width="1000" height="500" src="https://www.youtube.com/embed/JLr7o0UDY9k"
+             frameborder='0'
+             allow='autoplay; encrypted-media'
+             allowfullscreen
+             title='video'></iframe>
+        </div>
       </section>
 
 
