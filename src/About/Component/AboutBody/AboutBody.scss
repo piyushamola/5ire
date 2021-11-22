@@ -76,23 +76,6 @@
   }
 
 
-  // .aboutAdvisors {
-  //   @include flex($justify-content: space-evenly);
-  //   margin: 5rem auto;
-  //   width: 70%;
-
-  //     .headingStyles {
-  //       @include heading($color: #000040, $font-size: 2rem, $line-height: 0.5rem);
-  //       text-align: center;
-  //       margin-top: 3rem;
-  //     }
-
-  //     .subheadingStyles {
-  //       @include heading($color: #000400, $font-size: 2rem, $line-height: 0.5rem);
-  //       text-align: center;
-  //     }
-  // }
-
   .aboutAdvisorsMobile {
     width: 85%;
     margin: 0 auto;
@@ -121,6 +104,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .legalTeam {
+      // @include flex($justify-content: center);
+      padding: 2rem;
+      margin: 5rem auto;
+      p {
+        text-align: center;
+        @include content($font-size: 4rem, $color: #404F77, $font-family: 'Helvetica')
+      }
     }
 
 @media only screen and (max-width: 640px) {
@@ -179,10 +172,10 @@
         }
 
     .founders {
-      margin: 3rem;
+      margin: 6rem 3rem;
         h1 {
             text-align: center;
-            @include heading($color: #000040, $font-size: 2.4rem, $line-height: 1rem);
+            @include heading($color: #000040, $font-size: 2.8rem, $line-height: 1rem);
         };
     }
 

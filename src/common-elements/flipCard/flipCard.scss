@@ -53,9 +53,9 @@
 
   .flipCardBack {
     transform: rotateY(180deg);
-    padding: 2rem;
+    padding: 1.5rem;
     p {
-        @include content($color: #000400, $font-size: 1.6rem, $line-height: 2.4rem);
+        @include content($color: #000400, $font-size: 1.4rem, $line-height: 2.4rem);
     }
   }
 

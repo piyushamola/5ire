@@ -42,7 +42,10 @@ import ImageHeadingContent from '../../../common-elements/ImageHeadingContent/Im
 import FlipCard from '../../../common-elements/flipCard/flipCard';
 import Footer from '../../../common-elements/Footer/Footer';
 
-const teamImages = [PG, PD, VM, Serge, SAI, Zak, Avid];
+
+// about team values 
+
+const teamImages = [PG, PD, VM, Serge, SAI, Zak, Avid, PG, PG, PG, PG, PG, PG, PG, PG, PG, PG, PG, PG, PG];
 const aboutTeamParas = ["Serial social entrepreneur, investor, public speaker and writer creating 5th Industrial Revolution and championing UN SDGs. India President - 5thelement.group; Entrepreneur 35 Under 35, Asiaone 40 under 40 Most Influential Leaders, Greenbiz Global 30 Under 30, BP Scholar, WEF Global Shaper, Ambassador at One Young World, Al Gore’s Climate Leader. MBA – IIFT Delhi. Exec Ed – UChicago / UOxford",
     "Prateek is a Blockchain enthusiast, investor and veteran Internet Marketer. He conceptualised the proprietary 5IRE consensus mechanism and reward protocols. In his internet marketing days, he clocked 8-figure affiliate revenues and helped incubate many startups. He founded Kaching Media and multiple internet marketing companies. He is also a heavy proponent of work life balance and healthy living.",
 "Venture Capitalist & Futurist. Incubated 40+ Projects including Qtum, Tron & Aleph Zero; Advisor at the EU Blockchain Observatory, World Future Society & UN USA; Member of Singularity University, Ex-EU Lawyer.",
@@ -50,11 +53,24 @@ const aboutTeamParas = ["Serial social entrepreneur, investor, public speaker an
 "Visionary Technology Leader with a record of accomplishment creating technology strategies and products that address across industry opportunities. He has 15+ years of Experience in strategy management MBA - Stephen M. Ross School of Business",
 "A security of information systems engineer. Communication protocols and E2E encryption enthusiast. Cryptography, Blockchain and Intellectual property protection & DRM Researcher",
 "Software engineer turned social entreprenuer with an experience in building for-benefit businesses and enterprise management. He also has a knack for Graphic & UI/UX Design. Exec Ed - Indian Institute of Management, Ranchi.",
+"Phd in Information Security, Green IT & Technopreneurship, previously a research Associate at BT Ireland Innovation Center (University of Ulster) and at Universiti Teknologi Malaysia. Associate Professor at Quest International University Perak and at National University of Computer Emerging Sciences (FAST-NU)",
+"An IT Professional having 20+ years with a proven record of delivering results in application development and DevOps. Certified AWS solutions architect with excellent programming experience in CPP,Java and Rust.",
+"An IT Technologist and Engineer with 13 years of experience. Currently working as an Cloud Native Enterprise Software Engineer at a global Enterprise company. Former Oracle and Former HP Software Engineer. Former CTO of Blockchain company. Founder and CTO of ProofSys.io - a decentralized tech engineering company and ProofID - a blockchain-based digital identity platform. BTA Blockchain Architect Certified Professional. Oracle Certified Professional. IBM Certified Professional.",
+"Research Intern, pursuing a bachelors in Computer Science from University of Michigan. Has experience with smart contract development on the Solana ecosystem with Rust. Also instructor at BAM with a primary interest in consensus protocols.",
+"Blockchain/Rust Developer and enthusiast with 5 years of experience in full stack development, He did his education in electronics & technology in Vietnam and Japan.",
+"An Infrastructure Engineer with 7+ years experience of effective infrastructure designing at scale, code management and deployment in all different forms of production environment.",
+"has been in the field of bug bounty since 2009 and has been listed in Apple, Google, Microsoft, Facebook, Adobe, Uber, AT&T, Avira, and many more with hall of fame listings as proof. He has helped celebrities such as Harbhajan Singh in recovering their hacked accounts, and also assisted an international singer in tracking down his hacked account and recovering it. He has been a speaker at various conferences worldwide such as BotConf, CONFidence, Hack In the Box, SINCON, Sec-T Hackcon, and numerous others. He also spoke at the IEEE Conference in California and Malaysia as well as for TedX. He also authored multiple bestsellers titled Kali Linux - An Ethical Hacker's Cookbook, Hands-On Red Team Tactics and Hands-On Web Pentesting with Metasploit",
+"Akshay is a tech entrepreneur currently running his product development studio. Akshay is working on a crypto exchange with this team and bringing products that increase usability of traders of the exchange thus increasing crypto adaptability and reach.",
+"is security-minded a backend developer with a strong passion for Blockchain. Having been in the crypto space since 2016, he has strong knowledge of the workings of blockchain and working to create the the proof of benefit in 5ire. He has a strong skills in Golang, Rust and TS/JS. ",
+"Omoalhaja helps founders, investors, developers, crypto and blockchain enthusiasts achieve their dreams of decentralizing access to common wealth and lowering the entry barriers for everyday people to contribute to blockchain ecosystems. He does this by writing technical content covering cryptocurrencies, blockchain and blockchain ecosystems, including the burgeoning world of non-fungible tokens (NFTs). His clients have applauded and commended him for demystifying complex topics, identifying risks and opportunities for investors, and poke holes in all the hype and hysteria surrounding digital collectibles. If he's not writing, you will find him hustling NAN with Mubeenah-his jewel.",
+"Software Engineer and Rust enthusiast with 2+ years of experience in network programming, building libraries and code optimization mainly in C/C++ and Rust",
+"Legal expert specializing in tech law. Holding LL.M. degree in International Commercial Law and MA in Information Technology Law. Private consultant for tech companies operating in the fields of A.I.&Machine Learning, Blockchain&Crypto, E-Commerce, and Data Privacy.",
+"Certified AML FinTech Compliance Associate (CAFCA), ACAMS. Professor of Business Law at Universidad Rafael Urdaneta (URU) in the Schools of Law and Business Administration. Member of the Editorial Task Force of the Association of Certified Sanctions Specialists (ACSS). Private consultant in Blockchain and Cryptocurrency Laws and Regulations, International Corporate Law, and AML/CFT & Sanctions Compliance for domestic and international companies in Venezuela"
 ];
 
-const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Mattila", "Serge Ajamian", "Sai Kossireddy", "Zakaria Salek", "Rahul Rautela",];
+const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Mattila", "Serge Ajamian", "Sai Kossireddy", "Zakaria Salek", "Rahul Rautela", "Dr. Jamshed Memon", "Raja Anche", "Alvin Jay Reyes", "William Wang", "Ho Dung", "Sushant Salil", "Himanshu Sharma", "Akshay", "Laurens", "Omoalhaja Abiola", "Abdullah", "Mubariz Aliyev",  "Angel Niño Torres"];
 
-const aboutImageSize = [{ width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}, { width: '17rem', height: '17rem'}];
+const aboutImageSize = new Array(aboutTeamHeadings.length).fill({ width: '17rem', height: '17rem'});
 
 const aboutTeamSubPara = ["Co Founder & CEO","Co Founder & CMO", "Co Founder & CBO", "Head of Advisory Council Strategic Advisor to the CEO", "Head of Strategy Management", "Head of Blockchain Research & Development", "Head of Operations & Design"];
 
@@ -129,7 +145,7 @@ function AboutBody(props) {
            </header>
               <div className={styles.teamFlipFlop}>
                       { teamImages.map((img, index) => (
-                        index <= 3 && <div>
+                        index <= 3 && <div key={index}>
                         <FlipCard image={img} paraAfterFlip={t(aboutTeamParas[index])} heading={t(aboutTeamHeadings[index])} subPara={t(aboutTeamSubPara[index])}
                             imgSize={aboutImageSize[index]}
                         />
@@ -138,7 +154,19 @@ function AboutBody(props) {
               </div>
               <div className={styles.teamFlipFlop}>
                       { teamImages.map((img, index) => (
-                        index > 3 && <div>
+                        (index > 3 && index <= 17) && <div key={index}>
+                        <FlipCard image={img} paraAfterFlip={t(aboutTeamParas[index])} heading={t(aboutTeamHeadings[index])} subPara={t(aboutTeamSubPara[index])}
+                            imgSize={aboutImageSize[index]}
+                        />
+                        </div>
+                      ))}
+              </div>
+              <div className={styles.founders}>
+                <h1>{t("Legal Team")}</h1>
+              </div>
+                <div className={styles.teamFlipFlop}>
+                      { teamImages.map((img, index) => (
+                        (index > 17) && <div key={index}>
                         <FlipCard image={img} paraAfterFlip={t(aboutTeamParas[index])} heading={t(aboutTeamHeadings[index])} subPara={t(aboutTeamSubPara[index])}
                             imgSize={aboutImageSize[index]}
                         />
