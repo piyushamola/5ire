@@ -173,7 +173,7 @@ function Body(props) {
             </p>
             <div className={styles.applyNow}>
               <div className={styles.firePublicSale}>
-              <h1>{t('5ire Public Sale is coming soon! Apply for White Listing')}</h1>
+              <h1>{t('              5ire Public Sale is coming soon ! Apply Now to get Whitelisted.')}</h1>
               </div>
               <Button label={t('Apply Now')} btnClick={() => window.open("https://forms.gle/k2gz8TMeWbG8NC9R6")} className={styles.button}/>
             </div>

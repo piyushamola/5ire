@@ -21,10 +21,21 @@ import Alvaro from '../../../assets2/advisors/Alvaro.png';
 import PG from '../../../assets2/teamPictures/PG.png';
 import PD from '../../../assets2/teamPictures/PD.png';
 import VM from '../../../assets2/teamPictures/VM.png';
+import Serge from '../../../assets2/teamPictures/Serge.png';
 import SAI from '../../../assets2/teamPictures/Sai.png';
 import Zak from '../../../assets2/teamPictures/Zak.png';
 import Avid from '../../../assets2/teamPictures/Avid.png';
-import Serge from '../../../assets2/teamPictures/Serge.png';
+import Samiran from '../../../assets2/teamPictures/Samiran.png';
+import Raja from '../../../assets2/teamPictures/Raja.png';
+import Alvin from '../../../assets2/teamPictures/Alvin.png';
+import Laurens from '../../../assets2/teamPictures/Laurens.png';
+import Abdullah from '../../../assets2/teamPictures/Abdullah.png';
+import Dung from '../../../assets2/teamPictures/Dung.png';
+import Salil  from '../../../assets2/teamPictures/Salil.png';
+import Himanshu from '../../../assets2/teamPictures/Himanshu.png';
+import Jamshed from '../../../assets2/teamPictures/Jamshed.png';
+import Angel from '../../../assets2/teamPictures/Angel.png';
+import Mubariz from '../../../assets2/teamPictures/Mubariz.png';
 
 //logo 
 
@@ -45,9 +56,9 @@ import Footer from '../../../common-elements/Footer/Footer';
 
 // about team values 
 
-const teamImages = [PG, PD, VM, Serge, SAI, Zak, Avid, PG, PG, PG, PG, PG, PG, PG, PG, PG, PG, PG, PG, PG];
+const teamImages = [PG, PD, VM, Serge, SAI, Zak, Avid, Samiran, Raja, Alvin, Dung, Salil, Himanshu, Laurens, Abdullah, Jamshed, Angel, Mubariz];
 const aboutTeamParas = ["Serial social entrepreneur, investor, public speaker and writer creating 5th Industrial Revolution and championing UN SDGs. India President - 5thelement.group; Entrepreneur 35 Under 35, Asiaone 40 under 40 Most Influential Leaders, Greenbiz Global 30 Under 30, BP Scholar, WEF Global Shaper, Ambassador at One Young World, Al Gore’s Climate Leader. MBA – IIFT Delhi. Exec Ed – UChicago / UOxford",
-    "Prateek is a Blockchain enthusiast, investor and veteran Internet Marketer. He conceptualised the proprietary 5IRE consensus mechanism and reward protocols. In his internet marketing days, he clocked 8-figure affiliate revenues and helped incubate many startups. He founded Kaching Media and multiple internet marketing companies. He is also a heavy proponent of work life balance and healthy living.",
+"Prateek is a Blockchain enthusiast, investor and veteran Internet Marketer. He conceptualised the proprietary 5IRE consensus mechanism and reward protocols. In his internet marketing days, he clocked 8-figure affiliate revenues and helped incubate many startups. He founded Kaching Media and multiple internet marketing companies. He is also a heavy proponent of work life balance and healthy living.",
 "Venture Capitalist & Futurist. Incubated 40+ Projects including Qtum, Tron & Aleph Zero; Advisor at the EU Blockchain Observatory, World Future Society & UN USA; Member of Singularity University, Ex-EU Lawyer.",
 "Cofounder of Node Kapital, investing and scaling in DEFI, NFT, Gaming, Esports, Metaverse, Infrastructure & Layer 1/2 solutions. He previously successfully led and scaled Talent Spot Group into a global business with USD 120 Million in revenue. Polyglot - fluent in Arabic, Chinese, English, French, Armenian. Completed his grad degree at Stanford University.",
 "Visionary Technology Leader with a record of accomplishment creating technology strategies and products that address across industry opportunities. He has 15+ years of Experience in strategy management MBA - Stephen M. Ross School of Business",
@@ -55,24 +66,21 @@ const aboutTeamParas = ["Serial social entrepreneur, investor, public speaker an
 "Software engineer turned social entreprenuer with an experience in building for-benefit businesses and enterprise management. He also has a knack for Graphic & UI/UX Design. Exec Ed - Indian Institute of Management, Ranchi.",
 "Phd in Information Security, Green IT & Technopreneurship, previously a research Associate at BT Ireland Innovation Center (University of Ulster) and at Universiti Teknologi Malaysia. Associate Professor at Quest International University Perak and at National University of Computer Emerging Sciences (FAST-NU)",
 "An IT Professional having 20+ years with a proven record of delivering results in application development and DevOps. Certified AWS solutions architect with excellent programming experience in CPP,Java and Rust.",
-"An IT Technologist and Engineer with 13 years of experience. Currently working as an Cloud Native Enterprise Software Engineer at a global Enterprise company. Former Oracle and Former HP Software Engineer. Former CTO of Blockchain company. Founder and CTO of ProofSys.io - a decentralized tech engineering company and ProofID - a blockchain-based digital identity platform. BTA Blockchain Architect Certified Professional. Oracle Certified Professional. IBM Certified Professional.",
-"Research Intern, pursuing a bachelors in Computer Science from University of Michigan. Has experience with smart contract development on the Solana ecosystem with Rust. Also instructor at BAM with a primary interest in consensus protocols.",
+"An Tech Entrepreneur and IT Technologist, Engineer with 10+ years of Software engineering experience. Founder, Blockchain Advisory, CTO, Product Manager and Solutions Architect. Silo’d and built teams that launched several production-grade distributed applications. Lead and delivered products from conception to launch and maturation from an established roadmap. Launched key blockchain platform and solutions specifically in the identity (SSI) space. BTA Blockchain Architect Certified Professional. Oracle Certified Professional. IBM Certified Professional. Technical Writer. Distributed Ledger Technology Advocate.",
 "Blockchain/Rust Developer and enthusiast with 5 years of experience in full stack development, He did his education in electronics & technology in Vietnam and Japan.",
 "An Infrastructure Engineer with 7+ years experience of effective infrastructure designing at scale, code management and deployment in all different forms of production environment.",
-"has been in the field of bug bounty since 2009 and has been listed in Apple, Google, Microsoft, Facebook, Adobe, Uber, AT&T, Avira, and many more with hall of fame listings as proof. He has helped celebrities such as Harbhajan Singh in recovering their hacked accounts, and also assisted an international singer in tracking down his hacked account and recovering it. He has been a speaker at various conferences worldwide such as BotConf, CONFidence, Hack In the Box, SINCON, Sec-T Hackcon, and numerous others. He also spoke at the IEEE Conference in California and Malaysia as well as for TedX. He also authored multiple bestsellers titled Kali Linux - An Ethical Hacker's Cookbook, Hands-On Red Team Tactics and Hands-On Web Pentesting with Metasploit",
-"Akshay is a tech entrepreneur currently running his product development studio. Akshay is working on a crypto exchange with this team and bringing products that increase usability of traders of the exchange thus increasing crypto adaptability and reach.",
-"is security-minded a backend developer with a strong passion for Blockchain. Having been in the crypto space since 2016, he has strong knowledge of the workings of blockchain and working to create the the proof of benefit in 5ire. He has a strong skills in Golang, Rust and TS/JS. ",
-"Omoalhaja helps founders, investors, developers, crypto and blockchain enthusiasts achieve their dreams of decentralizing access to common wealth and lowering the entry barriers for everyday people to contribute to blockchain ecosystems. He does this by writing technical content covering cryptocurrencies, blockchain and blockchain ecosystems, including the burgeoning world of non-fungible tokens (NFTs). His clients have applauded and commended him for demystifying complex topics, identifying risks and opportunities for investors, and poke holes in all the hype and hysteria surrounding digital collectibles. If he's not writing, you will find him hustling NAN with Mubeenah-his jewel.",
+"He has been in the field of bug bounty since 2009 and has been listed in Apple, Google, Microsoft, Facebook, Adobe, Uber, AT&T, Avira, and many more with hall of fame listings. He has been a speaker at various conferences worldwide such as BotConf, CONFidence, Hack In the Box, SINCON, Sec-T Hackcon, and numerous others. He also spoke at the IEEE Conference in California and Malaysia as well as for TedX. He also authored multiple bestsellers titled Kali Linux - An Ethical Hacker's Cookbook, Hands-On Red Team Tactics and Hands-On Web Pentesting with Metasploit",
+"He is security-minded a backend developer with a strong passion for Blockchain. Having been in the crypto space since 2016, he has strong knowledge of the workings of blockchain and working to create the the proof of benefit in 5ire. He has a strong skills in Golang, Rust and TS/JS. ",
 "Software Engineer and Rust enthusiast with 2+ years of experience in network programming, building libraries and code optimization mainly in C/C++ and Rust",
-"Legal expert specializing in tech law. Holding LL.M. degree in International Commercial Law and MA in Information Technology Law. Private consultant for tech companies operating in the fields of A.I.&Machine Learning, Blockchain&Crypto, E-Commerce, and Data Privacy.",
-"Certified AML FinTech Compliance Associate (CAFCA), ACAMS. Professor of Business Law at Universidad Rafael Urdaneta (URU) in the Schools of Law and Business Administration. Member of the Editorial Task Force of the Association of Certified Sanctions Specialists (ACSS). Private consultant in Blockchain and Cryptocurrency Laws and Regulations, International Corporate Law, and AML/CFT & Sanctions Compliance for domestic and international companies in Venezuela"
-];
+"Dr. Jamshed Memon is Blockchain Security Consultant at 5ire. He possesses a doctorate in Information Systems and has over 12 years of academic and industry experience in the field of cryptography and cyber security. Along with working at 5ire Dr. Memon is also a cryptography researcher at British Telecom Ireland Innovation Center in Belfast, United Kingdom. His research interests include Post Quantum Cryptography, Public Key Infrastructure and Green Computing. ",
+"He is Certified AML FinTech Compliance Associate (CAFCA), ACAMS, Professor of Business Law at Universidad Rafael Urdaneta (URU) in the Schools of Law and Business Administration, Member of the Editorial Task Force of the Association of Certified Sanctions Specialists (ACSS). Private consultant in Blockchain and Cryptocurrency Laws and Regulations, International Corporate Law, and AML/CFT & Sanctions Compliance for domestic and international companies in Venezuela.",
+"He is Legal expert specializing in tech law. Holding LL.M. degree in International Commercial Law and MA in Information Technology Law. Private consultant for tech companies operating in the fields of A.I.&Machine Learning, Blockchain&Crypto, E-Commerce, and Data Privacy."];
 
-const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Mattila", "Serge Ajamian", "Sai Kossireddy", "Zakaria Salek", "Rahul Rautela", "Dr. Jamshed Memon", "Raja Anche", "Alvin Jay Reyes", "William Wang", "Ho Dung", "Sushant Salil", "Himanshu Sharma", "Akshay", "Laurens", "Omoalhaja Abiola", "Abdullah", "Mubariz Aliyev",  "Angel Niño Torres"];
+const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Mattila", "Serge Ajamian", "Sai Kossireddy", "Zakaria Salek", "Rahul Rautela", "Dr. Samiran Bag", "Raja Anche", "Alvin Jay Reyes", "Ho Dung", "Sushant Salil", "Himanshu Sharma", "Laurens", "Abdullah", "Dr. Jamshed Memon", "Angel Niño Torres", "Mubariz Aliyev"];
 
 const aboutImageSize = new Array(aboutTeamHeadings.length).fill({ width: '17rem', height: '17rem'});
 
-const aboutTeamSubPara = ["Co Founder & CEO","Co Founder & CMO", "Co Founder & CBO", "Head of Advisory Council Strategic Advisor to the CEO", "Head of Strategy Management", "Head of Blockchain Research & Development", "Head of Operations & Design"];
+const aboutTeamSubPara = ["Co Founder & CEO","Co Founder & CMO", "Co Founder & CBO", "Head of Advisory Council Strategic Advisor to the CEO", "Head of Strategy Management", "Head of Blockchain Research & Development", "Head of Operations & Design","Senior Researcher", "Infrastructure Architect", "Technical Manager", "Rust Developer", "Infrastructure Lead", "5ire Security Head", "Sr Substrate Developer", "Software engineer", "Blockchain Researcher", "Lawyer", "Lawyer" ];
 
 // Advisors 
 
@@ -154,7 +162,7 @@ function AboutBody(props) {
               </div>
               <div className={styles.teamFlipFlop}>
                       { teamImages.map((img, index) => (
-                        (index > 3 && index <= 17) && <div key={index}>
+                        (index > 3 && index <= 15) && <div key={index}>
                         <FlipCard image={img} paraAfterFlip={t(aboutTeamParas[index])} heading={t(aboutTeamHeadings[index])} subPara={t(aboutTeamSubPara[index])}
                             imgSize={aboutImageSize[index]}
                         />
@@ -166,7 +174,7 @@ function AboutBody(props) {
               </div>
                 <div className={styles.teamFlipFlop}>
                       { teamImages.map((img, index) => (
-                        (index > 17) && <div key={index}>
+                        (index > 15) && <div key={index}>
                         <FlipCard image={img} paraAfterFlip={t(aboutTeamParas[index])} heading={t(aboutTeamHeadings[index])} subPara={t(aboutTeamSubPara[index])}
                             imgSize={aboutImageSize[index]}
                         />
