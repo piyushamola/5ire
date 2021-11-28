@@ -34,6 +34,7 @@ import Dung from '../../../assets2/teamPictures/Dung.png';
 import Salil  from '../../../assets2/teamPictures/Salil.png';
 import Himanshu from '../../../assets2/teamPictures/Himanshu.png';
 import Jamshed from '../../../assets2/teamPictures/Jamshed.png';
+import Omoalhaja from '../../../assets2/teamPictures/Omoalhaja.jpeg';
 import Angel from '../../../assets2/teamPictures/Angel.png';
 import Mubariz from '../../../assets2/teamPictures/Mubariz.png';
 
@@ -56,7 +57,7 @@ import Footer from '../../../common-elements/Footer/Footer';
 
 // about team values 
 
-const teamImages = [PG, PD, VM, Serge, SAI, Zak, Avid, Samiran, Raja, Alvin, Dung, Salil, Himanshu, Laurens, Abdullah, Jamshed, Angel, Mubariz];
+const teamImages = [PG, PD, VM, Serge, SAI, Zak, Avid, Samiran, Raja, Alvin, Dung, Salil, Himanshu, Laurens, Abdullah, Jamshed, Omoalhaja, Angel, Mubariz];
 const aboutTeamParas = ["Serial social entrepreneur, investor, public speaker and writer creating 5th Industrial Revolution and championing UN SDGs. India President - 5thelement.group; Entrepreneur 35 Under 35, Asiaone 40 under 40 Most Influential Leaders, Greenbiz Global 30 Under 30, BP Scholar, WEF Global Shaper, Ambassador at One Young World, Al Gore’s Climate Leader. MBA – IIFT Delhi. Exec Ed – UChicago / UOxford",
 "Prateek is a Blockchain enthusiast, investor and veteran Internet Marketer. He conceptualised the proprietary 5IRE consensus mechanism and reward protocols. In his internet marketing days, he clocked 8-figure affiliate revenues and helped incubate many startups. He founded Kaching Media and multiple internet marketing companies. He is also a heavy proponent of work life balance and healthy living.",
 "Venture Capitalist & Futurist. Incubated 40+ Projects including Qtum, Tron & Aleph Zero; Advisor at the EU Blockchain Observatory, World Future Society & UN USA; Member of Singularity University, Ex-EU Lawyer.",
@@ -73,14 +74,36 @@ const aboutTeamParas = ["Serial social entrepreneur, investor, public speaker an
 "He is security-minded a backend developer with a strong passion for Blockchain. Having been in the crypto space since 2016, he has strong knowledge of the workings of blockchain and working to create the the proof of benefit in 5ire. He has a strong skills in Golang, Rust and TS/JS. ",
 "Software Engineer and Rust enthusiast with 2+ years of experience in network programming, building libraries and code optimization mainly in C/C++ and Rust",
 "Dr. Jamshed Memon is Blockchain Security Consultant at 5ire. He possesses a doctorate in Information Systems and has over 12 years of academic and industry experience in the field of cryptography and cyber security. Along with working at 5ire Dr. Memon is also a cryptography researcher at British Telecom Ireland Innovation Center in Belfast, United Kingdom. His research interests include Post Quantum Cryptography, Public Key Infrastructure and Green Computing. ",
+"Omoalhaja helps founders, investors, developers, crypto and blockchain enthusiasts achieve their dreams of decentralizing access to common wealth and lowering the entry barriers for everyday people to contribute to blockchain ecosystems. He does this by writing technical content covering cryptocurrencies, blockchain and blockchain ecosystems, including the burgeoning world of non-fungible tokens (NFTs). His clients have applauded and commended him for demystifying complex topics, identifying risks and opportunities for investors, and poke holes in all the hype and hysteria surrounding digital collectibles. If he's not writing, you will find him hustling NAN with Mubeenah -his jewel.",
 "He is Certified AML FinTech Compliance Associate (CAFCA), ACAMS, Professor of Business Law at Universidad Rafael Urdaneta (URU) in the Schools of Law and Business Administration, Member of the Editorial Task Force of the Association of Certified Sanctions Specialists (ACSS). Private consultant in Blockchain and Cryptocurrency Laws and Regulations, International Corporate Law, and AML/CFT & Sanctions Compliance for domestic and international companies in Venezuela.",
 "He is Legal expert specializing in tech law. Holding LL.M. degree in International Commercial Law and MA in Information Technology Law. Private consultant for tech companies operating in the fields of A.I.&Machine Learning, Blockchain&Crypto, E-Commerce, and Data Privacy."];
 
-const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Mattila", "Serge Ajamian", "Sai Kossireddy", "Zakaria Salek", "Rahul Rautela", "Dr. Samiran Bag", "Raja Anche", "Alvin Jay Reyes", "Ho Dung", "Sushant Salil", "Himanshu Sharma", "Laurens", "Abdullah", "Dr. Jamshed Memon", "Angel Niño Torres", "Mubariz Aliyev"];
+const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Mattila", "Serge Ajamian", "Sai Kossireddy", "Zakaria Salek", "Rahul Rautela", "Dr. Samiran Bag", "Raja Anche", "Alvin Jay Reyes", "Ho Dung", "Sushant Salil", "Himanshu Sharma", "Laurens", "Abdullah", "Dr. Jamshed Memon", "Omoalhaja Abiola", "Angel Niño Torres", "Mubariz Aliyev"];
 
 const aboutImageSize = new Array(aboutTeamHeadings.length).fill({ width: '17rem', height: '17rem'});
 
-const aboutTeamSubPara = ["Co Founder & CEO","Co Founder & CMO", "Co Founder & CBO", "Head of Advisory Council Strategic Advisor to the CEO", "Head of Strategy Management", "Head of Blockchain Research & Development", "Head of Operations & Design","Senior Researcher", "Infrastructure Architect", "Technical Manager", "Rust Developer", "Infrastructure Lead", "5ire Security Head", "Sr Substrate Developer", "Software engineer", "Blockchain Researcher", "Lawyer", "Lawyer" ];
+const aboutTeamSubPara = ["Co Founder & CEO","Co Founder & CMO", "Co Founder & CBO", "Head of Advisory Council Strategic Advisor to the CEO", "Head of Strategy Management", "Head of Blockchain Research & Development", "Head of Operations & Design","Senior Researcher", "Infrastructure Architect", "Technical Manager", "Rust Developer", "Infrastructure Lead", "5ire Security Head", "Sr Substrate Developer", "Software engineer", "Blockchain Researcher", "Technical Writer", "Lawyer", "Lawyer" ];
+
+const aboutTeamLinkedIn = ["https://www.linkedin.com/in/pratikgauri/",
+ "https://www.linkedin.com/in/prateekdwivedi1991",
+"https://www.linkedin.com/in/vilmamattila",
+"https://www.linkedin.com/in/sergeajamian/",
+"https://www.linkedin.com/in/skossireddy/",
+"https://www.linkedin.com/in/zakaria-salek/",
+"https://www.linkedin.com/in/rahul-rautela-14152473/",
+"https://www.linkedin.com/in/samiran-bag-aab9a133/",
+"https://www.linkedin.com/in/raja-s-a-16300823/",
+"https://www.linkedin.com/in/alvinjayreyes/",
+"https://www.linkedin.com/in/dinh-dung-880bb0219/",
+"",
+"https://www.linkedin.com/in/0xhimanshu/",
+"https://www.linkedin.com/in/laurens-kubat",
+"https://www.linkedin.com/in/abdullah-eryuzlu-675611182",
+"https://www.linkedin.com/in/jamshedmemon/",
+"",
+"https://www.linkedin.com/in/angeljnt/",
+"https://www.linkedin.com/in/mubariz-aliyev/",
+]
 
 // Advisors 
 
@@ -89,6 +112,12 @@ const advisorsImages = [ian, joe, mathew, David, Alvaro];
 const advisorsHeadings = ["Ian Scarffe", "Joe Vezzani", "Mathew Neimerg", "David Marshall", "Alvaro Fernandaz"];
 const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
 const advisorsSubPara = ["Blockchain and Crypto Advisor", "CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero", "Co-Founder Marshland Capital", "Head of Strategy & Growth, Nsure Network", "Co-founder & CMO Aleph Zero"];
+const advisorsLinkedIn = ["https://www.linkedin.com/in/ianscarffe/",
+"https://www.linkedin.com/in/joevezzani/",
+"https://www.linkedin.com/in/matthew-niemerg/",
+"https://www.linkedin.com/in/davidkmarshall/",
+"https://www.linkedin.com/in/alvaro-fern%C3%A1ndez-576b3489/"];
+
 const responsiveForAdvisors = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -156,15 +185,17 @@ function AboutBody(props) {
                         index <= 3 && <div key={index}>
                         <FlipCard image={img} paraAfterFlip={t(aboutTeamParas[index])} heading={t(aboutTeamHeadings[index])} subPara={t(aboutTeamSubPara[index])}
                             imgSize={aboutImageSize[index]}
+                            linkedIn={aboutTeamLinkedIn[index]}
                         />
                         </div>
                       ))}
               </div>
               <div className={styles.teamFlipFlop}>
                       { teamImages.map((img, index) => (
-                        (index > 3 && index <= 15) && <div key={index}>
+                        (index > 3 && index <= 16) && <div key={index}>
                         <FlipCard image={img} paraAfterFlip={t(aboutTeamParas[index])} heading={t(aboutTeamHeadings[index])} subPara={t(aboutTeamSubPara[index])}
                             imgSize={aboutImageSize[index]}
+                            linkedIn={aboutTeamLinkedIn[index]}
                         />
                         </div>
                       ))}
@@ -174,9 +205,10 @@ function AboutBody(props) {
               </div>
                 <div className={styles.teamFlipFlop}>
                       { teamImages.map((img, index) => (
-                        (index > 15) && <div key={index}>
+                        (index > 16) && <div key={index}>
                         <FlipCard image={img} paraAfterFlip={t(aboutTeamParas[index])} heading={t(aboutTeamHeadings[index])} subPara={t(aboutTeamSubPara[index])}
                             imgSize={aboutImageSize[index]}
+                            linkedIn={aboutTeamLinkedIn[index]}
                         />
                         </div>
                       ))}
@@ -205,7 +237,9 @@ function AboutBody(props) {
                             imgSize={advisorsImageSize[index]}
                             headingStyles={styles.headingStyles}
                             subHeadStyles={styles.subheadingStyles}
-                            containerClass={styles.containerClass}/>
+                            containerClass={styles.containerClass}
+                            linkedIn={advisorsLinkedIn[index]}
+                            />
                           ))}
                 </CarouselComp>
               </div>

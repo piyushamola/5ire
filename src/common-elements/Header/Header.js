@@ -84,7 +84,7 @@ function Header(props) {
         <div className={itemsClasses.join(' ')}>
             <NavigationItem link="/" exact active={true}>{t("Home")}</NavigationItem>
             <NavigationItem link="/technology">{t("Technology")}</NavigationItem>
-            <NavigationItem link="/about">{t("About")}</NavigationItem>
+            <NavigationItem link="/about">{t("Our Team")}</NavigationItem>
             <NavigationItem link="/roadmap">{t("Roadmap")}</NavigationItem>
             <NavigationItem link="/contact">{t("Contact")}</NavigationItem>
         </div>

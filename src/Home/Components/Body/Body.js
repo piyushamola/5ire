@@ -77,6 +77,11 @@ const teamImages = [PG, PD, VM];
 const aboutTeamHeadings = ["Pratik Gauri", "Prateek Dwivedi", "Vilma Mattila"];
 const aboutImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
 const aboutTeamSubPara = ["Co Founder & CEO","Co Founder & CMO", "Co Founder & CBO"];
+const aboutTeamLinkedIn = ["https://www.linkedin.com/in/pratikgauri/",
+ "https://www.linkedin.com/in/prateekdwivedi1991",
+"https://www.linkedin.com/in/vilmamattila",
+];
+
 const responsiveForTeam = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -128,6 +133,12 @@ const advisorsImages = [ian, joe, mathew, David, Alvaro];
 const advisorsHeadings = ["Ian Scarffe", "Joe Vezzani", "Mathew Neimerg", "David Marshall", "Alvaro Fernandaz"];
 const advisorsImageSize = [{ width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'},  { width: '17.6rem', height: '17.6rem'}, { width: '17.6rem', height: '17.6rem'}];
 const advisorsSubPara = ["Blockchain and Crypto Advisor", "CEO, Lunarcrush Ex- Morgan Stanley","President & Co-founder of Aleph Zero", "Co-Founder Marshland Capital", "Head of Strategy & Growth, Nsure Network"];
+const advisorsLinkedIn = ["https://www.linkedin.com/in/ianscarffe/",
+"https://www.linkedin.com/in/joevezzani/",
+"https://www.linkedin.com/in/matthew-niemerg/",
+"https://www.linkedin.com/in/davidkmarshall/",
+"https://www.linkedin.com/in/alvaro-fern%C3%A1ndez-576b3489/"];
+
 const responsiveForAdvisors = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -302,7 +313,9 @@ function Body(props) {
                         <ImageHeadingContent image={img} heading={t(aboutTeamHeadings[index])} subHead={t(aboutTeamSubPara[index])}
                         imgSize={aboutImageSize[index]}
                         headingStyles={styles.headingStyles}
-                        subHeadStyles={styles.subheadingStyles}/>
+                        subHeadStyles={styles.subheadingStyles}
+                        linkedIn={aboutTeamLinkedIn[index]}
+                        />
                       ))}
          </div>
          <div className={styles.aboutTeamMobile}>
@@ -312,7 +325,9 @@ function Body(props) {
                         imgSize={aboutImageSize[index]}
                         headingStyles={styles.headingStyles}
                         subHeadStyles={styles.subheadingStyles}
-                        containerClass={styles.containerClass}/>
+                        containerClass={styles.containerClass}
+                        linkedIn={aboutTeamLinkedIn[index]}
+                        />
                       ))}
              </CarouselComp>
           </div>
@@ -343,7 +358,8 @@ function Body(props) {
                         imgSize={advisorsImageSize[index]}
                         headingStyles={styles.headingStyles}
                         subHeadStyles={styles.subheadingStyles}
-                        containerClass={styles.containerClass}/>
+                        containerClass={styles.containerClass}
+                        linkedIn={advisorsLinkedIn[index]}/>
                       ))}
              </CarouselComp>
           </div>
